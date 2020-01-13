@@ -1,0 +1,9 @@
+<map id="askForName" name="askForName">
+<area shape="rect" id="node1" title="Pergunta o nome do jogador, se este fizer uma pontuação rocord." alt="" coords="5,107,103,133"/>
+<area shape="rect" id="node2" href="$words_8c.html#a706863273d76b7398b7ad2f554a970fb" title="Desenha no ecrã a palavra pretendida, com uma certa cor." alt="" coords="151,69,303,96"/>
+<area shape="rect" id="node6" href="$video__card_8c.html#adf0e5bdc609c021a347011e8482d19fd" title="Desenha o fundo correspondente ao Sprite* sprite." alt="" coords="168,132,285,159"/>
+<area shape="rect" id="node3" href="$sprite_8c.html#ae2345365e9a63d97d4cedbdc75b223f5" title="Desenha o sprite sp, com uma cor pretendida." alt="" coords="351,5,505,32"/>
+<area shape="rect" id="node4" href="$words_8c.html#a750a9dd509ad68b3462d2b7b01ecf6df" title="Obtém o comprimento do xpm do caracter c." alt="" coords="371,56,485,83"/>
+<area shape="rect" id="node5" href="$words_8c.html#a2d5452b6a168937899914f0978105ae9" title="Obtém o Sprite* correspondente ao caracter c." alt="" coords="391,107,465,133"/>
+<area shape="rect" id="node7" href="$sprite_8c.html#a7151b29f2e45fc31dd5125879647eaeb" title="Desenha o sprite sp;" alt="" coords="383,157,473,184"/>
+</map>

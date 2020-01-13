@@ -1,0 +1,218 @@
+\hypertarget{video__card_8h}{}\doxysection{video\+\_\+card.\+h File Reference}
+\label{video__card_8h}\index{video\_card.h@{video\_card.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sprite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+Include dependency graph for video\+\_\+card.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{video__card_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{video__card_8h_a8cc35ceb6edb14480e5afceb3ce2ee8b}{I\+N\+D\+E\+X\+E\+D\+\_\+\+C\+O\+L\+OR}}~0x04
+\item 
+\#define \mbox{\hyperlink{video__card_8h_aa1736cd349cf2b4f9dbe368c2a13e5be}{D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR}}~0x06
+\item 
+\#define \mbox{\hyperlink{video__card_8h_a611d85d777fc72fee560583ea12f95ee}{h\+\_\+res}}~1280
+\item 
+\#define \mbox{\hyperlink{video__card_8h_a883287d34c2e10b78dff888334e417a2}{v\+\_\+res}}~1024
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$() \mbox{\hyperlink{video__card_8h_aa6c1ff5024cd4d15e476bce487584daa}{vg\+\_\+init}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla teclada corresponder a esse caracter. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video__card_8h_a2ed56794e158969846a9df63dba87f22}{init\+\_\+all\+\_\+sprites}} ()
+\item 
+void \mbox{\hyperlink{video__card_8h_adf0e5bdc609c021a347011e8482d19fd}{draw\+\_\+backgroud}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sprite, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha o fundo correspondente ao Sprite$\ast$ sprite. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video__card_8h_ab801580a817ad5e8b33fa718023857cc}{draw\+\_\+cursor}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sprite, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha sprite do rato. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video__card_8h_a979d76acd75329c403f136bbb891c21e}{draw\+\_\+everything\+\_\+in\+\_\+game}} (char $\ast$word, int score, uint8\+\_\+t $\ast$initial\+\_\+address, int \mbox{\hyperlink{words_8c_a572259e9327ffd81d9348c35038d9092}{y0\+\_\+word}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha tudo o que precisamos no jogo (fundo, palavra atual, score, level e timer). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video__card_8h_a505e4eac70b471c9c86556011daf2298}{free\+\_\+everything}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{video__card_8h_aa1736cd349cf2b4f9dbe368c2a13e5be}\label{video__card_8h_aa1736cd349cf2b4f9dbe368c2a13e5be}} 
+\index{video\_card.h@{video\_card.h}!DIRECT\_COLOR@{DIRECT\_COLOR}}
+\index{DIRECT\_COLOR@{DIRECT\_COLOR}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{DIRECT\_COLOR}{DIRECT\_COLOR}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+C\+T\+\_\+\+C\+O\+L\+OR~0x06}
+
+\mbox{\Hypertarget{video__card_8h_a611d85d777fc72fee560583ea12f95ee}\label{video__card_8h_a611d85d777fc72fee560583ea12f95ee}} 
+\index{video\_card.h@{video\_card.h}!h\_res@{h\_res}}
+\index{h\_res@{h\_res}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{h\_res}{h\_res}}
+{\footnotesize\ttfamily \#define h\+\_\+res~1280}
+
+\mbox{\Hypertarget{video__card_8h_a8cc35ceb6edb14480e5afceb3ce2ee8b}\label{video__card_8h_a8cc35ceb6edb14480e5afceb3ce2ee8b}} 
+\index{video\_card.h@{video\_card.h}!INDEXED\_COLOR@{INDEXED\_COLOR}}
+\index{INDEXED\_COLOR@{INDEXED\_COLOR}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{INDEXED\_COLOR}{INDEXED\_COLOR}}
+{\footnotesize\ttfamily \#define I\+N\+D\+E\+X\+E\+D\+\_\+\+C\+O\+L\+OR~0x04}
+
+\mbox{\Hypertarget{video__card_8h_a883287d34c2e10b78dff888334e417a2}\label{video__card_8h_a883287d34c2e10b78dff888334e417a2}} 
+\index{video\_card.h@{video\_card.h}!v\_res@{v\_res}}
+\index{v\_res@{v\_res}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{v\_res}{v\_res}}
+{\footnotesize\ttfamily \#define v\+\_\+res~1024}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{video__card_8h_adf0e5bdc609c021a347011e8482d19fd}\label{video__card_8h_adf0e5bdc609c021a347011e8482d19fd}} 
+\index{video\_card.h@{video\_card.h}!draw\_backgroud@{draw\_backgroud}}
+\index{draw\_backgroud@{draw\_backgroud}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{draw\_backgroud()}{draw\_backgroud()}}
+{\footnotesize\ttfamily void draw\+\_\+backgroud (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sprite,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha o fundo correspondente ao Sprite$\ast$ sprite. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & -\/ Fundo a desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{video__card_8h_adf0e5bdc609c021a347011e8482d19fd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8h_ab801580a817ad5e8b33fa718023857cc}\label{video__card_8h_ab801580a817ad5e8b33fa718023857cc}} 
+\index{video\_card.h@{video\_card.h}!draw\_cursor@{draw\_cursor}}
+\index{draw\_cursor@{draw\_cursor}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{draw\_cursor()}{draw\_cursor()}}
+{\footnotesize\ttfamily void draw\+\_\+cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sprite,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha sprite do rato. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & -\/ \mbox{\hyperlink{structSprite}{Sprite}} do rato a desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{video__card_8h_ab801580a817ad5e8b33fa718023857cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8h_a979d76acd75329c403f136bbb891c21e}\label{video__card_8h_a979d76acd75329c403f136bbb891c21e}} 
+\index{video\_card.h@{video\_card.h}!draw\_everything\_in\_game@{draw\_everything\_in\_game}}
+\index{draw\_everything\_in\_game@{draw\_everything\_in\_game}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{draw\_everything\_in\_game()}{draw\_everything\_in\_game()}}
+{\footnotesize\ttfamily void draw\+\_\+everything\+\_\+in\+\_\+game (\begin{DoxyParamCaption}\item[{char $\ast$}]{word,  }\item[{int}]{score,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address,  }\item[{int}]{y0\+\_\+word }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha tudo o que precisamos no jogo (fundo, palavra atual, score, level e timer). 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & -\/ Palavra atual. \\
+\hline
+{\em score} & -\/ Pontuação atual. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+{\em y0\+\_\+word} & -\/ Coordenada y onde a palavra começa a ser desenhada. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8h_a979d76acd75329c403f136bbb891c21e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8h_a505e4eac70b471c9c86556011daf2298}\label{video__card_8h_a505e4eac70b471c9c86556011daf2298}} 
+\index{video\_card.h@{video\_card.h}!free\_everything@{free\_everything}}
+\index{free\_everything@{free\_everything}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{free\_everything()}{free\_everything()}}
+{\footnotesize\ttfamily void free\+\_\+everything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Faz o free de todos os sprites inicializados. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{video__card_8h_a505e4eac70b471c9c86556011daf2298_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8h_a2ed56794e158969846a9df63dba87f22}\label{video__card_8h_a2ed56794e158969846a9df63dba87f22}} 
+\index{video\_card.h@{video\_card.h}!init\_all\_sprites@{init\_all\_sprites}}
+\index{init\_all\_sprites@{init\_all\_sprites}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{init\_all\_sprites()}{init\_all\_sprites()}}
+{\footnotesize\ttfamily void init\+\_\+all\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cria todos os sprites necessários. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8h_a2ed56794e158969846a9df63dba87f22_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8h_aa6c1ff5024cd4d15e476bce487584daa}\label{video__card_8h_aa6c1ff5024cd4d15e476bce487584daa}} 
+\index{video\_card.h@{video\_card.h}!vg\_init@{vg\_init}}
+\index{vg\_init@{vg\_init}!video\_card.h@{video\_card.h}}
+\doxysubsubsection{\texorpdfstring{vg\_init()}{vg\_init()}}
+{\footnotesize\ttfamily void$\ast$() vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla teclada corresponder a esse caracter. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & -\/ Modo gráfico pretendido. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,47 @@
+\hypertarget{structTime}{}\doxysection{Time Struct Reference}
+\label{structTime}\index{Time@{Time}}
+
+
+
+\begin{DoxyItemize}
+\item Hora e segundo atuais. 
+\end{DoxyItemize} 
+
+
+
+
+{\ttfamily \#include $<$R\+T\+C.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structTime_a7b4be1e266d66cc91eafa5dc47fb6ad4}{hour}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structTime_abfaff8d32cfee8aeafdcda111945d0e9}{second}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item Hora e segundo atuais. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structTime_a7b4be1e266d66cc91eafa5dc47fb6ad4}\label{structTime_a7b4be1e266d66cc91eafa5dc47fb6ad4}} 
+\index{Time@{Time}!hour@{hour}}
+\index{hour@{hour}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily uint8\+\_\+t Time\+::hour}
+
+Hora atual. \mbox{\Hypertarget{structTime_abfaff8d32cfee8aeafdcda111945d0e9}\label{structTime_abfaff8d32cfee8aeafdcda111945d0e9}} 
+\index{Time@{Time}!second@{second}}
+\index{second@{second}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{second}{second}}
+{\footnotesize\ttfamily uint8\+\_\+t Time\+::second}
+
+Segundo atual. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RTC_8h}{R\+T\+C.\+h}}\end{DoxyCompactItemize}

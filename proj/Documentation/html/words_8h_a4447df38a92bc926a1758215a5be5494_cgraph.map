@@ -1,0 +1,4 @@
+<map id="update_word" name="update_word">
+<area shape="rect" id="node1" title="Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla tecla..." alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node2" href="$words_8c.html#a8bf78a2e049d9f2e425ba50d5d20f9c0" title="Gera uma palavra aleatória do ficheiro das palavras (words.c)." alt="" coords="149,5,224,32"/>
+</map>

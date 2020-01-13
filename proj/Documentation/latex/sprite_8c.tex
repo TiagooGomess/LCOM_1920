@@ -1,0 +1,120 @@
+\hypertarget{sprite_8c}{}\doxysection{sprite.\+c File Reference}
+\label{sprite_8c}\index{sprite.c@{sprite.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sprite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+Include dependency graph for sprite.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{sprite_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{sprite_8c_aa4ecfecbe8b45f81c4abe4164757be85}{create\+\_\+sprite}} (xpm\+\_\+map\+\_\+t xpm, int x, int y)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Cria um objeto do tipo Sprite$\ast$ correspondente ao xpm. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sprite_8c_a7151b29f2e45fc31dd5125879647eaeb}{draw\+\_\+sprite}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp, uint8\+\_\+t $\ast$base)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha o sprite sp; 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sprite_8c_ae2345365e9a63d97d4cedbdc75b223f5}{draw\+\_\+sprite\+\_\+with\+\_\+color}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp, uint32\+\_\+t final\+\_\+color, uint8\+\_\+t $\ast$base)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha o sprite sp, com uma cor pretendida. 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{sprite_8c_a39838b676f89123c42a1509becd29c32}{bits\+Per\+Pixel}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sprite_8c_aa4ecfecbe8b45f81c4abe4164757be85}\label{sprite_8c_aa4ecfecbe8b45f81c4abe4164757be85}} 
+\index{sprite.c@{sprite.c}!create\_sprite@{create\_sprite}}
+\index{create\_sprite@{create\_sprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{create\_sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ create\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Cria um objeto do tipo Sprite$\ast$ correspondente ao xpm. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & -\/ Xpm. \\
+\hline
+{\em x} & -\/ Coordenada x onde o sprite é inicializado. \\
+\hline
+{\em y} & -\/ Coordenada y onde o sprite é inicializado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Sprite$\ast$ correspondente ao xpm; N\+U\+LL em caso de erro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sprite_8c_a7151b29f2e45fc31dd5125879647eaeb}\label{sprite_8c_a7151b29f2e45fc31dd5125879647eaeb}} 
+\index{sprite.c@{sprite.c}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily int draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp,  }\item[{uint8\+\_\+t $\ast$}]{base }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha o sprite sp; 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & -\/ \mbox{\hyperlink{structSprite}{Sprite}} a ser desenhado. \\
+\hline
+{\em base} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 0 em caso de sucesso; 1 em caso de erro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sprite_8c_ae2345365e9a63d97d4cedbdc75b223f5}\label{sprite_8c_ae2345365e9a63d97d4cedbdc75b223f5}} 
+\index{sprite.c@{sprite.c}!draw\_sprite\_with\_color@{draw\_sprite\_with\_color}}
+\index{draw\_sprite\_with\_color@{draw\_sprite\_with\_color}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite\_with\_color()}{draw\_sprite\_with\_color()}}
+{\footnotesize\ttfamily int draw\+\_\+sprite\+\_\+with\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp,  }\item[{uint32\+\_\+t}]{cor,  }\item[{uint8\+\_\+t $\ast$}]{base }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha o sprite sp, com uma cor pretendida. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & -\/ \mbox{\hyperlink{structSprite}{Sprite}} a ser desenhado. \\
+\hline
+{\em cor} & -\/ Cor pretendida. \\
+\hline
+{\em base} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 0 em caso de sucesso; 1 em caso de erro. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{sprite_8c_a39838b676f89123c42a1509becd29c32}\label{sprite_8c_a39838b676f89123c42a1509becd29c32}} 
+\index{sprite.c@{sprite.c}!bitsPerPixel@{bitsPerPixel}}
+\index{bitsPerPixel@{bitsPerPixel}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{bitsPerPixel}{bitsPerPixel}}
+{\footnotesize\ttfamily uint32\+\_\+t bits\+Per\+Pixel}
+

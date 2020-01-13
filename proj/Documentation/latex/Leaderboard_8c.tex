@@ -1,0 +1,249 @@
+\hypertarget{Leaderboard_8c}{}\doxysection{Leaderboard.\+c File Reference}
+\label{Leaderboard_8c}\index{Leaderboard.c@{Leaderboard.c}}
+{\ttfamily \#include \char`\"{}Leaderboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}words.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprite.\+h\char`\"{}}\newline
+Include dependency graph for Leaderboard.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Leaderboard_8c_a91bc0812975de0adcfc4a0ab3c936047}{ask\+For\+Name}} (uint8\+\_\+t $\ast$initial\+\_\+address, char $\ast$\mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Pergunta o nome do jogador, se este fizer uma pontuação rocord. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Leaderboard_8c_adef48bade38ca3fd9760b10d2a87851e}{split}} (char $\ast$str, char c, char $\ast$$\ast$$\ast$arr)
+\item 
+void \mbox{\hyperlink{Leaderboard_8c_a1aa9de7c0ef0b246d6608cedb67225c3}{read\+\_\+leaderboard\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Lê o ficheiro da leaderboard (Leaderboard.\+txt). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Leaderboard_8c_a7a9066727f5028846dc0297bd5cbb9ff}{new\+\_\+record\+\_\+handler}} (int score, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Mete os jogadores da leaderboard na posição correta, de acordo com as suas pontuações. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Leaderboard_8c_a8e0a5fa157c1487e5103a719066bcd3e}{is\+\_\+new\+\_\+record}} (int score)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Verifica se o jogador atual obteve uma pontuação record. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Leaderboard_8c_abd1e041c45639b7d2b559ff87091b3f0}{write\+\_\+leaderboard\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Escreve o ficheiro da leaderboard (Leaderboard.\+txt). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Leaderboard_8c_a6caf8017db854ed18885298f4a2439c5}{display\+\_\+leaderboard}} (uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha a leaderboard. 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{Leaderboard_8c_aedc0f3ecf46124eedeabc0fbc95d22bd}{sprite\+Record\+Dia}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{Leaderboard_8c_a3a30719fd30f060855a8896fe89292a0}{sprite\+Leaderboard}}
+\item 
+const char $\ast$ \mbox{\hyperlink{Leaderboard_8c_a881191fa2a43e0d3f7493f3bb934403d}{filename\+\_\+leaderboard}} = \char`\"{}/home/lcom/labs/proj/Leaderboard.\+txt\char`\"{}
+\item 
+\mbox{\hyperlink{structPlayer}{Player}} \mbox{\hyperlink{Leaderboard_8c_a12f0c4ea1761604c63209090d255c710}{players}} \mbox{[}3\mbox{]}
+\item 
+char $\ast$ \mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Leaderboard_8c_a91bc0812975de0adcfc4a0ab3c936047}\label{Leaderboard_8c_a91bc0812975de0adcfc4a0ab3c936047}} 
+\index{Leaderboard.c@{Leaderboard.c}!askForName@{askForName}}
+\index{askForName@{askForName}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{askForName()}{askForName()}}
+{\footnotesize\ttfamily void ask\+For\+Name (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address,  }\item[{char $\ast$}]{top\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Pergunta o nome do jogador, se este fizer uma pontuação rocord. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+{\em top\+Player\+Name} & -\/ Nome do jogador atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 0 se houver sucesso, 1 caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8c_a91bc0812975de0adcfc4a0ab3c936047_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8c_a6caf8017db854ed18885298f4a2439c5}\label{Leaderboard_8c_a6caf8017db854ed18885298f4a2439c5}} 
+\index{Leaderboard.c@{Leaderboard.c}!display\_leaderboard@{display\_leaderboard}}
+\index{display\_leaderboard@{display\_leaderboard}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{display\_leaderboard()}{display\_leaderboard()}}
+{\footnotesize\ttfamily void display\+\_\+leaderboard (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha a leaderboard. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8c_a6caf8017db854ed18885298f4a2439c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8c_a8e0a5fa157c1487e5103a719066bcd3e}\label{Leaderboard_8c_a8e0a5fa157c1487e5103a719066bcd3e}} 
+\index{Leaderboard.c@{Leaderboard.c}!is\_new\_record@{is\_new\_record}}
+\index{is\_new\_record@{is\_new\_record}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{is\_new\_record()}{is\_new\_record()}}
+{\footnotesize\ttfamily bool is\+\_\+new\+\_\+record (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Verifica se o jogador atual obteve uma pontuação record. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & -\/ Pontuação do jogador atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true se houver um record, false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8c_a8e0a5fa157c1487e5103a719066bcd3e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8c_a7a9066727f5028846dc0297bd5cbb9ff}\label{Leaderboard_8c_a7a9066727f5028846dc0297bd5cbb9ff}} 
+\index{Leaderboard.c@{Leaderboard.c}!new\_record\_handler@{new\_record\_handler}}
+\index{new\_record\_handler@{new\_record\_handler}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{new\_record\_handler()}{new\_record\_handler()}}
+{\footnotesize\ttfamily bool new\+\_\+record\+\_\+handler (\begin{DoxyParamCaption}\item[{int}]{score,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Mete os jogadores da leaderboard na posição correta, de acordo com as suas pontuações. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & -\/ Pontuação do jogador atual. \\
+\hline
+{\em name} & -\/ Nome do jogador atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true se houver um record, false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8c_a7a9066727f5028846dc0297bd5cbb9ff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8c_a1aa9de7c0ef0b246d6608cedb67225c3}\label{Leaderboard_8c_a1aa9de7c0ef0b246d6608cedb67225c3}} 
+\index{Leaderboard.c@{Leaderboard.c}!read\_leaderboard\_file@{read\_leaderboard\_file}}
+\index{read\_leaderboard\_file@{read\_leaderboard\_file}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{read\_leaderboard\_file()}{read\_leaderboard\_file()}}
+{\footnotesize\ttfamily void read\+\_\+leaderboard\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Lê o ficheiro da leaderboard (Leaderboard.\+txt). 
+\end{DoxyItemize}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{Leaderboard_8c_a1aa9de7c0ef0b246d6608cedb67225c3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8c_adef48bade38ca3fd9760b10d2a87851e}\label{Leaderboard_8c_adef48bade38ca3fd9760b10d2a87851e}} 
+\index{Leaderboard.c@{Leaderboard.c}!split@{split}}
+\index{split@{split}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily int split (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{char}]{c,  }\item[{char $\ast$$\ast$$\ast$}]{arr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Leaderboard_8c_abd1e041c45639b7d2b559ff87091b3f0}\label{Leaderboard_8c_abd1e041c45639b7d2b559ff87091b3f0}} 
+\index{Leaderboard.c@{Leaderboard.c}!write\_leaderboard\_file@{write\_leaderboard\_file}}
+\index{write\_leaderboard\_file@{write\_leaderboard\_file}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{write\_leaderboard\_file()}{write\_leaderboard\_file()}}
+{\footnotesize\ttfamily void write\+\_\+leaderboard\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Escreve o ficheiro da leaderboard (Leaderboard.\+txt). 
+\end{DoxyItemize}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Leaderboard_8c_a881191fa2a43e0d3f7493f3bb934403d}\label{Leaderboard_8c_a881191fa2a43e0d3f7493f3bb934403d}} 
+\index{Leaderboard.c@{Leaderboard.c}!filename\_leaderboard@{filename\_leaderboard}}
+\index{filename\_leaderboard@{filename\_leaderboard}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{filename\_leaderboard}{filename\_leaderboard}}
+{\footnotesize\ttfamily const char$\ast$ filename\+\_\+leaderboard = \char`\"{}/home/lcom/labs/proj/Leaderboard.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{Leaderboard_8c_a12f0c4ea1761604c63209090d255c710}\label{Leaderboard_8c_a12f0c4ea1761604c63209090d255c710}} 
+\index{Leaderboard.c@{Leaderboard.c}!players@{players}}
+\index{players@{players}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{players}{players}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPlayer}{Player}} players\mbox{[}3\mbox{]}}
+
+\mbox{\Hypertarget{Leaderboard_8c_a3a30719fd30f060855a8896fe89292a0}\label{Leaderboard_8c_a3a30719fd30f060855a8896fe89292a0}} 
+\index{Leaderboard.c@{Leaderboard.c}!spriteLeaderboard@{spriteLeaderboard}}
+\index{spriteLeaderboard@{spriteLeaderboard}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{spriteLeaderboard}{spriteLeaderboard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Leaderboard}
+
+\mbox{\Hypertarget{Leaderboard_8c_aedc0f3ecf46124eedeabc0fbc95d22bd}\label{Leaderboard_8c_aedc0f3ecf46124eedeabc0fbc95d22bd}} 
+\index{Leaderboard.c@{Leaderboard.c}!spriteRecordDia@{spriteRecordDia}}
+\index{spriteRecordDia@{spriteRecordDia}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{spriteRecordDia}{spriteRecordDia}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Record\+Dia}
+
+\mbox{\Hypertarget{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}\label{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}} 
+\index{Leaderboard.c@{Leaderboard.c}!topPlayerName@{topPlayerName}}
+\index{topPlayerName@{topPlayerName}!Leaderboard.c@{Leaderboard.c}}
+\doxysubsubsection{\texorpdfstring{topPlayerName}{topPlayerName}}
+{\footnotesize\ttfamily char$\ast$ top\+Player\+Name}
+

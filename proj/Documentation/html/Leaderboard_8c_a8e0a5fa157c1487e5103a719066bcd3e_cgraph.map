@@ -1,0 +1,5 @@
+<map id="is_new_record" name="is_new_record">
+<area shape="rect" id="node1" title="Verifica se o jogador atual obteve uma pontuação record." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$Leaderboard_8c.html#a1aa9de7c0ef0b246d6608cedb67225c3" title="Lê o ficheiro da leaderboard (Leaderboard.txt)." alt="" coords="160,5,305,32"/>
+<area shape="rect" id="node3" href="$Leaderboard_8c.html#adef48bade38ca3fd9760b10d2a87851e" title=" " alt="" coords="353,5,400,32"/>
+</map>

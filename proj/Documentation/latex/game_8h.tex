@@ -1,0 +1,439 @@
+\hypertarget{game_8h}{}\doxysection{game.\+h File Reference}
+\label{game_8h}\index{game.h@{game.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for game.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{game_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{game_8h_a92ec624d407acbae2928825cb327f8d9}{I\+N\+T\+E\+R\+R\+R\+U\+P\+T\+S\+\_\+\+P\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+M\+O\+U\+SE}}~15
+\item 
+\#define \mbox{\hyperlink{game_8h_ad7c0c35518efbb30080352042d3c2796}{I\+N\+T\+E\+R\+R\+U\+P\+T\+S\+\_\+\+P\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+G\+A\+ME}}~2
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8h_af889cb8d2930d95f3de1f37de8d6b922}{subscribe\+\_\+and\+\_\+enable\+\_\+everything}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Subscreve e ativa as interrupções de todos os dispositivos; ativa o data reporting do rato. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game_8h_a5e7d591fcc90c2e42bf50cb82b937492}{unsubscribe\+\_\+everything}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Retira a subscrição e desativa as interrupções de todos os dispositivos; desativa o data reporting do rato. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{game_8h_ad8e61754b85d20745f257849d4ae851d}{get\+First\+Word}} ()
+\item 
+void \mbox{\hyperlink{game_8h_a31d857684906a63d6b3c37ec795ee7f7}{set\+\_\+level}} ()
+\item 
+void \mbox{\hyperlink{game_8h_a7784190ad4611d265788148b1cd860fe}{level\+\_\+handler}} ()
+\item 
+void \mbox{\hyperlink{game_8h_ad8a7a5017be3e8262302cade0d668f3c}{pause\+Game\+Handler\+Keyboard}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{game_8h_a9ec477a0b8d6cc9db09513c59e84afb0}{ask\+Name\+If\+Record\+Handler\+Keyboard}} (char $\ast$\mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Se houver um record, pergunta o nome do jogador. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_a40528afb72ccbb62a58018387c01a40c}{game\+Words\+Handler\+Keyboard}} ()
+\item 
+bool \mbox{\hyperlink{game_8h_abaf0adbb3f8db58f3c138d87ed95d312}{main\+Menu\+Handler\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato no menu principal. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8h_a37d11d5c8f6a3678348bc1fa3e7dfc32}{leaderboard\+Handler\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato na leaderboard. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8h_a1cb9cf0d7c54827f8192f431ec4ac55c}{instructions\+Handler\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato nas instruções. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8h_a642431ad24893994e7032925b8f444b5}{ask\+Name\+Handler\+Mouse}} (char $\ast$\mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato quando se está a pedir o nome do jogador. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8h_a8eb9f8fc46a486378b31b6b98dfede25}{gamer\+Over\+Handler\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato no menu do game over. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8h_afc359b8ab44bfd67915704250ee63ca5}{game\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata de tudo o que for relacionado com o jogo em si (nível de dificuldade, tempo passado, pontuação, verificar se o jogador perdeu, verificar se a pontuação obtida corresponde a um recorde, desenhar tudo). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_a2afbabf1ec3e6b54a29c677b4d619bd6}{paused\+Game\+Hanler}} ()
+\item 
+void \mbox{\hyperlink{game_8h_aeb72f01360a33b3837fed6c4dec06d38}{ask\+Name\+Handler}} (char $\ast$\mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha o fundo próprio de quando se pede o nome do jogador, assim como o rato. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_a4153880956c612951373977e2008cbd7}{menu\+Handler}} ()
+\item 
+void \mbox{\hyperlink{game_8h_a9f0c5b968db80219c55eff59a7d0e325}{leaderboard\+Handler}} ()
+\item 
+void \mbox{\hyperlink{game_8h_af6b39ba42256ed7dabcef7195e518af9}{instructions\+Handler}} ()
+\item 
+void \mbox{\hyperlink{game_8h_a0ad16c3cd55604e229191d7146346b36}{game\+Over\+Handler}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{game_8h_a92ec624d407acbae2928825cb327f8d9}\label{game_8h_a92ec624d407acbae2928825cb327f8d9}} 
+\index{game.h@{game.h}!INTERRRUPTS\_PER\_FRAME\_MOUSE@{INTERRRUPTS\_PER\_FRAME\_MOUSE}}
+\index{INTERRRUPTS\_PER\_FRAME\_MOUSE@{INTERRRUPTS\_PER\_FRAME\_MOUSE}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{INTERRRUPTS\_PER\_FRAME\_MOUSE}{INTERRRUPTS\_PER\_FRAME\_MOUSE}}
+{\footnotesize\ttfamily \#define I\+N\+T\+E\+R\+R\+R\+U\+P\+T\+S\+\_\+\+P\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+M\+O\+U\+SE~15}
+
+\mbox{\Hypertarget{game_8h_ad7c0c35518efbb30080352042d3c2796}\label{game_8h_ad7c0c35518efbb30080352042d3c2796}} 
+\index{game.h@{game.h}!INTERRUPTS\_PER\_FRAME\_GAME@{INTERRUPTS\_PER\_FRAME\_GAME}}
+\index{INTERRUPTS\_PER\_FRAME\_GAME@{INTERRUPTS\_PER\_FRAME\_GAME}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{INTERRUPTS\_PER\_FRAME\_GAME}{INTERRUPTS\_PER\_FRAME\_GAME}}
+{\footnotesize\ttfamily \#define I\+N\+T\+E\+R\+R\+U\+P\+T\+S\+\_\+\+P\+E\+R\+\_\+\+F\+R\+A\+M\+E\+\_\+\+G\+A\+ME~2}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game_8h_aeb72f01360a33b3837fed6c4dec06d38}\label{game_8h_aeb72f01360a33b3837fed6c4dec06d38}} 
+\index{game.h@{game.h}!askNameHandler@{askNameHandler}}
+\index{askNameHandler@{askNameHandler}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{askNameHandler()}{askNameHandler()}}
+{\footnotesize\ttfamily void ask\+Name\+Handler (\begin{DoxyParamCaption}\item[{char $\ast$}]{top\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha o fundo próprio de quando se pede o nome do jogador, assim como o rato. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Player\+Name} & -\/ Nome do jogador atual. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_aeb72f01360a33b3837fed6c4dec06d38_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a642431ad24893994e7032925b8f444b5}\label{game_8h_a642431ad24893994e7032925b8f444b5}} 
+\index{game.h@{game.h}!askNameHandlerMouse@{askNameHandlerMouse}}
+\index{askNameHandlerMouse@{askNameHandlerMouse}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{askNameHandlerMouse()}{askNameHandlerMouse()}}
+{\footnotesize\ttfamily bool ask\+Name\+Handler\+Mouse (\begin{DoxyParamCaption}\item[{char $\ast$}]{top\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato quando se está a pedir o nome do jogador. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Player\+Name} & -\/ Nome do jogador atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a642431ad24893994e7032925b8f444b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a9ec477a0b8d6cc9db09513c59e84afb0}\label{game_8h_a9ec477a0b8d6cc9db09513c59e84afb0}} 
+\index{game.h@{game.h}!askNameIfRecordHandlerKeyboard@{askNameIfRecordHandlerKeyboard}}
+\index{askNameIfRecordHandlerKeyboard@{askNameIfRecordHandlerKeyboard}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{askNameIfRecordHandlerKeyboard()}{askNameIfRecordHandlerKeyboard()}}
+{\footnotesize\ttfamily char$\ast$ ask\+Name\+If\+Record\+Handler\+Keyboard (\begin{DoxyParamCaption}\item[{char $\ast$}]{top\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Se houver um record, pergunta o nome do jogador. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Player\+Name} & -\/ Nome do jogador atual (o que o utilizador já digitou até ao momento). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Nome do jogador atual. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a9ec477a0b8d6cc9db09513c59e84afb0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_afc359b8ab44bfd67915704250ee63ca5}\label{game_8h_afc359b8ab44bfd67915704250ee63ca5}} 
+\index{game.h@{game.h}!gameHandler@{gameHandler}}
+\index{gameHandler@{gameHandler}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{gameHandler()}{gameHandler()}}
+{\footnotesize\ttfamily bool game\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata de tudo o que for relacionado com o jogo em si (nível de dificuldade, tempo passado, pontuação, verificar se o jogador perdeu, verificar se a pontuação obtida corresponde a um recorde, desenhar tudo). 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_afc359b8ab44bfd67915704250ee63ca5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a0ad16c3cd55604e229191d7146346b36}\label{game_8h_a0ad16c3cd55604e229191d7146346b36}} 
+\index{game.h@{game.h}!gameOverHandler@{gameOverHandler}}
+\index{gameOverHandler@{gameOverHandler}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{gameOverHandler()}{gameOverHandler()}}
+{\footnotesize\ttfamily void game\+Over\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo do menu do game over, caso o jogo se encontre aí. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a0ad16c3cd55604e229191d7146346b36_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a8eb9f8fc46a486378b31b6b98dfede25}\label{game_8h_a8eb9f8fc46a486378b31b6b98dfede25}} 
+\index{game.h@{game.h}!gamerOverHandlerMouse@{gamerOverHandlerMouse}}
+\index{gamerOverHandlerMouse@{gamerOverHandlerMouse}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{gamerOverHandlerMouse()}{gamerOverHandlerMouse()}}
+{\footnotesize\ttfamily bool gamer\+Over\+Handler\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato no menu do game over. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_a40528afb72ccbb62a58018387c01a40c}\label{game_8h_a40528afb72ccbb62a58018387c01a40c}} 
+\index{game.h@{game.h}!gameWordsHandlerKeyboard@{gameWordsHandlerKeyboard}}
+\index{gameWordsHandlerKeyboard@{gameWordsHandlerKeyboard}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{gameWordsHandlerKeyboard()}{gameWordsHandlerKeyboard()}}
+{\footnotesize\ttfamily void game\+Words\+Handler\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Atualizada a palavra atual do jogo, de acordo com o que o jogador digita. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a40528afb72ccbb62a58018387c01a40c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_ad8e61754b85d20745f257849d4ae851d}\label{game_8h_ad8e61754b85d20745f257849d4ae851d}} 
+\index{game.h@{game.h}!getFirstWord@{getFirstWord}}
+\index{getFirstWord@{getFirstWord}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{getFirstWord()}{getFirstWord()}}
+{\footnotesize\ttfamily char$\ast$ get\+First\+Word (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vai buscar a primeira palavra ao ficheiro das palavras (words.\+txt). Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{game_8h_ad8e61754b85d20745f257849d4ae851d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_af6b39ba42256ed7dabcef7195e518af9}\label{game_8h_af6b39ba42256ed7dabcef7195e518af9}} 
+\index{game.h@{game.h}!instructionsHandler@{instructionsHandler}}
+\index{instructionsHandler@{instructionsHandler}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{instructionsHandler()}{instructionsHandler()}}
+{\footnotesize\ttfamily void instructions\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo das instruções, caso o jogo se encontre nas instruções. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_af6b39ba42256ed7dabcef7195e518af9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a1cb9cf0d7c54827f8192f431ec4ac55c}\label{game_8h_a1cb9cf0d7c54827f8192f431ec4ac55c}} 
+\index{game.h@{game.h}!instructionsHandlerMouse@{instructionsHandlerMouse}}
+\index{instructionsHandlerMouse@{instructionsHandlerMouse}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{instructionsHandlerMouse()}{instructionsHandlerMouse()}}
+{\footnotesize\ttfamily bool instructions\+Handler\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato nas instruções. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_a9f0c5b968db80219c55eff59a7d0e325}\label{game_8h_a9f0c5b968db80219c55eff59a7d0e325}} 
+\index{game.h@{game.h}!leaderboardHandler@{leaderboardHandler}}
+\index{leaderboardHandler@{leaderboardHandler}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{leaderboardHandler()}{leaderboardHandler()}}
+{\footnotesize\ttfamily void leaderboard\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo da leaderboard, caso o jogo se encontre na leaderboard. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a9f0c5b968db80219c55eff59a7d0e325_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a37d11d5c8f6a3678348bc1fa3e7dfc32}\label{game_8h_a37d11d5c8f6a3678348bc1fa3e7dfc32}} 
+\index{game.h@{game.h}!leaderboardHandlerMouse@{leaderboardHandlerMouse}}
+\index{leaderboardHandlerMouse@{leaderboardHandlerMouse}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{leaderboardHandlerMouse()}{leaderboardHandlerMouse()}}
+{\footnotesize\ttfamily bool leaderboard\+Handler\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato na leaderboard. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_a7784190ad4611d265788148b1cd860fe}\label{game_8h_a7784190ad4611d265788148b1cd860fe}} 
+\index{game.h@{game.h}!level\_handler@{level\_handler}}
+\index{level\_handler@{level\_handler}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{level\_handler()}{level\_handler()}}
+{\footnotesize\ttfamily void level\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Muda a velocidade com que as palavras caem, de acordo com o nível de dificuldade do jogo. \mbox{\Hypertarget{game_8h_abaf0adbb3f8db58f3c138d87ed95d312}\label{game_8h_abaf0adbb3f8db58f3c138d87ed95d312}} 
+\index{game.h@{game.h}!mainMenuHandlerMouse@{mainMenuHandlerMouse}}
+\index{mainMenuHandlerMouse@{mainMenuHandlerMouse}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{mainMenuHandlerMouse()}{mainMenuHandlerMouse()}}
+{\footnotesize\ttfamily bool main\+Menu\+Handler\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato no menu principal. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_a4153880956c612951373977e2008cbd7}\label{game_8h_a4153880956c612951373977e2008cbd7}} 
+\index{game.h@{game.h}!menuHandler@{menuHandler}}
+\index{menuHandler@{menuHandler}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{menuHandler()}{menuHandler()}}
+{\footnotesize\ttfamily void menu\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo do menu principal, caso o jogo se encontre o menu principal. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a4153880956c612951373977e2008cbd7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a2afbabf1ec3e6b54a29c677b4d619bd6}\label{game_8h_a2afbabf1ec3e6b54a29c677b4d619bd6}} 
+\index{game.h@{game.h}!pausedGameHanler@{pausedGameHanler}}
+\index{pausedGameHanler@{pausedGameHanler}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{pausedGameHanler()}{pausedGameHanler()}}
+{\footnotesize\ttfamily void paused\+Game\+Hanler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo da pausa, caso o jogo se encontre em pausa. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a2afbabf1ec3e6b54a29c677b4d619bd6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_ad8a7a5017be3e8262302cade0d668f3c}\label{game_8h_ad8a7a5017be3e8262302cade0d668f3c}} 
+\index{game.h@{game.h}!pauseGameHandlerKeyboard@{pauseGameHandlerKeyboard}}
+\index{pauseGameHandlerKeyboard@{pauseGameHandlerKeyboard}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{pauseGameHandlerKeyboard()}{pauseGameHandlerKeyboard()}}
+{\footnotesize\ttfamily void pause\+Game\+Handler\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Mete e retira o jogo da pausa. \mbox{\Hypertarget{game_8h_a31d857684906a63d6b3c37ec795ee7f7}\label{game_8h_a31d857684906a63d6b3c37ec795ee7f7}} 
+\index{game.h@{game.h}!set\_level@{set\_level}}
+\index{set\_level@{set\_level}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{set\_level()}{set\_level()}}
+{\footnotesize\ttfamily void set\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Atribui o nível de dificuldade do jogo, de acordo com o tempo. \mbox{\Hypertarget{game_8h_af889cb8d2930d95f3de1f37de8d6b922}\label{game_8h_af889cb8d2930d95f3de1f37de8d6b922}} 
+\index{game.h@{game.h}!subscribe\_and\_enable\_everything@{subscribe\_and\_enable\_everything}}
+\index{subscribe\_and\_enable\_everything@{subscribe\_and\_enable\_everything}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{subscribe\_and\_enable\_everything()}{subscribe\_and\_enable\_everything()}}
+{\footnotesize\ttfamily int subscribe\+\_\+and\+\_\+enable\+\_\+everything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Subscreve e ativa as interrupções de todos os dispositivos; ativa o data reporting do rato. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ 0 se houver sucesso, 1 caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_af889cb8d2930d95f3de1f37de8d6b922_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8h_a5e7d591fcc90c2e42bf50cb82b937492}\label{game_8h_a5e7d591fcc90c2e42bf50cb82b937492}} 
+\index{game.h@{game.h}!unsubscribe\_everything@{unsubscribe\_everything}}
+\index{unsubscribe\_everything@{unsubscribe\_everything}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{unsubscribe\_everything()}{unsubscribe\_everything()}}
+{\footnotesize\ttfamily int unsubscribe\+\_\+everything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Retira a subscrição e desativa as interrupções de todos os dispositivos; desativa o data reporting do rato. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ 0 se houver sucesso, 1 caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a5e7d591fcc90c2e42bf50cb82b937492_cgraph}
+\end{center}
+\end{figure}

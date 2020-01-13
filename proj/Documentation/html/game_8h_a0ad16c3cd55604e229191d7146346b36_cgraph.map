@@ -1,0 +1,9 @@
+<map id="gameOverHandler" name="gameOverHandler">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,132,83"/>
+<area shape="rect" id="node2" href="$words_8c.html#af7b308cf84d3ddc838763fc6ebcd3554" title="Desenha no ecrã o número pretendido." alt="" coords="184,107,293,133"/>
+<area shape="rect" id="node6" href="$video__card_8c.html#adf0e5bdc609c021a347011e8482d19fd" title="Desenha o fundo correspondente ao Sprite* sprite." alt="" coords="180,5,297,32"/>
+<area shape="rect" id="node7" href="$video__card_8c.html#ab801580a817ad5e8b33fa718023857cc" title="Desenha sprite do rato." alt="" coords="192,56,285,83"/>
+<area shape="rect" id="node3" href="$sprite_8c.html#a7151b29f2e45fc31dd5125879647eaeb" title="Desenha o sprite sp;" alt="" coords="345,56,435,83"/>
+<area shape="rect" id="node4" href="$words_8c.html#a2d5452b6a168937899914f0978105ae9" title="Obtém o Sprite* correspondente ao caracter c." alt="" coords="353,107,427,133"/>
+<area shape="rect" id="node5" href="$words_8c.html#ab81423dba4689728aefd790cb8316167" title=" " alt="" coords="359,157,421,184"/>
+</map>

@@ -1,0 +1,94 @@
+\hypertarget{scancodes_8c}{}\doxysection{scancodes.\+c File Reference}
+\label{scancodes_8c}\index{scancodes.c@{scancodes.c}}
+{\ttfamily \#include \char`\"{}scancodes.\+h\char`\"{}}\newline
+Include dependency graph for scancodes.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{scancodes_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{scancodes_8c_a0ebb9ae988ad2a28c49e1d96c552d6af}{scancode\+\_\+to\+\_\+char}} (uint8\+\_\+t \mbox{\hyperlink{proj_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Converte o break code obtido para o respetivo caracter. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{scancodes_8c_af830ccd5d805fcfb290b47ec1fdcb920}{scancode\+\_\+to\+\_\+char\+\_\+pointer}} (uint8\+\_\+t \mbox{\hyperlink{proj_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Converte o break code obtido para o respetivo caracter, na forma de char$\ast$. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{scancodes_8c_ac54e757c5af8a19d4e5c4d2d17162549}{is\+\_\+valid\+\_\+scancode}} (uint8\+\_\+t \mbox{\hyperlink{proj_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Verifica se o break code obtido corresponde a uma letra. 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{scancodes_8c_ac54e757c5af8a19d4e5c4d2d17162549}\label{scancodes_8c_ac54e757c5af8a19d4e5c4d2d17162549}} 
+\index{scancodes.c@{scancodes.c}!is\_valid\_scancode@{is\_valid\_scancode}}
+\index{is\_valid\_scancode@{is\_valid\_scancode}!scancodes.c@{scancodes.c}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_scancode()}{is\_valid\_scancode()}}
+{\footnotesize\ttfamily bool is\+\_\+valid\+\_\+scancode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Verifica se o break code obtido corresponde a uma letra. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & -\/ Break code obtido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true se for uma letra; false, caso não seja. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scancodes_8c_a0ebb9ae988ad2a28c49e1d96c552d6af}\label{scancodes_8c_a0ebb9ae988ad2a28c49e1d96c552d6af}} 
+\index{scancodes.c@{scancodes.c}!scancode\_to\_char@{scancode\_to\_char}}
+\index{scancode\_to\_char@{scancode\_to\_char}!scancodes.c@{scancodes.c}}
+\doxysubsubsection{\texorpdfstring{scancode\_to\_char()}{scancode\_to\_char()}}
+{\footnotesize\ttfamily char scancode\+\_\+to\+\_\+char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Converte o break code obtido para o respetivo caracter. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & -\/ Break code obtido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Caracter correspondente. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scancodes_8c_af830ccd5d805fcfb290b47ec1fdcb920}\label{scancodes_8c_af830ccd5d805fcfb290b47ec1fdcb920}} 
+\index{scancodes.c@{scancodes.c}!scancode\_to\_char\_pointer@{scancode\_to\_char\_pointer}}
+\index{scancode\_to\_char\_pointer@{scancode\_to\_char\_pointer}!scancodes.c@{scancodes.c}}
+\doxysubsubsection{\texorpdfstring{scancode\_to\_char\_pointer()}{scancode\_to\_char\_pointer()}}
+{\footnotesize\ttfamily char$\ast$ scancode\+\_\+to\+\_\+char\+\_\+pointer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{scancode }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Converte o break code obtido para o respetivo caracter, na forma de char$\ast$. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & -\/ Break code obtido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Caracter correspondente, na forma de char$\ast$. 
+\end{DoxyReturn}

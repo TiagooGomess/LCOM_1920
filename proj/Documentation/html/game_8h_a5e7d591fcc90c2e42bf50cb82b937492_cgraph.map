@@ -1,0 +1,10 @@
+<map id="unsubscribe_everything" name="unsubscribe_everything">
+<area shape="rect" id="node1" title="Retira a subscrição e desativa as interrupções de todos os dispositivos; desativa o data reporting do..." alt="" coords="5,107,164,133"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a32cc4de66854f8a7bd909e7aa8b901ed" title="Unsubscribes keyboard interrupts." alt="" coords="212,5,385,32"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a9fea1ea975f7300b78c11e6a85250fcc" title="Desativa o data reporting." alt="" coords="232,56,365,83"/>
+<area shape="rect" id="node6" href="$mouse_8c.html#a3ecf823d80520009ae5e0d76ae40a3c3" title="Unsubscribes mouse interrupts." alt="" coords="219,107,378,133"/>
+<area shape="rect" id="node7" href="$RTC_8c.html#ab8f17bf5280c908c8b199a90fefcc758" title="Unsubscribes RTC interrupts." alt="" coords="231,157,366,184"/>
+<area shape="rect" id="node8" href="$group__timer.html#gafabd21de449be154dd65d5fdb2d8045d" title="Unsubscribes Timer 0 interrupts." alt="" coords="224,208,373,235"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#ade708cce0180bcd225c357e82429d17a" title="Envia comando para o rato." alt="" coords="433,56,612,83"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="660,56,751,83"/>
+</map>

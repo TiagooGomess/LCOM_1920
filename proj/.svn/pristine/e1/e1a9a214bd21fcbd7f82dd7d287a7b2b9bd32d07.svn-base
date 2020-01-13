@@ -1,0 +1,113 @@
+\hypertarget{Numeros_8h}{}\doxysection{Numeros.\+h File Reference}
+\label{Numeros_8h}\index{Numeros.h@{Numeros.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/liblm.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/proj.\+h$>$}\newline
+Include dependency graph for Numeros.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{Numeros_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{Numeros_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_aa49b7dd181edede72859320a462429dd}{num\+\_\+0}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_a57339565419df8293ba8bdb61d98607a}{num\+\_\+1}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_a22e8bfcdb1085d426f8ef7f19ea7e61e}{num\+\_\+2}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_afbf6626ba212a1c4b2548ce7364b3226}{num\+\_\+3}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_a7a8bc98312eb4a12f991593db3740d27}{num\+\_\+4}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_ac843a16f203d6fe22af4b48f87205495}{num\+\_\+5}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_ada7f92df8d4df8da5beeed1c799b90f2}{num\+\_\+6}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_afa9d0ae16e45d8ab2914a0d09189e2b7}{num\+\_\+7}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_a9c4357ff2ad6ed1219ab0365d84cca62}{num\+\_\+8}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_a54dc0cef5607a25b228cf35ee11fad32}{num\+\_\+9}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Numeros_8h_af750948d54e9aaa13dd8ab4d1edccb87}{dois\+\_\+pontos}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Numeros_8h_af750948d54e9aaa13dd8ab4d1edccb87}\label{Numeros_8h_af750948d54e9aaa13dd8ab4d1edccb87}} 
+\index{Numeros.h@{Numeros.h}!dois\_pontos@{dois\_pontos}}
+\index{dois\_pontos@{dois\_pontos}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{dois\_pontos}{dois\_pontos}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t dois\+\_\+pontos\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_aa49b7dd181edede72859320a462429dd}\label{Numeros_8h_aa49b7dd181edede72859320a462429dd}} 
+\index{Numeros.h@{Numeros.h}!num\_0@{num\_0}}
+\index{num\_0@{num\_0}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_0}{num\_0}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+0\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_a57339565419df8293ba8bdb61d98607a}\label{Numeros_8h_a57339565419df8293ba8bdb61d98607a}} 
+\index{Numeros.h@{Numeros.h}!num\_1@{num\_1}}
+\index{num\_1@{num\_1}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_1}{num\_1}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+1\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_a22e8bfcdb1085d426f8ef7f19ea7e61e}\label{Numeros_8h_a22e8bfcdb1085d426f8ef7f19ea7e61e}} 
+\index{Numeros.h@{Numeros.h}!num\_2@{num\_2}}
+\index{num\_2@{num\_2}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_2}{num\_2}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+2\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_afbf6626ba212a1c4b2548ce7364b3226}\label{Numeros_8h_afbf6626ba212a1c4b2548ce7364b3226}} 
+\index{Numeros.h@{Numeros.h}!num\_3@{num\_3}}
+\index{num\_3@{num\_3}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_3}{num\_3}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+3\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_a7a8bc98312eb4a12f991593db3740d27}\label{Numeros_8h_a7a8bc98312eb4a12f991593db3740d27}} 
+\index{Numeros.h@{Numeros.h}!num\_4@{num\_4}}
+\index{num\_4@{num\_4}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_4}{num\_4}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+4\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_ac843a16f203d6fe22af4b48f87205495}\label{Numeros_8h_ac843a16f203d6fe22af4b48f87205495}} 
+\index{Numeros.h@{Numeros.h}!num\_5@{num\_5}}
+\index{num\_5@{num\_5}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_5}{num\_5}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+5\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_ada7f92df8d4df8da5beeed1c799b90f2}\label{Numeros_8h_ada7f92df8d4df8da5beeed1c799b90f2}} 
+\index{Numeros.h@{Numeros.h}!num\_6@{num\_6}}
+\index{num\_6@{num\_6}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_6}{num\_6}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+6\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_afa9d0ae16e45d8ab2914a0d09189e2b7}\label{Numeros_8h_afa9d0ae16e45d8ab2914a0d09189e2b7}} 
+\index{Numeros.h@{Numeros.h}!num\_7@{num\_7}}
+\index{num\_7@{num\_7}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_7}{num\_7}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+7\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_a9c4357ff2ad6ed1219ab0365d84cca62}\label{Numeros_8h_a9c4357ff2ad6ed1219ab0365d84cca62}} 
+\index{Numeros.h@{Numeros.h}!num\_8@{num\_8}}
+\index{num\_8@{num\_8}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_8}{num\_8}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+8\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Numeros_8h_a54dc0cef5607a25b228cf35ee11fad32}\label{Numeros_8h_a54dc0cef5607a25b228cf35ee11fad32}} 
+\index{Numeros.h@{Numeros.h}!num\_9@{num\_9}}
+\index{num\_9@{num\_9}!Numeros.h@{Numeros.h}}
+\doxysubsubsection{\texorpdfstring{num\_9}{num\_9}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t num\+\_\+9\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+

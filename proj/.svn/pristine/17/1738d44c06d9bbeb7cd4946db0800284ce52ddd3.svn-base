@@ -1,0 +1,5 @@
+<map id="init_letters_and_numbers_sprites" name="init_letters_and_numbers_sprites">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,172,65"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#aa4ecfecbe8b45f81c4abe4164757be85" title="Cria um objeto do tipo Sprite* correspondente ao xpm." alt="" coords="220,5,317,32"/>
+<area shape="rect" id="node3" href="$words_8c.html#a913867d378b0e012e9e5eef502f9ca78" title="Obtém o XMP do caracter c." alt="" coords="234,56,303,83"/>
+</map>

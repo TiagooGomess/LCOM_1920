@@ -1,0 +1,13 @@
+\doxysection{Class List}
+Here are the classes, structs, unions and interfaces with brief descriptions\+:\begin{DoxyCompactList}
+\item\contentsline{section}{\mbox{\hyperlink{structPlayer}{Player}} \\*
+\begin{DoxyItemize}
+\item Jogador 
+\end{DoxyItemize}}{\pageref{structPlayer}}{}
+\item\contentsline{section}{\mbox{\hyperlink{structSprite}{Sprite}} }{\pageref{structSprite}}{}
+\item\contentsline{section}{\mbox{\hyperlink{structTime}{Time}} \\*
+\begin{DoxyItemize}
+\item Hora e segundo atuais 
+\end{DoxyItemize}}{\pageref{structTime}}{}
+\item\contentsline{section}{\mbox{\hyperlink{uniontimer__status__field__val}{timer\+\_\+status\+\_\+field\+\_\+val}} \\*Union for storing values of timer status fields, including the full status byte }{\pageref{uniontimer__status__field__val}}{}
+\end{DoxyCompactList}

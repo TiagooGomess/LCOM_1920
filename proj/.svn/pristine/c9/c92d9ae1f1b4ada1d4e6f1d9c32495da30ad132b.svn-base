@@ -1,0 +1,5 @@
+<map id="mouse_reset_state" name="mouse_reset_state">
+<area shape="rect" id="node1" title="Desativa o data reporting." alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#ade708cce0180bcd225c357e82429d17a" title="Envia comando para o rato." alt="" coords="187,5,365,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="413,5,504,32"/>
+</map>

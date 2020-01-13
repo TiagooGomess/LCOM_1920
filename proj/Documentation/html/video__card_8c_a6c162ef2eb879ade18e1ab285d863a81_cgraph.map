@@ -1,0 +1,4 @@
+<map id="init_menu_backgroud" name="init_menu_backgroud">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#aa4ecfecbe8b45f81c4abe4164757be85" title="Cria um objeto do tipo Sprite* correspondente ao xpm." alt="" coords="199,5,296,32"/>
+</map>

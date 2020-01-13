@@ -1,0 +1,14 @@
+<map id="init_all_sprites_day" name="init_all_sprites_day">
+<area shape="rect" id="node1" title=" " alt="" coords="5,223,139,250"/>
+<area shape="rect" id="node2" href="$video__card_8c.html#ac9746eed9ab8b73a128234432e94333d" title=" " alt="" coords="187,71,373,98"/>
+<area shape="rect" id="node4" href="$video__card_8c.html#a211f22606ccb968ad4a2d96e393249fd" title=" " alt="" coords="197,5,363,47"/>
+<area shape="rect" id="node6" href="$video__card_8c.html#a6c162ef2eb879ade18e1ab285d863a81" title=" " alt="" coords="207,122,353,149"/>
+<area shape="rect" id="node7" href="$video__card_8c.html#a9df6347c68b975fcc0c67c2ff810c2f7" title=" " alt="" coords="193,173,367,199"/>
+<area shape="rect" id="node8" href="$video__card_8c.html#a5189ef17b942888fba51c6806c1eb1c1" title=" " alt="" coords="207,223,353,250"/>
+<area shape="rect" id="node9" href="$video__card_8c.html#ad75dd6f8dc5d04a5481231ad41b924de" title=" " alt="" coords="205,274,355,301"/>
+<area shape="rect" id="node10" href="$video__card_8c.html#ae383dffba78c90bb5ff9d0b4400b7340" title=" " alt="" coords="204,325,356,351"/>
+<area shape="rect" id="node11" href="$video__card_8c.html#ac1a79b9e7cb3c5fa64a2a53eb7f9333e" title=" " alt="" coords="218,375,342,402"/>
+<area shape="rect" id="node12" href="$video__card_8c.html#a07f88fa3cb12d7d45d44814ad106d84e" title=" " alt="" coords="220,426,340,453"/>
+<area shape="rect" id="node3" href="$sprite_8c.html#aa4ecfecbe8b45f81c4abe4164757be85" title="Cria um objeto do tipo Sprite* correspondente ao xpm." alt="" coords="421,223,519,250"/>
+<area shape="rect" id="node5" href="$words_8c.html#a913867d378b0e012e9e5eef502f9ca78" title="Obtém o XMP do caracter c." alt="" coords="435,13,505,39"/>
+</map>

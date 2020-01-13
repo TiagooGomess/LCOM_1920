@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ce4b607-cbda-4399-8d51-b5ee5448d1f9" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="proj" />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1TzF57wzcQPIU4soY35DRUWEJr9" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ce4b607-cbda-4399-8d51-b5ee5448d1f9" name="Default Changelist" comment="" />
+      <created>1574454830954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574454830954</updated>
+      <workItem from="1574454832221" duration="5982000" />
+      <workItem from="1574701799126" duration="10797000" />
+      <workItem from="1574770878697" duration="3805000" />
+      <workItem from="1574783841454" duration="356000" />
+      <workItem from="1574892688769" duration="4635000" />
+      <workItem from="1574949316028" duration="376000" />
+      <workItem from="1574962815847" duration="8026000" />
+      <workItem from="1575030740486" duration="606000" />
+      <workItem from="1575031394670" duration="260000" />
+      <workItem from="1575051990793" duration="2253000" />
+      <workItem from="1575063161711" duration="754000" />
+      <workItem from="1575067698256" duration="3157000" />
+      <workItem from="1575071257679" duration="9650000" />
+      <workItem from="1575114509314" duration="1244000" />
+      <workItem from="1575122620301" duration="2861000" />
+      <workItem from="1575129591329" duration="14342000" />
+      <workItem from="1575210657514" duration="12258000" />
+      <workItem from="1575306846767" duration="9001000" />
+      <workItem from="1575396816361" duration="4607000" />
+      <workItem from="1575554042143" duration="3075000" />
+      <workItem from="1575566518606" duration="9887000" />
+      <workItem from="1575899915729" duration="4159000" />
+      <workItem from="1575910789191" duration="10462000" />
+      <workItem from="1575994075615" duration="236000" />
+      <workItem from="1576329797703" duration="859000" />
+      <workItem from="1576515797155" duration="10736000" />
+      <workItem from="1576755332910" duration="8594000" />
+      <workItem from="1576769133616" duration="264000" />
+      <workItem from="1576770457046" duration="5062000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

@@ -1,0 +1,272 @@
+\hypertarget{keyboard_8h}{}\doxysection{keyboard.\+h File Reference}
+\label{keyboard_8h}\index{keyboard.h@{keyboard.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for keyboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_aade608c2b485d0c1238c401e073bbbdc}{S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}~0x64
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a85dd25ad45d47136734196ec996419cd}{O\+U\+T\+P\+U\+T\+\_\+\+B\+U\+F\+F\+ER}}~0x60
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a9155cb924b37fc18eb1ceb7d16b89988}{I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+D\+A\+TA}}~0x60
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_aec7fa15415ad8abad43e4ec6758f9fb0}{I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+M\+M\+A\+ND}}~0x64
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a6e944ce9ec2d9759b485c55a448afc7c}{I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+F\+ER}}~0x20
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a1a522aa19bcb695a9df30032a893bee3}{D\+E\+L\+A\+Y\+\_\+\+US}}~20000
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a343f44cb034d2d2ff3438b3d45dcde1f}{E\+S\+C\+\_\+\+B\+R\+E\+AK}}~0x81
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a5c1072213ce8d8cd43628c4319ae0391}{K\+B\+D\+\_\+\+I\+RQ}}~0x01
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a305ee86129081b404b151c64293566e7}{R\+E\+A\+D\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+Y\+TE}}~0x20
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a4680153f26a3244682a2e2e01e57e318}{W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+Y\+TE}}~0x60
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a45967c9e25447ba853cf6fb4ac545fe6}{O\+BF}}~0x01
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a3c48b10907056351582baf9f6478598e}{I\+BF}}~0x02
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_ae3d9f52a1a315303ad04f0576bd42a25}{S\+YS}}~0x04
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a2946bc30423c2a996eeafa49e995c30e}{A2}}~0x08
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a03f542f1e0e2ba512c4ed189decfee3d}{I\+NH}}~0x10
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a1b41fd2be63532d4ab910f8b256c3811}{A\+UX}}~0x20
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a45ba202b05caf39795aeca91b0ae547e}{T\+I\+M\+E\+O\+UT}}~0x40
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_af6996d12e71a534569c41a25de7d6d52}{P\+A\+R\+I\+TY}}~0x80
+\item 
+\#define \mbox{\hyperlink{keyboard_8h_a3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(n)~(1 $<$$<$ (n))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{keyboard_8h_a178b1db0b319dccad2840cc3fd273132}{keyboard\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Subscribes and enables keyboard interrupts. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8h_a32cc4de66854f8a7bd909e7aa8b901ed}{keyboard\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Unsubscribes keyboard interrupts. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{keyboard_8h_aeca306b90c1f222127f0c162654e771c}{write\+\_\+\+K\+B\+C\+\_\+command\+\_\+byte}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Escreve o comando do teclado para o K\+BC. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{keyboard_8h_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{keyboard_8h_a2946bc30423c2a996eeafa49e995c30e}\label{keyboard_8h_a2946bc30423c2a996eeafa49e995c30e}} 
+\index{keyboard.h@{keyboard.h}!A2@{A2}}
+\index{A2@{A2}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{A2}{A2}}
+{\footnotesize\ttfamily \#define A2~0x08}
+
+\mbox{\Hypertarget{keyboard_8h_a1b41fd2be63532d4ab910f8b256c3811}\label{keyboard_8h_a1b41fd2be63532d4ab910f8b256c3811}} 
+\index{keyboard.h@{keyboard.h}!AUX@{AUX}}
+\index{AUX@{AUX}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{AUX}{AUX}}
+{\footnotesize\ttfamily \#define A\+UX~0x20}
+
+\mbox{\Hypertarget{keyboard_8h_a3a8ea58898cb58fc96013383d39f482c}\label{keyboard_8h_a3a8ea58898cb58fc96013383d39f482c}} 
+\index{keyboard.h@{keyboard.h}!BIT@{BIT}}
+\index{BIT@{BIT}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{BIT}{BIT}}
+{\footnotesize\ttfamily \#define B\+IT(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})~(1 $<$$<$ (n))}
+
+\mbox{\Hypertarget{keyboard_8h_a1a522aa19bcb695a9df30032a893bee3}\label{keyboard_8h_a1a522aa19bcb695a9df30032a893bee3}} 
+\index{keyboard.h@{keyboard.h}!DELAY\_US@{DELAY\_US}}
+\index{DELAY\_US@{DELAY\_US}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{DELAY\_US}{DELAY\_US}}
+{\footnotesize\ttfamily \#define D\+E\+L\+A\+Y\+\_\+\+US~20000}
+
+\mbox{\Hypertarget{keyboard_8h_a343f44cb034d2d2ff3438b3d45dcde1f}\label{keyboard_8h_a343f44cb034d2d2ff3438b3d45dcde1f}} 
+\index{keyboard.h@{keyboard.h}!ESC\_BREAK@{ESC\_BREAK}}
+\index{ESC\_BREAK@{ESC\_BREAK}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{ESC\_BREAK}{ESC\_BREAK}}
+{\footnotesize\ttfamily \#define E\+S\+C\+\_\+\+B\+R\+E\+AK~0x81}
+
+\mbox{\Hypertarget{keyboard_8h_a3c48b10907056351582baf9f6478598e}\label{keyboard_8h_a3c48b10907056351582baf9f6478598e}} 
+\index{keyboard.h@{keyboard.h}!IBF@{IBF}}
+\index{IBF@{IBF}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{IBF}{IBF}}
+{\footnotesize\ttfamily \#define I\+BF~0x02}
+
+\mbox{\Hypertarget{keyboard_8h_a03f542f1e0e2ba512c4ed189decfee3d}\label{keyboard_8h_a03f542f1e0e2ba512c4ed189decfee3d}} 
+\index{keyboard.h@{keyboard.h}!INH@{INH}}
+\index{INH@{INH}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{INH}{INH}}
+{\footnotesize\ttfamily \#define I\+NH~0x10}
+
+\mbox{\Hypertarget{keyboard_8h_a6e944ce9ec2d9759b485c55a448afc7c}\label{keyboard_8h_a6e944ce9ec2d9759b485c55a448afc7c}} 
+\index{keyboard.h@{keyboard.h}!INPUT\_BUFFER@{INPUT\_BUFFER}}
+\index{INPUT\_BUFFER@{INPUT\_BUFFER}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{INPUT\_BUFFER}{INPUT\_BUFFER}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+F\+ER~0x20}
+
+\mbox{\Hypertarget{keyboard_8h_aec7fa15415ad8abad43e4ec6758f9fb0}\label{keyboard_8h_aec7fa15415ad8abad43e4ec6758f9fb0}} 
+\index{keyboard.h@{keyboard.h}!INPUT\_BUFFER\_COMMAND@{INPUT\_BUFFER\_COMMAND}}
+\index{INPUT\_BUFFER\_COMMAND@{INPUT\_BUFFER\_COMMAND}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{INPUT\_BUFFER\_COMMAND}{INPUT\_BUFFER\_COMMAND}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+C\+O\+M\+M\+A\+ND~0x64}
+
+\mbox{\Hypertarget{keyboard_8h_a9155cb924b37fc18eb1ceb7d16b89988}\label{keyboard_8h_a9155cb924b37fc18eb1ceb7d16b89988}} 
+\index{keyboard.h@{keyboard.h}!INPUT\_BUFFER\_DATA@{INPUT\_BUFFER\_DATA}}
+\index{INPUT\_BUFFER\_DATA@{INPUT\_BUFFER\_DATA}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{INPUT\_BUFFER\_DATA}{INPUT\_BUFFER\_DATA}}
+{\footnotesize\ttfamily \#define I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+D\+A\+TA~0x60}
+
+\mbox{\Hypertarget{keyboard_8h_a5c1072213ce8d8cd43628c4319ae0391}\label{keyboard_8h_a5c1072213ce8d8cd43628c4319ae0391}} 
+\index{keyboard.h@{keyboard.h}!KBD\_IRQ@{KBD\_IRQ}}
+\index{KBD\_IRQ@{KBD\_IRQ}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{KBD\_IRQ}{KBD\_IRQ}}
+{\footnotesize\ttfamily \#define K\+B\+D\+\_\+\+I\+RQ~0x01}
+
+\mbox{\Hypertarget{keyboard_8h_a45967c9e25447ba853cf6fb4ac545fe6}\label{keyboard_8h_a45967c9e25447ba853cf6fb4ac545fe6}} 
+\index{keyboard.h@{keyboard.h}!OBF@{OBF}}
+\index{OBF@{OBF}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{OBF}{OBF}}
+{\footnotesize\ttfamily \#define O\+BF~0x01}
+
+\mbox{\Hypertarget{keyboard_8h_a85dd25ad45d47136734196ec996419cd}\label{keyboard_8h_a85dd25ad45d47136734196ec996419cd}} 
+\index{keyboard.h@{keyboard.h}!OUTPUT\_BUFFER@{OUTPUT\_BUFFER}}
+\index{OUTPUT\_BUFFER@{OUTPUT\_BUFFER}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{OUTPUT\_BUFFER}{OUTPUT\_BUFFER}}
+{\footnotesize\ttfamily \#define O\+U\+T\+P\+U\+T\+\_\+\+B\+U\+F\+F\+ER~0x60}
+
+\mbox{\Hypertarget{keyboard_8h_af6996d12e71a534569c41a25de7d6d52}\label{keyboard_8h_af6996d12e71a534569c41a25de7d6d52}} 
+\index{keyboard.h@{keyboard.h}!PARITY@{PARITY}}
+\index{PARITY@{PARITY}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{PARITY}{PARITY}}
+{\footnotesize\ttfamily \#define P\+A\+R\+I\+TY~0x80}
+
+\mbox{\Hypertarget{keyboard_8h_a305ee86129081b404b151c64293566e7}\label{keyboard_8h_a305ee86129081b404b151c64293566e7}} 
+\index{keyboard.h@{keyboard.h}!READ\_COMMAND\_BYTE@{READ\_COMMAND\_BYTE}}
+\index{READ\_COMMAND\_BYTE@{READ\_COMMAND\_BYTE}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{READ\_COMMAND\_BYTE}{READ\_COMMAND\_BYTE}}
+{\footnotesize\ttfamily \#define R\+E\+A\+D\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+Y\+TE~0x20}
+
+\mbox{\Hypertarget{keyboard_8h_aade608c2b485d0c1238c401e073bbbdc}\label{keyboard_8h_aade608c2b485d0c1238c401e073bbbdc}} 
+\index{keyboard.h@{keyboard.h}!STATUS\_REGISTER@{STATUS\_REGISTER}}
+\index{STATUS\_REGISTER@{STATUS\_REGISTER}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{STATUS\_REGISTER}{STATUS\_REGISTER}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G\+I\+S\+T\+ER~0x64}
+
+\mbox{\Hypertarget{keyboard_8h_ae3d9f52a1a315303ad04f0576bd42a25}\label{keyboard_8h_ae3d9f52a1a315303ad04f0576bd42a25}} 
+\index{keyboard.h@{keyboard.h}!SYS@{SYS}}
+\index{SYS@{SYS}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{SYS}{SYS}}
+{\footnotesize\ttfamily \#define S\+YS~0x04}
+
+\mbox{\Hypertarget{keyboard_8h_a45ba202b05caf39795aeca91b0ae547e}\label{keyboard_8h_a45ba202b05caf39795aeca91b0ae547e}} 
+\index{keyboard.h@{keyboard.h}!TIMEOUT@{TIMEOUT}}
+\index{TIMEOUT@{TIMEOUT}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{TIMEOUT}{TIMEOUT}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+O\+UT~0x40}
+
+\mbox{\Hypertarget{keyboard_8h_a4680153f26a3244682a2e2e01e57e318}\label{keyboard_8h_a4680153f26a3244682a2e2e01e57e318}} 
+\index{keyboard.h@{keyboard.h}!WRITE\_COMMAND\_BYTE@{WRITE\_COMMAND\_BYTE}}
+\index{WRITE\_COMMAND\_BYTE@{WRITE\_COMMAND\_BYTE}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_COMMAND\_BYTE}{WRITE\_COMMAND\_BYTE}}
+{\footnotesize\ttfamily \#define W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+Y\+TE~0x60}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8h_aea970a154161a35f6894898a092ed70a}\label{keyboard_8h_aea970a154161a35f6894898a092ed70a}} 
+\index{keyboard.h@{keyboard.h}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Trata das interrupções do teclado. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{keyboard_8h_aea970a154161a35f6894898a092ed70a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8h_a178b1db0b319dccad2840cc3fd273132}\label{keyboard_8h_a178b1db0b319dccad2840cc3fd273132}} 
+\index{keyboard.h@{keyboard.h}!keyboard\_subscribe\_int@{keyboard\_subscribe\_int}}
+\index{keyboard\_subscribe\_int@{keyboard\_subscribe\_int}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_subscribe\_int()}{keyboard\_subscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Subscribes and enables keyboard interrupts. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & -\/ address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Return 0 upon success and non-\/zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_a32cc4de66854f8a7bd909e7aa8b901ed}\label{keyboard_8h_a32cc4de66854f8a7bd909e7aa8b901ed}} 
+\index{keyboard.h@{keyboard.h}!keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}}
+\index{keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{keyboard\_unsubscribe\_int()}{keyboard\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Unsubscribes keyboard interrupts. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ Return 0 upon success and non-\/zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{keyboard_8h_aeca306b90c1f222127f0c162654e771c}\label{keyboard_8h_aeca306b90c1f222127f0c162654e771c}} 
+\index{keyboard.h@{keyboard.h}!write\_KBC\_command\_byte@{write\_KBC\_command\_byte}}
+\index{write\_KBC\_command\_byte@{write\_KBC\_command\_byte}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{write\_KBC\_command\_byte()}{write\_KBC\_command\_byte()}}
+{\footnotesize\ttfamily int write\+\_\+\+K\+B\+C\+\_\+command\+\_\+byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Escreve o comando do teclado para o K\+BC. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ 0 se houver sucesso, 1 caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{keyboard_8h_aeca306b90c1f222127f0c162654e771c_cgraph}
+\end{center}
+\end{figure}

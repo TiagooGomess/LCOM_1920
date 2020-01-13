@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75a13f7c-6a21-4cd3-9fd6-8979d6ce4d64" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ProjectId" id="1SsSDLWtLJzMya147AWWeptQVts" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75a13f7c-6a21-4cd3-9fd6-8979d6ce4d64" name="Default Changelist" comment="" />
+      <created>1572350689933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572350689933</updated>
+      <workItem from="1572350691119" duration="12473000" />
+      <workItem from="1572432357560" duration="5720000" />
+      <workItem from="1572442131617" duration="1002000" />
+      <workItem from="1572460476868" duration="289000" />
+      <workItem from="1572464893185" duration="239000" />
+      <workItem from="1572480490765" duration="1496000" />
+      <workItem from="1572519957453" duration="3024000" />
+      <workItem from="1572608641682" duration="2393000" />
+      <workItem from="1572645407474" duration="1268000" />
+      <workItem from="1572647386814" duration="24000" />
+      <workItem from="1572652263706" duration="1106000" />
+      <workItem from="1572694213219" duration="501000" />
+      <workItem from="1572725526061" duration="5636000" />
+      <workItem from="1572865537069" duration="7142000" />
+      <workItem from="1572887332931" duration="6358000" />
+      <workItem from="1572900799184" duration="2865000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

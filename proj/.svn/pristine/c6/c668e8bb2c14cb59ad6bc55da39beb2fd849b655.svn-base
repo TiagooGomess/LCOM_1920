@@ -1,0 +1,210 @@
+\hypertarget{Leaderboard_8h}{}\doxysection{Leaderboard.\+h File Reference}
+\label{Leaderboard_8h}\index{Leaderboard.h@{Leaderboard.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for Leaderboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{Leaderboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{Leaderboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPlayer}{Player}}
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Jogador. 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{Leaderboard_8h_a91bc0812975de0adcfc4a0ab3c936047}{ask\+For\+Name}} (uint8\+\_\+t $\ast$initial\+\_\+address, char $\ast$\mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Pergunta o nome do jogador, se este fizer uma pontuação rocord. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Leaderboard_8h_a1aa9de7c0ef0b246d6608cedb67225c3}{read\+\_\+leaderboard\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Lê o ficheiro da leaderboard (Leaderboard.\+txt). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Leaderboard_8h_a6caf8017db854ed18885298f4a2439c5}{display\+\_\+leaderboard}} (uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha a leaderboard. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Leaderboard_8h_a7a9066727f5028846dc0297bd5cbb9ff}{new\+\_\+record\+\_\+handler}} (int score, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Mete os jogadores da leaderboard na posição correta, de acordo com as suas pontuações. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Leaderboard_8h_a8e0a5fa157c1487e5103a719066bcd3e}{is\+\_\+new\+\_\+record}} (int score)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Verifica se o jogador atual obteve uma pontuação record. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Leaderboard_8h_abd1e041c45639b7d2b559ff87091b3f0}{write\+\_\+leaderboard\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Escreve o ficheiro da leaderboard (Leaderboard.\+txt). 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Leaderboard_8h_a91bc0812975de0adcfc4a0ab3c936047}\label{Leaderboard_8h_a91bc0812975de0adcfc4a0ab3c936047}} 
+\index{Leaderboard.h@{Leaderboard.h}!askForName@{askForName}}
+\index{askForName@{askForName}!Leaderboard.h@{Leaderboard.h}}
+\doxysubsubsection{\texorpdfstring{askForName()}{askForName()}}
+{\footnotesize\ttfamily void ask\+For\+Name (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address,  }\item[{char $\ast$}]{top\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Pergunta o nome do jogador, se este fizer uma pontuação rocord. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+{\em top\+Player\+Name} & -\/ Nome do jogador atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ 0 se houver sucesso, 1 caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8h_a91bc0812975de0adcfc4a0ab3c936047_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8h_a6caf8017db854ed18885298f4a2439c5}\label{Leaderboard_8h_a6caf8017db854ed18885298f4a2439c5}} 
+\index{Leaderboard.h@{Leaderboard.h}!display\_leaderboard@{display\_leaderboard}}
+\index{display\_leaderboard@{display\_leaderboard}!Leaderboard.h@{Leaderboard.h}}
+\doxysubsubsection{\texorpdfstring{display\_leaderboard()}{display\_leaderboard()}}
+{\footnotesize\ttfamily void display\+\_\+leaderboard (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha a leaderboard. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8h_a6caf8017db854ed18885298f4a2439c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8h_a8e0a5fa157c1487e5103a719066bcd3e}\label{Leaderboard_8h_a8e0a5fa157c1487e5103a719066bcd3e}} 
+\index{Leaderboard.h@{Leaderboard.h}!is\_new\_record@{is\_new\_record}}
+\index{is\_new\_record@{is\_new\_record}!Leaderboard.h@{Leaderboard.h}}
+\doxysubsubsection{\texorpdfstring{is\_new\_record()}{is\_new\_record()}}
+{\footnotesize\ttfamily bool is\+\_\+new\+\_\+record (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Verifica se o jogador atual obteve uma pontuação record. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & -\/ Pontuação do jogador atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true se houver um record, false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8h_a8e0a5fa157c1487e5103a719066bcd3e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8h_a7a9066727f5028846dc0297bd5cbb9ff}\label{Leaderboard_8h_a7a9066727f5028846dc0297bd5cbb9ff}} 
+\index{Leaderboard.h@{Leaderboard.h}!new\_record\_handler@{new\_record\_handler}}
+\index{new\_record\_handler@{new\_record\_handler}!Leaderboard.h@{Leaderboard.h}}
+\doxysubsubsection{\texorpdfstring{new\_record\_handler()}{new\_record\_handler()}}
+{\footnotesize\ttfamily bool new\+\_\+record\+\_\+handler (\begin{DoxyParamCaption}\item[{int}]{score,  }\item[{char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Mete os jogadores da leaderboard na posição correta, de acordo com as suas pontuações. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & -\/ Pontuação do jogador atual. \\
+\hline
+{\em name} & -\/ Nome do jogador atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true se houver um record, false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Leaderboard_8h_a7a9066727f5028846dc0297bd5cbb9ff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8h_a1aa9de7c0ef0b246d6608cedb67225c3}\label{Leaderboard_8h_a1aa9de7c0ef0b246d6608cedb67225c3}} 
+\index{Leaderboard.h@{Leaderboard.h}!read\_leaderboard\_file@{read\_leaderboard\_file}}
+\index{read\_leaderboard\_file@{read\_leaderboard\_file}!Leaderboard.h@{Leaderboard.h}}
+\doxysubsubsection{\texorpdfstring{read\_leaderboard\_file()}{read\_leaderboard\_file()}}
+{\footnotesize\ttfamily void read\+\_\+leaderboard\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Lê o ficheiro da leaderboard (Leaderboard.\+txt). 
+\end{DoxyItemize}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{Leaderboard_8h_a1aa9de7c0ef0b246d6608cedb67225c3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Leaderboard_8h_abd1e041c45639b7d2b559ff87091b3f0}\label{Leaderboard_8h_abd1e041c45639b7d2b559ff87091b3f0}} 
+\index{Leaderboard.h@{Leaderboard.h}!write\_leaderboard\_file@{write\_leaderboard\_file}}
+\index{write\_leaderboard\_file@{write\_leaderboard\_file}!Leaderboard.h@{Leaderboard.h}}
+\doxysubsubsection{\texorpdfstring{write\_leaderboard\_file()}{write\_leaderboard\_file()}}
+{\footnotesize\ttfamily void write\+\_\+leaderboard\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Escreve o ficheiro da leaderboard (Leaderboard.\+txt). 
+\end{DoxyItemize}
+

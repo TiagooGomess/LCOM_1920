@@ -1,0 +1,4 @@
+<map id="draw_cursor" name="draw_cursor">
+<area shape="rect" id="node1" title="Desenha sprite do rato." alt="" coords="5,5,99,32"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#a7151b29f2e45fc31dd5125879647eaeb" title="Desenha o sprite sp;" alt="" coords="147,5,236,32"/>
+</map>

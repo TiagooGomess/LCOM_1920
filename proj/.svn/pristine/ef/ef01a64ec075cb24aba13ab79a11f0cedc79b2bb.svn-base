@@ -1,0 +1,137 @@
+\hypertarget{Fundos_8h}{}\doxysection{Fundos.\+h File Reference}
+\label{Fundos_8h}\index{Fundos.h@{Fundos.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/liblm.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/proj.\+h$>$}\newline
+Include dependency graph for Fundos.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{Fundos_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{Fundos_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a4b62b9899093bf0516ebc753ae8a4203}{Menu\+\_\+dia\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_afbfbbb1314a64d9cdd48d8acb69668cb}{Menu\+\_\+noite\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_ac85a90b41105eebe0175568f5559d874}{fundo\+\_\+pausa\+\_\+dia}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a3129411d80eb5515f838a8bb42a334ba}{fundo\+\_\+pausa\+\_\+noite}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a71f6ddc0dcae518d9266fd69d91af251}{fundo\+\_\+dia}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_aa6fd1c83ea41f24ee061ac984b0113ca}{fundo\+\_\+noite}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a676c2f0f472fbb455a2ea2e9f17c534a}{Leaderboard\+\_\+dia\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a641316b945599df78f46caf8c1c75917}{Leaderboard\+\_\+noite\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_ac49a7988f0836b0bdf93ad315a5b0922}{Recorde\+\_\+\+Dia\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a5e3a80f6ce7d418c316eda5293684b48}{Recorde\+\_\+\+Noite\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a33240681e70edf07c475ed149fb1b318}{Game\+\_\+\+Over\+\_\+\+Noite\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_ac37c4a9ea1da8bf12200d841a2fefc0d}{Game\+\_\+\+Over\+\_\+\+Dia\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a9f98f2da9734308f89a83083f77fc969}{instructions\+\_\+day\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Fundos_8h_a0b5b5f88365475b865b704de0ba02f4f}{instructions\+\_\+night\+\_\+xpm}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Fundos_8h_a71f6ddc0dcae518d9266fd69d91af251}\label{Fundos_8h_a71f6ddc0dcae518d9266fd69d91af251}} 
+\index{Fundos.h@{Fundos.h}!fundo\_dia@{fundo\_dia}}
+\index{fundo\_dia@{fundo\_dia}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{fundo\_dia}{fundo\_dia}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t fundo\+\_\+dia\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_aa6fd1c83ea41f24ee061ac984b0113ca}\label{Fundos_8h_aa6fd1c83ea41f24ee061ac984b0113ca}} 
+\index{Fundos.h@{Fundos.h}!fundo\_noite@{fundo\_noite}}
+\index{fundo\_noite@{fundo\_noite}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{fundo\_noite}{fundo\_noite}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t fundo\+\_\+noite\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_ac85a90b41105eebe0175568f5559d874}\label{Fundos_8h_ac85a90b41105eebe0175568f5559d874}} 
+\index{Fundos.h@{Fundos.h}!fundo\_pausa\_dia@{fundo\_pausa\_dia}}
+\index{fundo\_pausa\_dia@{fundo\_pausa\_dia}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{fundo\_pausa\_dia}{fundo\_pausa\_dia}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t fundo\+\_\+pausa\+\_\+dia\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_a3129411d80eb5515f838a8bb42a334ba}\label{Fundos_8h_a3129411d80eb5515f838a8bb42a334ba}} 
+\index{Fundos.h@{Fundos.h}!fundo\_pausa\_noite@{fundo\_pausa\_noite}}
+\index{fundo\_pausa\_noite@{fundo\_pausa\_noite}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{fundo\_pausa\_noite}{fundo\_pausa\_noite}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t fundo\+\_\+pausa\+\_\+noite\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_ac37c4a9ea1da8bf12200d841a2fefc0d}\label{Fundos_8h_ac37c4a9ea1da8bf12200d841a2fefc0d}} 
+\index{Fundos.h@{Fundos.h}!Game\_Over\_Dia\_xpm@{Game\_Over\_Dia\_xpm}}
+\index{Game\_Over\_Dia\_xpm@{Game\_Over\_Dia\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{Game\_Over\_Dia\_xpm}{Game\_Over\_Dia\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t Game\+\_\+\+Over\+\_\+\+Dia\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_a33240681e70edf07c475ed149fb1b318}\label{Fundos_8h_a33240681e70edf07c475ed149fb1b318}} 
+\index{Fundos.h@{Fundos.h}!Game\_Over\_Noite\_xpm@{Game\_Over\_Noite\_xpm}}
+\index{Game\_Over\_Noite\_xpm@{Game\_Over\_Noite\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{Game\_Over\_Noite\_xpm}{Game\_Over\_Noite\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t Game\+\_\+\+Over\+\_\+\+Noite\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_a9f98f2da9734308f89a83083f77fc969}\label{Fundos_8h_a9f98f2da9734308f89a83083f77fc969}} 
+\index{Fundos.h@{Fundos.h}!instructions\_day\_xpm@{instructions\_day\_xpm}}
+\index{instructions\_day\_xpm@{instructions\_day\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{instructions\_day\_xpm}{instructions\_day\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t instructions\+\_\+day\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_a0b5b5f88365475b865b704de0ba02f4f}\label{Fundos_8h_a0b5b5f88365475b865b704de0ba02f4f}} 
+\index{Fundos.h@{Fundos.h}!instructions\_night\_xpm@{instructions\_night\_xpm}}
+\index{instructions\_night\_xpm@{instructions\_night\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{instructions\_night\_xpm}{instructions\_night\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t instructions\+\_\+night\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_a676c2f0f472fbb455a2ea2e9f17c534a}\label{Fundos_8h_a676c2f0f472fbb455a2ea2e9f17c534a}} 
+\index{Fundos.h@{Fundos.h}!Leaderboard\_dia\_xpm@{Leaderboard\_dia\_xpm}}
+\index{Leaderboard\_dia\_xpm@{Leaderboard\_dia\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{Leaderboard\_dia\_xpm}{Leaderboard\_dia\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t Leaderboard\+\_\+dia\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_a641316b945599df78f46caf8c1c75917}\label{Fundos_8h_a641316b945599df78f46caf8c1c75917}} 
+\index{Fundos.h@{Fundos.h}!Leaderboard\_noite\_xpm@{Leaderboard\_noite\_xpm}}
+\index{Leaderboard\_noite\_xpm@{Leaderboard\_noite\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{Leaderboard\_noite\_xpm}{Leaderboard\_noite\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t Leaderboard\+\_\+noite\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_a4b62b9899093bf0516ebc753ae8a4203}\label{Fundos_8h_a4b62b9899093bf0516ebc753ae8a4203}} 
+\index{Fundos.h@{Fundos.h}!Menu\_dia\_xpm@{Menu\_dia\_xpm}}
+\index{Menu\_dia\_xpm@{Menu\_dia\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{Menu\_dia\_xpm}{Menu\_dia\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t Menu\+\_\+dia\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_afbfbbb1314a64d9cdd48d8acb69668cb}\label{Fundos_8h_afbfbbb1314a64d9cdd48d8acb69668cb}} 
+\index{Fundos.h@{Fundos.h}!Menu\_noite\_xpm@{Menu\_noite\_xpm}}
+\index{Menu\_noite\_xpm@{Menu\_noite\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{Menu\_noite\_xpm}{Menu\_noite\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t Menu\+\_\+noite\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_ac49a7988f0836b0bdf93ad315a5b0922}\label{Fundos_8h_ac49a7988f0836b0bdf93ad315a5b0922}} 
+\index{Fundos.h@{Fundos.h}!Recorde\_Dia\_xpm@{Recorde\_Dia\_xpm}}
+\index{Recorde\_Dia\_xpm@{Recorde\_Dia\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{Recorde\_Dia\_xpm}{Recorde\_Dia\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t Recorde\+\_\+\+Dia\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Fundos_8h_a5e3a80f6ce7d418c316eda5293684b48}\label{Fundos_8h_a5e3a80f6ce7d418c316eda5293684b48}} 
+\index{Fundos.h@{Fundos.h}!Recorde\_Noite\_xpm@{Recorde\_Noite\_xpm}}
+\index{Recorde\_Noite\_xpm@{Recorde\_Noite\_xpm}!Fundos.h@{Fundos.h}}
+\doxysubsubsection{\texorpdfstring{Recorde\_Noite\_xpm}{Recorde\_Noite\_xpm}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t Recorde\+\_\+\+Noite\+\_\+xpm\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+

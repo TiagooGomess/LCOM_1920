@@ -1,0 +1,9 @@
+<map id="sprite.c" name="sprite.c">
+<area shape="rect" id="node1" title=" " alt="" coords="259,5,325,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="182,229,261,256"/>
+<area shape="rect" id="node3" href="$sprite_8h.html" title=" " alt="" coords="259,155,325,181"/>
+<area shape="rect" id="node4" href="$video__card_8h.html" title=" " alt="" coords="141,80,237,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="93,229,158,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,229,67,256"/>
+<area shape="rect" id="node7" href="$RTC_8h.html" title=" " alt="" coords="72,155,133,181"/>
+</map>

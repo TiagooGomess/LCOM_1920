@@ -1,0 +1,10 @@
+<map id="subscribe_and_enable_everything" name="subscribe_and_enable_everything">
+<area shape="rect" id="node1" title="Subscreve e ativa as interrupções de todos os dispositivos; ativa o data reporting do rato." alt="" coords="5,107,156,149"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a178b1db0b319dccad2840cc3fd273132" title="Subscribes and enables keyboard interrupts." alt="" coords="206,5,365,32"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a20285aed4b3ef45812cd967532dd09db" title="Subscribes and enables mouse interrupts." alt="" coords="213,56,358,83"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#a7ba50a17048a0d8b03264792f36e629a" title="Ativa o data reporting." alt="" coords="204,107,367,149"/>
+<area shape="rect" id="node7" href="$RTC_8c.html#a5171a9c0f54940fe60f7500896afcc86" title="Subscribes and enables RTC interrupts." alt="" coords="225,173,346,200"/>
+<area shape="rect" id="node8" href="$group__timer.html#gac57a7e1140a7e00ad95ac5488d2a671b" title="Subscribes and enables Timer 0 interrupts." alt="" coords="218,224,353,251"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#ade708cce0180bcd225c357e82429d17a" title="Envia comando para o rato." alt="" coords="415,115,593,141"/>
+<area shape="rect" id="node6" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="641,115,732,141"/>
+</map>

@@ -1,0 +1,233 @@
+\hypertarget{Letras_8h}{}\doxysection{Letras.\+h File Reference}
+\label{Letras_8h}\index{Letras.h@{Letras.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/liblm.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/proj.\+h$>$}\newline
+Include dependency graph for Letras.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{Letras_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Letras_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a02d6d0d51d05e46255e06dfe952f7efb}{letra\+\_\+A}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a1a909a0098af860760206e8ca1602015}{letra\+\_\+B}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a07e4e94712ab1123e9e94f92e9dfe8be}{letra\+\_\+C}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_ab4075ead0dff9f8f7be32ae521e47134}{letra\+\_\+D}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a205f2a320ab60bc4fb3ddf436e9861cf}{letra\+\_\+E}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_ac077a9833e9e48b1a0425c36604c68b1}{letra\+\_\+F}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_abcd4cba44d46d42c8e87797af73aaffc}{letra\+\_\+G}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a3384d88517eb32e7a984f78842762703}{letra\+\_\+H}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a2facf8c0ef8a47aac0aeb3d236bd505c}{letra\+\_\+I}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a25b57659b96f35192f8a20304c060298}{letra\+\_\+J}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a751205988fae3fd3f16d33de4178e405}{letra\+\_\+K}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_aeaaedd555d362abaf23ef4e09d29fba9}{letra\+\_\+L}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a244014b666520f5f626f656d7798ac21}{letra\+\_\+M}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_af34d621edd54e79834c82d60949b85aa}{letra\+\_\+N}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_adca0d164d1a50da54e99151b7acb2439}{letra\+\_\+O}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a508c13afa2644d5bb3356107102f4374}{letra\+\_\+P}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_addbb14a010a1b243b5bedfcb6312580f}{letra\+\_\+Q}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a2b3da2abe5ec18a4d672d63be584795f}{letra\+\_\+R}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a140e2e5f0cb43104ed4df752467d7b60}{letra\+\_\+S}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a6b4221a33f82217295097fff8b6c991e}{letra\+\_\+T}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a7b136b7a64b98935330dcdf95dd50467}{letra\+\_\+U}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_ac4ad273ff842d1ec1b07f86192778ba5}{letra\+\_\+V}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_aae8549cc26f1b6c6347ba356bd6e4fad}{letra\+\_\+W}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a742c49eb18933d659cd65eb218c574a1}{letra\+\_\+X}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_a040a9c3cee5eb2016fedb8ea089984b6}{letra\+\_\+Y}} \mbox{[}$\,$\mbox{]}
+\item 
+static const xpm\+\_\+row\+\_\+t \mbox{\hyperlink{Letras_8h_ad658edb162a6464eb19fe575ce6c5a24}{letra\+\_\+Z}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{Letras_8h_a02d6d0d51d05e46255e06dfe952f7efb}\label{Letras_8h_a02d6d0d51d05e46255e06dfe952f7efb}} 
+\index{Letras.h@{Letras.h}!letra\_A@{letra\_A}}
+\index{letra\_A@{letra\_A}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_A}{letra\_A}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+A\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a1a909a0098af860760206e8ca1602015}\label{Letras_8h_a1a909a0098af860760206e8ca1602015}} 
+\index{Letras.h@{Letras.h}!letra\_B@{letra\_B}}
+\index{letra\_B@{letra\_B}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_B}{letra\_B}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+B\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a07e4e94712ab1123e9e94f92e9dfe8be}\label{Letras_8h_a07e4e94712ab1123e9e94f92e9dfe8be}} 
+\index{Letras.h@{Letras.h}!letra\_C@{letra\_C}}
+\index{letra\_C@{letra\_C}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_C}{letra\_C}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+C\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_ab4075ead0dff9f8f7be32ae521e47134}\label{Letras_8h_ab4075ead0dff9f8f7be32ae521e47134}} 
+\index{Letras.h@{Letras.h}!letra\_D@{letra\_D}}
+\index{letra\_D@{letra\_D}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_D}{letra\_D}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+D\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a205f2a320ab60bc4fb3ddf436e9861cf}\label{Letras_8h_a205f2a320ab60bc4fb3ddf436e9861cf}} 
+\index{Letras.h@{Letras.h}!letra\_E@{letra\_E}}
+\index{letra\_E@{letra\_E}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_E}{letra\_E}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+E\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_ac077a9833e9e48b1a0425c36604c68b1}\label{Letras_8h_ac077a9833e9e48b1a0425c36604c68b1}} 
+\index{Letras.h@{Letras.h}!letra\_F@{letra\_F}}
+\index{letra\_F@{letra\_F}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_F}{letra\_F}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+F\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_abcd4cba44d46d42c8e87797af73aaffc}\label{Letras_8h_abcd4cba44d46d42c8e87797af73aaffc}} 
+\index{Letras.h@{Letras.h}!letra\_G@{letra\_G}}
+\index{letra\_G@{letra\_G}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_G}{letra\_G}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+G\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a3384d88517eb32e7a984f78842762703}\label{Letras_8h_a3384d88517eb32e7a984f78842762703}} 
+\index{Letras.h@{Letras.h}!letra\_H@{letra\_H}}
+\index{letra\_H@{letra\_H}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_H}{letra\_H}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+H\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a2facf8c0ef8a47aac0aeb3d236bd505c}\label{Letras_8h_a2facf8c0ef8a47aac0aeb3d236bd505c}} 
+\index{Letras.h@{Letras.h}!letra\_I@{letra\_I}}
+\index{letra\_I@{letra\_I}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_I}{letra\_I}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+I\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a25b57659b96f35192f8a20304c060298}\label{Letras_8h_a25b57659b96f35192f8a20304c060298}} 
+\index{Letras.h@{Letras.h}!letra\_J@{letra\_J}}
+\index{letra\_J@{letra\_J}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_J}{letra\_J}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+J\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a751205988fae3fd3f16d33de4178e405}\label{Letras_8h_a751205988fae3fd3f16d33de4178e405}} 
+\index{Letras.h@{Letras.h}!letra\_K@{letra\_K}}
+\index{letra\_K@{letra\_K}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_K}{letra\_K}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+K\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_aeaaedd555d362abaf23ef4e09d29fba9}\label{Letras_8h_aeaaedd555d362abaf23ef4e09d29fba9}} 
+\index{Letras.h@{Letras.h}!letra\_L@{letra\_L}}
+\index{letra\_L@{letra\_L}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_L}{letra\_L}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+L\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a244014b666520f5f626f656d7798ac21}\label{Letras_8h_a244014b666520f5f626f656d7798ac21}} 
+\index{Letras.h@{Letras.h}!letra\_M@{letra\_M}}
+\index{letra\_M@{letra\_M}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_M}{letra\_M}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+M\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_af34d621edd54e79834c82d60949b85aa}\label{Letras_8h_af34d621edd54e79834c82d60949b85aa}} 
+\index{Letras.h@{Letras.h}!letra\_N@{letra\_N}}
+\index{letra\_N@{letra\_N}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_N}{letra\_N}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+N\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_adca0d164d1a50da54e99151b7acb2439}\label{Letras_8h_adca0d164d1a50da54e99151b7acb2439}} 
+\index{Letras.h@{Letras.h}!letra\_O@{letra\_O}}
+\index{letra\_O@{letra\_O}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_O}{letra\_O}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+O\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a508c13afa2644d5bb3356107102f4374}\label{Letras_8h_a508c13afa2644d5bb3356107102f4374}} 
+\index{Letras.h@{Letras.h}!letra\_P@{letra\_P}}
+\index{letra\_P@{letra\_P}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_P}{letra\_P}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+P\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_addbb14a010a1b243b5bedfcb6312580f}\label{Letras_8h_addbb14a010a1b243b5bedfcb6312580f}} 
+\index{Letras.h@{Letras.h}!letra\_Q@{letra\_Q}}
+\index{letra\_Q@{letra\_Q}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_Q}{letra\_Q}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+Q\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a2b3da2abe5ec18a4d672d63be584795f}\label{Letras_8h_a2b3da2abe5ec18a4d672d63be584795f}} 
+\index{Letras.h@{Letras.h}!letra\_R@{letra\_R}}
+\index{letra\_R@{letra\_R}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_R}{letra\_R}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+R\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a140e2e5f0cb43104ed4df752467d7b60}\label{Letras_8h_a140e2e5f0cb43104ed4df752467d7b60}} 
+\index{Letras.h@{Letras.h}!letra\_S@{letra\_S}}
+\index{letra\_S@{letra\_S}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_S}{letra\_S}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+S\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a6b4221a33f82217295097fff8b6c991e}\label{Letras_8h_a6b4221a33f82217295097fff8b6c991e}} 
+\index{Letras.h@{Letras.h}!letra\_T@{letra\_T}}
+\index{letra\_T@{letra\_T}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_T}{letra\_T}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+T\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a7b136b7a64b98935330dcdf95dd50467}\label{Letras_8h_a7b136b7a64b98935330dcdf95dd50467}} 
+\index{Letras.h@{Letras.h}!letra\_U@{letra\_U}}
+\index{letra\_U@{letra\_U}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_U}{letra\_U}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+U\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_ac4ad273ff842d1ec1b07f86192778ba5}\label{Letras_8h_ac4ad273ff842d1ec1b07f86192778ba5}} 
+\index{Letras.h@{Letras.h}!letra\_V@{letra\_V}}
+\index{letra\_V@{letra\_V}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_V}{letra\_V}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+V\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_aae8549cc26f1b6c6347ba356bd6e4fad}\label{Letras_8h_aae8549cc26f1b6c6347ba356bd6e4fad}} 
+\index{Letras.h@{Letras.h}!letra\_W@{letra\_W}}
+\index{letra\_W@{letra\_W}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_W}{letra\_W}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+W\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a742c49eb18933d659cd65eb218c574a1}\label{Letras_8h_a742c49eb18933d659cd65eb218c574a1}} 
+\index{Letras.h@{Letras.h}!letra\_X@{letra\_X}}
+\index{letra\_X@{letra\_X}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_X}{letra\_X}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+X\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_a040a9c3cee5eb2016fedb8ea089984b6}\label{Letras_8h_a040a9c3cee5eb2016fedb8ea089984b6}} 
+\index{Letras.h@{Letras.h}!letra\_Y@{letra\_Y}}
+\index{letra\_Y@{letra\_Y}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_Y}{letra\_Y}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+Y\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{Letras_8h_ad658edb162a6464eb19fe575ce6c5a24}\label{Letras_8h_ad658edb162a6464eb19fe575ce6c5a24}} 
+\index{Letras.h@{Letras.h}!letra\_Z@{letra\_Z}}
+\index{letra\_Z@{letra\_Z}!Letras.h@{Letras.h}}
+\doxysubsubsection{\texorpdfstring{letra\_Z}{letra\_Z}}
+{\footnotesize\ttfamily const xpm\+\_\+row\+\_\+t letra\+\_\+Z\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+

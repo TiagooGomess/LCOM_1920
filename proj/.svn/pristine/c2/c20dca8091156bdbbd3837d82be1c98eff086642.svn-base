@@ -1,0 +1,8 @@
+<map id="words.h" name="words.h">
+<area shape="rect" id="node1" title=" " alt="" coords="217,5,285,32"/>
+<area shape="rect" id="node2" href="$game_8c.html" title=" " alt="" coords="5,80,71,107"/>
+<area shape="rect" id="node3" href="$Leaderboard_8c.html" title=" " alt="" coords="95,80,199,107"/>
+<area shape="rect" id="node4" href="$proj_8c.html" title=" " alt="" coords="224,80,279,107"/>
+<area shape="rect" id="node5" href="$video__card_8c.html" title=" " alt="" coords="303,80,399,107"/>
+<area shape="rect" id="node6" href="$words_8c.html" title=" " alt="" coords="424,80,492,107"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="gameWordsHandlerKeyboard" name="gameWordsHandlerKeyboard">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,197,57"/>
+<area shape="rect" id="node2" href="$scancodes_8c.html#a0ebb9ae988ad2a28c49e1d96c552d6af" title="Converte o break code obtido para o respetivo caracter." alt="" coords="245,5,373,32"/>
+<area shape="rect" id="node3" href="$words_8c.html#a4447df38a92bc926a1758215a5be5494" title="Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla tecla..." alt="" coords="261,56,357,83"/>
+<area shape="rect" id="node4" href="$words_8c.html#a8bf78a2e049d9f2e425ba50d5d20f9c0" title="Gera uma palavra aleatória do ficheiro das palavras (words.c)." alt="" coords="421,56,496,83"/>
+</map>

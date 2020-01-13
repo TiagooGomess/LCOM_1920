@@ -1,0 +1,614 @@
+\hypertarget{words_8c}{}\doxysection{words.\+c File Reference}
+\label{words_8c}\index{words.c@{words.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}scancodes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}words.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Numeros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sprite.\+h\char`\"{}}\newline
+Include dependency graph for words.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{words_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{words_8c_a8bf78a2e049d9f2e425ba50d5d20f9c0}{get\+\_\+word}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Gera uma palavra aleatória do ficheiro das palavras (\mbox{\hyperlink{words_8c}{words.\+c}}). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{words_8c_a4447df38a92bc926a1758215a5be5494}{update\+\_\+word}} (char c)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla teclada corresponder a esse caracter. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+xpm\+\_\+row\+\_\+t $\ast$ \mbox{\hyperlink{words_8c_a913867d378b0e012e9e5eef502f9ca78}{get\+X\+PM}} (char c)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Obtém o X\+MP do caracter c. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{words_8c_a750a9dd509ad68b3462d2b7b01ecf6df}{get\+\_\+letter\+\_\+width}} (char c)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Obtém o comprimento do xpm do caracter c. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{words_8c_a54d907c3765ea5ee5a15f17257ba90a8}{display\+Word}} (int x0, int y0, char $\ast$word, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha no ecrã a palavra pretendida. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{words_8c_a706863273d76b7398b7ad2f554a970fb}{display\+Word\+With\+Color}} (int x0, int y0, uint32\+\_\+t color, char $\ast$word, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha no ecrã a palavra pretendida, com uma certa cor. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{words_8c_ab81423dba4689728aefd790cb8316167}{inttostr}} (int n)
+\item 
+void \mbox{\hyperlink{words_8c_af7b308cf84d3ddc838763fc6ebcd3554}{display\+Number}} (int x0, int y0, unsigned num, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha no ecrã o número pretendido. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a2d5452b6a168937899914f0978105ae9}{get\+Sprite}} (char c)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Obtém o Sprite$\ast$ correspondente ao caracter c. 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{words_8c_a7efa5e9c7494c7d4586359300221aa5d}{filename}} = \char`\"{}/home/lcom/labs/proj/words.\+txt\char`\"{}
+\item 
+char $\ast$ \mbox{\hyperlink{words_8c_a260c7056dc66725df30a150f2a27625e}{current\+\_\+word}} = \char`\"{}\char`\"{}
+\item 
+char $\ast$ \mbox{\hyperlink{words_8c_a838c696cd43deda4fc4aa98bc3e93fd4}{current\+\_\+word\+\_\+complete}} = \char`\"{}\char`\"{}
+\item 
+int \mbox{\hyperlink{words_8c_a73b59f20e932a25b3658fe97398cff89}{numero\+\_\+palavras\+\_\+digitadas}} = 0
+\item 
+int \mbox{\hyperlink{words_8c_a572259e9327ffd81d9348c35038d9092}{y0\+\_\+word}}
+\item 
+int \mbox{\hyperlink{words_8c_afc1b964f483333dc194a2dd4e5435d9d}{x0\+\_\+word}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_aa4ec2e48a6e2f6eb9570e09fc6092a8f}{sprite\+\_\+A}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a2674749153a66fb58590114294f17cfd}{sprite\+\_\+B}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a4c36fc510b59de3bfb5a70f461da422d}{sprite\+\_\+C}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a8cd95f85127ad8eb6032011268e5bdd7}{sprite\+\_\+D}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_aacaad23482d12f14548521a44ae22c44}{sprite\+\_\+E}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_abb4dee969c4835c89019da4a0486b2a6}{sprite\+\_\+F}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_aafabfc28c1a36c31d15be9259b390a1c}{sprite\+\_\+G}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a2076073f00e9b0b70e474e764b3e2bb7}{sprite\+\_\+H}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a09b408935c5967ea30a343f79e93adc8}{sprite\+\_\+I}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_ac26a6ec312515929fabad6c561602f02}{sprite\+\_\+J}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_ae288ac65378769e24594ff8ba0fa6fdd}{sprite\+\_\+K}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a01908ceb43001086b0e763d0f3edbd94}{sprite\+\_\+L}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a867d79f874e7bec2b041b924f36aa4e4}{sprite\+\_\+M}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_ad5a3b380c0617852656212f8f8c6154d}{sprite\+\_\+N}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a0c8f1f90eaaf3b1bd8e9562963578028}{sprite\+\_\+O}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_ad504fa636de76b69fe1986d1b098f28a}{sprite\+\_\+P}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a0aab72d8f66d7fc1f0f0bde6f809e868}{sprite\+\_\+Q}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a8a5efbf173d390e1270e65e0e400e4ea}{sprite\+\_\+R}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a5ddeaa284abfccd5dc7f3323391e0095}{sprite\+\_\+S}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_ad9442d5b778f8a6b8adac7b5a5ad75ef}{sprite\+\_\+T}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a249ecdba5369bd809ec622262652bab2}{sprite\+\_\+U}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_aefc04ae134510ee4fbbf48afca32ab6c}{sprite\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a089a12e22b42762721c486823bd12fd8}{sprite\+\_\+W}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a2ca97379495ef4548bc3eafca08ee169}{sprite\+\_\+X}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_ad4315f1a129f5f2db44866f6405ae672}{sprite\+\_\+Y}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a9ab97a5e696a7a995cbb08a17d7388c4}{sprite\+\_\+Z}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a254ca7cd7a55afac2325f7e771f09d9f}{sprite\+\_\+0}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_af3560575b97d7e479af7add1c77b92a5}{sprite\+\_\+1}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a098d4b93fdca4bc492ef7f2515658cc9}{sprite\+\_\+2}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a1e8b66127c970360f59ca627238354c6}{sprite\+\_\+3}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_ac0ad10030b45571e092e1dc064d20a58}{sprite\+\_\+4}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_af0e057020fde2e2f145fd2e526e8ae0d}{sprite\+\_\+5}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_af3f6c9f61bfa850d0e00d980ae2a35aa}{sprite\+\_\+6}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_abae0f9ce3c0863a30b14514cb8aecd05}{sprite\+\_\+7}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_aaabbed7fe1688a2f86989eb1f9a570a0}{sprite\+\_\+8}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8c_a8112febcd6c39db8d205545f73f15129}{sprite\+\_\+9}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{words_8c_af7b308cf84d3ddc838763fc6ebcd3554}\label{words_8c_af7b308cf84d3ddc838763fc6ebcd3554}} 
+\index{words.c@{words.c}!displayNumber@{displayNumber}}
+\index{displayNumber@{displayNumber}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{displayNumber()}{displayNumber()}}
+{\footnotesize\ttfamily void display\+Number (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{unsigned}]{num,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha no ecrã o número pretendido. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & -\/ Coordenada x onde a palavra começa a ser desenhada. \\
+\hline
+{\em y0} & -\/ Coordenada y onde a palavra começa a ser desenhada. \\
+\hline
+{\em num} & -\/ Número que queremos desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{words_8c_af7b308cf84d3ddc838763fc6ebcd3554_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{words_8c_a54d907c3765ea5ee5a15f17257ba90a8}\label{words_8c_a54d907c3765ea5ee5a15f17257ba90a8}} 
+\index{words.c@{words.c}!displayWord@{displayWord}}
+\index{displayWord@{displayWord}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{displayWord()}{displayWord()}}
+{\footnotesize\ttfamily void display\+Word (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{char $\ast$}]{word,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha no ecrã a palavra pretendida. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & -\/ Coordenada x onde a palavra começa a ser desenhada. \\
+\hline
+{\em y0} & -\/ Coordenada y onde a palavra começa a ser desenhada. \\
+\hline
+{\em word} & -\/ Palavra que queremos desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{words_8c_a54d907c3765ea5ee5a15f17257ba90a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{words_8c_a706863273d76b7398b7ad2f554a970fb}\label{words_8c_a706863273d76b7398b7ad2f554a970fb}} 
+\index{words.c@{words.c}!displayWordWithColor@{displayWordWithColor}}
+\index{displayWordWithColor@{displayWordWithColor}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{displayWordWithColor()}{displayWordWithColor()}}
+{\footnotesize\ttfamily void display\+Word\+With\+Color (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{uint32\+\_\+t}]{color,  }\item[{char $\ast$}]{word,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha no ecrã a palavra pretendida, com uma certa cor. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & -\/ Coordenada x onde a palavra começa a ser desenhada. \\
+\hline
+{\em y0} & -\/ Coordenada y onde a palavra começa a ser desenhada. \\
+\hline
+{\em color} & -\/ Cor da palavra. \\
+\hline
+{\em word} & -\/ Palavra que queremos desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{words_8c_a706863273d76b7398b7ad2f554a970fb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{words_8c_a750a9dd509ad68b3462d2b7b01ecf6df}\label{words_8c_a750a9dd509ad68b3462d2b7b01ecf6df}} 
+\index{words.c@{words.c}!get\_letter\_width@{get\_letter\_width}}
+\index{get\_letter\_width@{get\_letter\_width}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{get\_letter\_width()}{get\_letter\_width()}}
+{\footnotesize\ttfamily unsigned get\+\_\+letter\+\_\+width (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Obtém o comprimento do xpm do caracter c. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Caracter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Comprimento pretendido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{words_8c_a8bf78a2e049d9f2e425ba50d5d20f9c0}\label{words_8c_a8bf78a2e049d9f2e425ba50d5d20f9c0}} 
+\index{words.c@{words.c}!get\_word@{get\_word}}
+\index{get\_word@{get\_word}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{get\_word()}{get\_word()}}
+{\footnotesize\ttfamily char$\ast$ get\+\_\+word (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Gera uma palavra aleatória do ficheiro das palavras (\mbox{\hyperlink{words_8c}{words.\+c}}). 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ A palavra escolhida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{words_8c_a2d5452b6a168937899914f0978105ae9}\label{words_8c_a2d5452b6a168937899914f0978105ae9}} 
+\index{words.c@{words.c}!getSprite@{getSprite}}
+\index{getSprite@{getSprite}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{getSprite()}{getSprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ get\+Sprite (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Obtém o Sprite$\ast$ correspondente ao caracter c. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Caracter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Sprite$\ast$ correspondente ao caracter c. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{words_8c_a913867d378b0e012e9e5eef502f9ca78}\label{words_8c_a913867d378b0e012e9e5eef502f9ca78}} 
+\index{words.c@{words.c}!getXPM@{getXPM}}
+\index{getXPM@{getXPM}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{getXPM()}{getXPM()}}
+{\footnotesize\ttfamily xpm\+\_\+row\+\_\+t$\ast$ get\+X\+PM (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Obtém o X\+MP do caracter c. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Caracter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ X\+PM do caracter c. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{words_8c_ab81423dba4689728aefd790cb8316167}\label{words_8c_ab81423dba4689728aefd790cb8316167}} 
+\index{words.c@{words.c}!inttostr@{inttostr}}
+\index{inttostr@{inttostr}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{inttostr()}{inttostr()}}
+{\footnotesize\ttfamily char$\ast$ inttostr (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{words_8c_a4447df38a92bc926a1758215a5be5494}\label{words_8c_a4447df38a92bc926a1758215a5be5494}} 
+\index{words.c@{words.c}!update\_word@{update\_word}}
+\index{update\_word@{update\_word}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{update\_word()}{update\_word()}}
+{\footnotesize\ttfamily void update\+\_\+word (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla teclada corresponder a esse caracter. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Caracter que foi digitado. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{words_8c_a4447df38a92bc926a1758215a5be5494_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{words_8c_a260c7056dc66725df30a150f2a27625e}\label{words_8c_a260c7056dc66725df30a150f2a27625e}} 
+\index{words.c@{words.c}!current\_word@{current\_word}}
+\index{current\_word@{current\_word}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{current\_word}{current\_word}}
+{\footnotesize\ttfamily char$\ast$ current\+\_\+word = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{words_8c_a838c696cd43deda4fc4aa98bc3e93fd4}\label{words_8c_a838c696cd43deda4fc4aa98bc3e93fd4}} 
+\index{words.c@{words.c}!current\_word\_complete@{current\_word\_complete}}
+\index{current\_word\_complete@{current\_word\_complete}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{current\_word\_complete}{current\_word\_complete}}
+{\footnotesize\ttfamily char$\ast$ current\+\_\+word\+\_\+complete = \char`\"{}\char`\"{}}
+
+\mbox{\Hypertarget{words_8c_a7efa5e9c7494c7d4586359300221aa5d}\label{words_8c_a7efa5e9c7494c7d4586359300221aa5d}} 
+\index{words.c@{words.c}!filename@{filename}}
+\index{filename@{filename}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily const char$\ast$ filename = \char`\"{}/home/lcom/labs/proj/words.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{words_8c_a73b59f20e932a25b3658fe97398cff89}\label{words_8c_a73b59f20e932a25b3658fe97398cff89}} 
+\index{words.c@{words.c}!numero\_palavras\_digitadas@{numero\_palavras\_digitadas}}
+\index{numero\_palavras\_digitadas@{numero\_palavras\_digitadas}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{numero\_palavras\_digitadas}{numero\_palavras\_digitadas}}
+{\footnotesize\ttfamily int numero\+\_\+palavras\+\_\+digitadas = 0}
+
+\mbox{\Hypertarget{words_8c_a254ca7cd7a55afac2325f7e771f09d9f}\label{words_8c_a254ca7cd7a55afac2325f7e771f09d9f}} 
+\index{words.c@{words.c}!sprite\_0@{sprite\_0}}
+\index{sprite\_0@{sprite\_0}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_0}{sprite\_0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+0}
+
+\mbox{\Hypertarget{words_8c_af3560575b97d7e479af7add1c77b92a5}\label{words_8c_af3560575b97d7e479af7add1c77b92a5}} 
+\index{words.c@{words.c}!sprite\_1@{sprite\_1}}
+\index{sprite\_1@{sprite\_1}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_1}{sprite\_1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+1}
+
+\mbox{\Hypertarget{words_8c_a098d4b93fdca4bc492ef7f2515658cc9}\label{words_8c_a098d4b93fdca4bc492ef7f2515658cc9}} 
+\index{words.c@{words.c}!sprite\_2@{sprite\_2}}
+\index{sprite\_2@{sprite\_2}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_2}{sprite\_2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+2}
+
+\mbox{\Hypertarget{words_8c_a1e8b66127c970360f59ca627238354c6}\label{words_8c_a1e8b66127c970360f59ca627238354c6}} 
+\index{words.c@{words.c}!sprite\_3@{sprite\_3}}
+\index{sprite\_3@{sprite\_3}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_3}{sprite\_3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+3}
+
+\mbox{\Hypertarget{words_8c_ac0ad10030b45571e092e1dc064d20a58}\label{words_8c_ac0ad10030b45571e092e1dc064d20a58}} 
+\index{words.c@{words.c}!sprite\_4@{sprite\_4}}
+\index{sprite\_4@{sprite\_4}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_4}{sprite\_4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+4}
+
+\mbox{\Hypertarget{words_8c_af0e057020fde2e2f145fd2e526e8ae0d}\label{words_8c_af0e057020fde2e2f145fd2e526e8ae0d}} 
+\index{words.c@{words.c}!sprite\_5@{sprite\_5}}
+\index{sprite\_5@{sprite\_5}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_5}{sprite\_5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+5}
+
+\mbox{\Hypertarget{words_8c_af3f6c9f61bfa850d0e00d980ae2a35aa}\label{words_8c_af3f6c9f61bfa850d0e00d980ae2a35aa}} 
+\index{words.c@{words.c}!sprite\_6@{sprite\_6}}
+\index{sprite\_6@{sprite\_6}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_6}{sprite\_6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+6}
+
+\mbox{\Hypertarget{words_8c_abae0f9ce3c0863a30b14514cb8aecd05}\label{words_8c_abae0f9ce3c0863a30b14514cb8aecd05}} 
+\index{words.c@{words.c}!sprite\_7@{sprite\_7}}
+\index{sprite\_7@{sprite\_7}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_7}{sprite\_7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+7}
+
+\mbox{\Hypertarget{words_8c_aaabbed7fe1688a2f86989eb1f9a570a0}\label{words_8c_aaabbed7fe1688a2f86989eb1f9a570a0}} 
+\index{words.c@{words.c}!sprite\_8@{sprite\_8}}
+\index{sprite\_8@{sprite\_8}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_8}{sprite\_8}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+8}
+
+\mbox{\Hypertarget{words_8c_a8112febcd6c39db8d205545f73f15129}\label{words_8c_a8112febcd6c39db8d205545f73f15129}} 
+\index{words.c@{words.c}!sprite\_9@{sprite\_9}}
+\index{sprite\_9@{sprite\_9}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_9}{sprite\_9}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+9}
+
+\mbox{\Hypertarget{words_8c_aa4ec2e48a6e2f6eb9570e09fc6092a8f}\label{words_8c_aa4ec2e48a6e2f6eb9570e09fc6092a8f}} 
+\index{words.c@{words.c}!sprite\_A@{sprite\_A}}
+\index{sprite\_A@{sprite\_A}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_A}{sprite\_A}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+A}
+
+\mbox{\Hypertarget{words_8c_a2674749153a66fb58590114294f17cfd}\label{words_8c_a2674749153a66fb58590114294f17cfd}} 
+\index{words.c@{words.c}!sprite\_B@{sprite\_B}}
+\index{sprite\_B@{sprite\_B}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_B}{sprite\_B}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+B}
+
+\mbox{\Hypertarget{words_8c_a4c36fc510b59de3bfb5a70f461da422d}\label{words_8c_a4c36fc510b59de3bfb5a70f461da422d}} 
+\index{words.c@{words.c}!sprite\_C@{sprite\_C}}
+\index{sprite\_C@{sprite\_C}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_C}{sprite\_C}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+C}
+
+\mbox{\Hypertarget{words_8c_a8cd95f85127ad8eb6032011268e5bdd7}\label{words_8c_a8cd95f85127ad8eb6032011268e5bdd7}} 
+\index{words.c@{words.c}!sprite\_D@{sprite\_D}}
+\index{sprite\_D@{sprite\_D}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_D}{sprite\_D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+D}
+
+\mbox{\Hypertarget{words_8c_aacaad23482d12f14548521a44ae22c44}\label{words_8c_aacaad23482d12f14548521a44ae22c44}} 
+\index{words.c@{words.c}!sprite\_E@{sprite\_E}}
+\index{sprite\_E@{sprite\_E}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_E}{sprite\_E}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+E}
+
+\mbox{\Hypertarget{words_8c_abb4dee969c4835c89019da4a0486b2a6}\label{words_8c_abb4dee969c4835c89019da4a0486b2a6}} 
+\index{words.c@{words.c}!sprite\_F@{sprite\_F}}
+\index{sprite\_F@{sprite\_F}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_F}{sprite\_F}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+F}
+
+\mbox{\Hypertarget{words_8c_aafabfc28c1a36c31d15be9259b390a1c}\label{words_8c_aafabfc28c1a36c31d15be9259b390a1c}} 
+\index{words.c@{words.c}!sprite\_G@{sprite\_G}}
+\index{sprite\_G@{sprite\_G}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_G}{sprite\_G}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+G}
+
+\mbox{\Hypertarget{words_8c_a2076073f00e9b0b70e474e764b3e2bb7}\label{words_8c_a2076073f00e9b0b70e474e764b3e2bb7}} 
+\index{words.c@{words.c}!sprite\_H@{sprite\_H}}
+\index{sprite\_H@{sprite\_H}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_H}{sprite\_H}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+H}
+
+\mbox{\Hypertarget{words_8c_a09b408935c5967ea30a343f79e93adc8}\label{words_8c_a09b408935c5967ea30a343f79e93adc8}} 
+\index{words.c@{words.c}!sprite\_I@{sprite\_I}}
+\index{sprite\_I@{sprite\_I}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_I}{sprite\_I}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+I}
+
+\mbox{\Hypertarget{words_8c_ac26a6ec312515929fabad6c561602f02}\label{words_8c_ac26a6ec312515929fabad6c561602f02}} 
+\index{words.c@{words.c}!sprite\_J@{sprite\_J}}
+\index{sprite\_J@{sprite\_J}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_J}{sprite\_J}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+J}
+
+\mbox{\Hypertarget{words_8c_ae288ac65378769e24594ff8ba0fa6fdd}\label{words_8c_ae288ac65378769e24594ff8ba0fa6fdd}} 
+\index{words.c@{words.c}!sprite\_K@{sprite\_K}}
+\index{sprite\_K@{sprite\_K}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_K}{sprite\_K}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+K}
+
+\mbox{\Hypertarget{words_8c_a01908ceb43001086b0e763d0f3edbd94}\label{words_8c_a01908ceb43001086b0e763d0f3edbd94}} 
+\index{words.c@{words.c}!sprite\_L@{sprite\_L}}
+\index{sprite\_L@{sprite\_L}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_L}{sprite\_L}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+L}
+
+\mbox{\Hypertarget{words_8c_a867d79f874e7bec2b041b924f36aa4e4}\label{words_8c_a867d79f874e7bec2b041b924f36aa4e4}} 
+\index{words.c@{words.c}!sprite\_M@{sprite\_M}}
+\index{sprite\_M@{sprite\_M}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_M}{sprite\_M}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+M}
+
+\mbox{\Hypertarget{words_8c_ad5a3b380c0617852656212f8f8c6154d}\label{words_8c_ad5a3b380c0617852656212f8f8c6154d}} 
+\index{words.c@{words.c}!sprite\_N@{sprite\_N}}
+\index{sprite\_N@{sprite\_N}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_N}{sprite\_N}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+N}
+
+\mbox{\Hypertarget{words_8c_a0c8f1f90eaaf3b1bd8e9562963578028}\label{words_8c_a0c8f1f90eaaf3b1bd8e9562963578028}} 
+\index{words.c@{words.c}!sprite\_O@{sprite\_O}}
+\index{sprite\_O@{sprite\_O}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_O}{sprite\_O}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+O}
+
+\mbox{\Hypertarget{words_8c_ad504fa636de76b69fe1986d1b098f28a}\label{words_8c_ad504fa636de76b69fe1986d1b098f28a}} 
+\index{words.c@{words.c}!sprite\_P@{sprite\_P}}
+\index{sprite\_P@{sprite\_P}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_P}{sprite\_P}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+P}
+
+\mbox{\Hypertarget{words_8c_a0aab72d8f66d7fc1f0f0bde6f809e868}\label{words_8c_a0aab72d8f66d7fc1f0f0bde6f809e868}} 
+\index{words.c@{words.c}!sprite\_Q@{sprite\_Q}}
+\index{sprite\_Q@{sprite\_Q}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_Q}{sprite\_Q}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+Q}
+
+\mbox{\Hypertarget{words_8c_a8a5efbf173d390e1270e65e0e400e4ea}\label{words_8c_a8a5efbf173d390e1270e65e0e400e4ea}} 
+\index{words.c@{words.c}!sprite\_R@{sprite\_R}}
+\index{sprite\_R@{sprite\_R}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_R}{sprite\_R}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+R}
+
+\mbox{\Hypertarget{words_8c_a5ddeaa284abfccd5dc7f3323391e0095}\label{words_8c_a5ddeaa284abfccd5dc7f3323391e0095}} 
+\index{words.c@{words.c}!sprite\_S@{sprite\_S}}
+\index{sprite\_S@{sprite\_S}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_S}{sprite\_S}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+S}
+
+\mbox{\Hypertarget{words_8c_ad9442d5b778f8a6b8adac7b5a5ad75ef}\label{words_8c_ad9442d5b778f8a6b8adac7b5a5ad75ef}} 
+\index{words.c@{words.c}!sprite\_T@{sprite\_T}}
+\index{sprite\_T@{sprite\_T}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_T}{sprite\_T}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+T}
+
+\mbox{\Hypertarget{words_8c_a249ecdba5369bd809ec622262652bab2}\label{words_8c_a249ecdba5369bd809ec622262652bab2}} 
+\index{words.c@{words.c}!sprite\_U@{sprite\_U}}
+\index{sprite\_U@{sprite\_U}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_U}{sprite\_U}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+U}
+
+\mbox{\Hypertarget{words_8c_aefc04ae134510ee4fbbf48afca32ab6c}\label{words_8c_aefc04ae134510ee4fbbf48afca32ab6c}} 
+\index{words.c@{words.c}!sprite\_V@{sprite\_V}}
+\index{sprite\_V@{sprite\_V}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_V}{sprite\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+V}
+
+\mbox{\Hypertarget{words_8c_a089a12e22b42762721c486823bd12fd8}\label{words_8c_a089a12e22b42762721c486823bd12fd8}} 
+\index{words.c@{words.c}!sprite\_W@{sprite\_W}}
+\index{sprite\_W@{sprite\_W}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_W}{sprite\_W}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+W}
+
+\mbox{\Hypertarget{words_8c_a2ca97379495ef4548bc3eafca08ee169}\label{words_8c_a2ca97379495ef4548bc3eafca08ee169}} 
+\index{words.c@{words.c}!sprite\_X@{sprite\_X}}
+\index{sprite\_X@{sprite\_X}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_X}{sprite\_X}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+X}
+
+\mbox{\Hypertarget{words_8c_ad4315f1a129f5f2db44866f6405ae672}\label{words_8c_ad4315f1a129f5f2db44866f6405ae672}} 
+\index{words.c@{words.c}!sprite\_Y@{sprite\_Y}}
+\index{sprite\_Y@{sprite\_Y}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_Y}{sprite\_Y}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+Y}
+
+\mbox{\Hypertarget{words_8c_a9ab97a5e696a7a995cbb08a17d7388c4}\label{words_8c_a9ab97a5e696a7a995cbb08a17d7388c4}} 
+\index{words.c@{words.c}!sprite\_Z@{sprite\_Z}}
+\index{sprite\_Z@{sprite\_Z}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_Z}{sprite\_Z}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+Z}
+
+\mbox{\Hypertarget{words_8c_afc1b964f483333dc194a2dd4e5435d9d}\label{words_8c_afc1b964f483333dc194a2dd4e5435d9d}} 
+\index{words.c@{words.c}!x0\_word@{x0\_word}}
+\index{x0\_word@{x0\_word}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{x0\_word}{x0\_word}}
+{\footnotesize\ttfamily int x0\+\_\+word}
+
+\mbox{\Hypertarget{words_8c_a572259e9327ffd81d9348c35038d9092}\label{words_8c_a572259e9327ffd81d9348c35038d9092}} 
+\index{words.c@{words.c}!y0\_word@{y0\_word}}
+\index{y0\_word@{y0\_word}!words.c@{words.c}}
+\doxysubsubsection{\texorpdfstring{y0\_word}{y0\_word}}
+{\footnotesize\ttfamily int y0\+\_\+word}
+

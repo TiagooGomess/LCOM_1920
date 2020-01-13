@@ -1,0 +1,269 @@
+\hypertarget{words_8h}{}\doxysection{words.\+h File Reference}
+\label{words_8h}\index{words.h@{words.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sprite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Letras.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scancodes.\+h\char`\"{}}\newline
+Include dependency graph for words.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{words_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{words_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{words_8h_a8bf78a2e049d9f2e425ba50d5d20f9c0}{get\+\_\+word}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Gera uma palavra aleatória do ficheiro das palavras (\mbox{\hyperlink{words_8c}{words.\+c}}). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{words_8h_a4447df38a92bc926a1758215a5be5494}{update\+\_\+word}} (char c)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla teclada corresponder a esse caracter. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+xpm\+\_\+row\+\_\+t $\ast$ \mbox{\hyperlink{words_8h_a913867d378b0e012e9e5eef502f9ca78}{get\+X\+PM}} (char c)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Obtém o X\+MP do caracter c. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{words_8h_a750a9dd509ad68b3462d2b7b01ecf6df}{get\+\_\+letter\+\_\+width}} (char c)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Obtém o comprimento do xpm do caracter c. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{words_8h_a54d907c3765ea5ee5a15f17257ba90a8}{display\+Word}} (int x0, int y0, char $\ast$word, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha no ecrã a palavra pretendida. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{words_8h_a706863273d76b7398b7ad2f554a970fb}{display\+Word\+With\+Color}} (int x0, int y0, uint32\+\_\+t color, char $\ast$word, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha no ecrã a palavra pretendida, com uma certa cor. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{words_8h_af7b308cf84d3ddc838763fc6ebcd3554}{display\+Number}} (int x0, int y0, unsigned num, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha no ecrã o número pretendido. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{words_8h_a2d5452b6a168937899914f0978105ae9}{get\+Sprite}} (char c)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Obtém o Sprite$\ast$ correspondente ao caracter c. 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{words_8h_af7b308cf84d3ddc838763fc6ebcd3554}\label{words_8h_af7b308cf84d3ddc838763fc6ebcd3554}} 
+\index{words.h@{words.h}!displayNumber@{displayNumber}}
+\index{displayNumber@{displayNumber}!words.h@{words.h}}
+\doxysubsubsection{\texorpdfstring{displayNumber()}{displayNumber()}}
+{\footnotesize\ttfamily void display\+Number (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{unsigned}]{num,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha no ecrã o número pretendido. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & -\/ Coordenada x onde a palavra começa a ser desenhada. \\
+\hline
+{\em y0} & -\/ Coordenada y onde a palavra começa a ser desenhada. \\
+\hline
+{\em num} & -\/ Número que queremos desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{words_8h_af7b308cf84d3ddc838763fc6ebcd3554_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{words_8h_a54d907c3765ea5ee5a15f17257ba90a8}\label{words_8h_a54d907c3765ea5ee5a15f17257ba90a8}} 
+\index{words.h@{words.h}!displayWord@{displayWord}}
+\index{displayWord@{displayWord}!words.h@{words.h}}
+\doxysubsubsection{\texorpdfstring{displayWord()}{displayWord()}}
+{\footnotesize\ttfamily void display\+Word (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{char $\ast$}]{word,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha no ecrã a palavra pretendida. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & -\/ Coordenada x onde a palavra começa a ser desenhada. \\
+\hline
+{\em y0} & -\/ Coordenada y onde a palavra começa a ser desenhada. \\
+\hline
+{\em word} & -\/ Palavra que queremos desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{words_8h_a54d907c3765ea5ee5a15f17257ba90a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{words_8h_a706863273d76b7398b7ad2f554a970fb}\label{words_8h_a706863273d76b7398b7ad2f554a970fb}} 
+\index{words.h@{words.h}!displayWordWithColor@{displayWordWithColor}}
+\index{displayWordWithColor@{displayWordWithColor}!words.h@{words.h}}
+\doxysubsubsection{\texorpdfstring{displayWordWithColor()}{displayWordWithColor()}}
+{\footnotesize\ttfamily void display\+Word\+With\+Color (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{uint32\+\_\+t}]{color,  }\item[{char $\ast$}]{word,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha no ecrã a palavra pretendida, com uma certa cor. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & -\/ Coordenada x onde a palavra começa a ser desenhada. \\
+\hline
+{\em y0} & -\/ Coordenada y onde a palavra começa a ser desenhada. \\
+\hline
+{\em color} & -\/ Cor da palavra. \\
+\hline
+{\em word} & -\/ Palavra que queremos desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{words_8h_a706863273d76b7398b7ad2f554a970fb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{words_8h_a750a9dd509ad68b3462d2b7b01ecf6df}\label{words_8h_a750a9dd509ad68b3462d2b7b01ecf6df}} 
+\index{words.h@{words.h}!get\_letter\_width@{get\_letter\_width}}
+\index{get\_letter\_width@{get\_letter\_width}!words.h@{words.h}}
+\doxysubsubsection{\texorpdfstring{get\_letter\_width()}{get\_letter\_width()}}
+{\footnotesize\ttfamily unsigned get\+\_\+letter\+\_\+width (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Obtém o comprimento do xpm do caracter c. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Caracter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Comprimento pretendido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{words_8h_a8bf78a2e049d9f2e425ba50d5d20f9c0}\label{words_8h_a8bf78a2e049d9f2e425ba50d5d20f9c0}} 
+\index{words.h@{words.h}!get\_word@{get\_word}}
+\index{get\_word@{get\_word}!words.h@{words.h}}
+\doxysubsubsection{\texorpdfstring{get\_word()}{get\_word()}}
+{\footnotesize\ttfamily char$\ast$ get\+\_\+word (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Gera uma palavra aleatória do ficheiro das palavras (\mbox{\hyperlink{words_8c}{words.\+c}}). 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ A palavra escolhida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{words_8h_a2d5452b6a168937899914f0978105ae9}\label{words_8h_a2d5452b6a168937899914f0978105ae9}} 
+\index{words.h@{words.h}!getSprite@{getSprite}}
+\index{getSprite@{getSprite}!words.h@{words.h}}
+\doxysubsubsection{\texorpdfstring{getSprite()}{getSprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ get\+Sprite (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Obtém o Sprite$\ast$ correspondente ao caracter c. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Caracter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Sprite$\ast$ correspondente ao caracter c. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{words_8h_a913867d378b0e012e9e5eef502f9ca78}\label{words_8h_a913867d378b0e012e9e5eef502f9ca78}} 
+\index{words.h@{words.h}!getXPM@{getXPM}}
+\index{getXPM@{getXPM}!words.h@{words.h}}
+\doxysubsubsection{\texorpdfstring{getXPM()}{getXPM()}}
+{\footnotesize\ttfamily xpm\+\_\+row\+\_\+t$\ast$ get\+X\+PM (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Obtém o X\+MP do caracter c. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Caracter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ X\+PM do caracter c. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{words_8h_a4447df38a92bc926a1758215a5be5494}\label{words_8h_a4447df38a92bc926a1758215a5be5494}} 
+\index{words.h@{words.h}!update\_word@{update\_word}}
+\index{update\_word@{update\_word}!words.h@{words.h}}
+\doxysubsubsection{\texorpdfstring{update\_word()}{update\_word()}}
+{\footnotesize\ttfamily void update\+\_\+word (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla teclada corresponder a esse caracter. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ Caracter que foi digitado. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{words_8h_a4447df38a92bc926a1758215a5be5494_cgraph}
+\end{center}
+\end{figure}

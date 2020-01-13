@@ -1,0 +1,865 @@
+\hypertarget{video__card_8c}{}\doxysection{video\+\_\+card.\+c File Reference}
+\label{video__card_8c}\index{video\_card.c@{video\_card.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Fundos.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cursor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}words.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Numeros.\+h\char`\"{}}\newline
+Include dependency graph for video\+\_\+card.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$() \mbox{\hyperlink{video__card_8c_aa6c1ff5024cd4d15e476bce487584daa}{vg\+\_\+init}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla teclada corresponder a esse caracter. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video__card_8c_a5189ef17b942888fba51c6806c1eb1c1}{init\+\_\+sprite\+\_\+backgroud}} (xpm\+\_\+map\+\_\+t fundo)
+\item 
+void \mbox{\hyperlink{video__card_8c_ad75dd6f8dc5d04a5481231ad41b924de}{init\+\_\+sprite\+\_\+game\+\_\+over}} (xpm\+\_\+map\+\_\+t fundo)
+\item 
+void \mbox{\hyperlink{video__card_8c_a07f88fa3cb12d7d45d44814ad106d84e}{init\+\_\+sprite\+\_\+pausa}} (xpm\+\_\+map\+\_\+t fundo\+\_\+pausa)
+\item 
+void \mbox{\hyperlink{video__card_8c_a6c162ef2eb879ade18e1ab285d863a81}{init\+\_\+menu\+\_\+backgroud}} (xpm\+\_\+map\+\_\+t menu)
+\item 
+void \mbox{\hyperlink{video__card_8c_ac9746eed9ab8b73a128234432e94333d}{init\+\_\+leaderboard\+\_\+background}} (xpm\+\_\+map\+\_\+t xpm)
+\item 
+void \mbox{\hyperlink{video__card_8c_a9df6347c68b975fcc0c67c2ff810c2f7}{init\+\_\+record\+\_\+backgroud\+\_\+dia}} (xpm\+\_\+map\+\_\+t xpm)
+\item 
+void \mbox{\hyperlink{video__card_8c_ac1a79b9e7cb3c5fa64a2a53eb7f9333e}{init\+\_\+sprite\+\_\+mouse}} (xpm\+\_\+map\+\_\+t cursor)
+\item 
+void \mbox{\hyperlink{video__card_8c_ae383dffba78c90bb5ff9d0b4400b7340}{init\+\_\+sprite\+\_\+instructions}} (xpm\+\_\+map\+\_\+t xpm)
+\item 
+void \mbox{\hyperlink{video__card_8c_a211f22606ccb968ad4a2d96e393249fd}{init\+\_\+letters\+\_\+and\+\_\+numbers\+\_\+sprites}} ()
+\item 
+bool \mbox{\hyperlink{video__card_8c_a4ea8e6c705584d91112207beda2db039}{is\+\_\+day}} ()
+\item 
+void \mbox{\hyperlink{video__card_8c_a309f4a6f01b1179bd33faf66be2a65c5}{init\+\_\+all\+\_\+sprites\+\_\+day}} ()
+\item 
+void \mbox{\hyperlink{video__card_8c_ae1fab7ebe9cd3b3140447618715a20c7}{init\+\_\+all\+\_\+sprites\+\_\+night}} ()
+\item 
+void \mbox{\hyperlink{video__card_8c_a2ed56794e158969846a9df63dba87f22}{init\+\_\+all\+\_\+sprites}} ()
+\item 
+void \mbox{\hyperlink{video__card_8c_adf0e5bdc609c021a347011e8482d19fd}{draw\+\_\+backgroud}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sprite, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha o fundo correspondente ao Sprite$\ast$ sprite. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video__card_8c_ab801580a817ad5e8b33fa718023857cc}{draw\+\_\+cursor}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sprite, uint8\+\_\+t $\ast$initial\+\_\+address)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha sprite do rato. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video__card_8c_a58d52fdac52d3ffb76ee11dbd27b1644}{draw\+\_\+timer}} (int \mbox{\hyperlink{video__card_8c_a6e34259a385c4a814a73af804f48b8af}{num\+\_\+seconds}}, uint8\+\_\+t $\ast$initial\+\_\+address)
+\item 
+void \mbox{\hyperlink{video__card_8c_a4a42ed1168dcdee4dd3a1423f3378d38}{display\+\_\+level}} (uint8\+\_\+t $\ast$initial\+\_\+address)
+\item 
+void \mbox{\hyperlink{video__card_8c_a979d76acd75329c403f136bbb891c21e}{draw\+\_\+everything\+\_\+in\+\_\+game}} (char $\ast$word, int score, uint8\+\_\+t $\ast$initial\+\_\+address, int \mbox{\hyperlink{words_8c_a572259e9327ffd81d9348c35038d9092}{y0\+\_\+word}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha tudo o que precisamos no jogo (fundo, palavra atual, score, level e timer). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video__card_8c_a20646c04d7650085de0e5cc88c41ade2}{free\+\_\+letters\+\_\+and\+\_\+numbers}} ()
+\item 
+void \mbox{\hyperlink{video__card_8c_a505e4eac70b471c9c86556011daf2298}{free\+\_\+everything}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a11791b1416f597b4630ba364f65a3908}{sprite\+Cursor}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a5c5391a0e50bdbdac721a982071e9622}{sprite\+Fundo}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a982f634310493c4a2cd0276fd50d371f}{sprite\+Game\+Over}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a6d0669c0d93145e1f0535291abfa3f6b}{sprite\+Pausa}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_acfbde9a43c8222c980190c91b1fe711c}{sprite\+Menu}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a3a30719fd30f060855a8896fe89292a0}{sprite\+Leaderboard}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_aedc0f3ecf46124eedeabc0fbc95d22bd}{sprite\+Record\+Dia}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a549a85593a134c7b2f9cd7c1a38773e0}{sprite\+Instructions}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_aa4ec2e48a6e2f6eb9570e09fc6092a8f}{sprite\+\_\+A}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a2674749153a66fb58590114294f17cfd}{sprite\+\_\+B}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a4c36fc510b59de3bfb5a70f461da422d}{sprite\+\_\+C}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a8cd95f85127ad8eb6032011268e5bdd7}{sprite\+\_\+D}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_aacaad23482d12f14548521a44ae22c44}{sprite\+\_\+E}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_abb4dee969c4835c89019da4a0486b2a6}{sprite\+\_\+F}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_aafabfc28c1a36c31d15be9259b390a1c}{sprite\+\_\+G}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a2076073f00e9b0b70e474e764b3e2bb7}{sprite\+\_\+H}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a09b408935c5967ea30a343f79e93adc8}{sprite\+\_\+I}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_ac26a6ec312515929fabad6c561602f02}{sprite\+\_\+J}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_ae288ac65378769e24594ff8ba0fa6fdd}{sprite\+\_\+K}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a01908ceb43001086b0e763d0f3edbd94}{sprite\+\_\+L}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a867d79f874e7bec2b041b924f36aa4e4}{sprite\+\_\+M}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_ad5a3b380c0617852656212f8f8c6154d}{sprite\+\_\+N}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a0c8f1f90eaaf3b1bd8e9562963578028}{sprite\+\_\+O}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_ad504fa636de76b69fe1986d1b098f28a}{sprite\+\_\+P}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a0aab72d8f66d7fc1f0f0bde6f809e868}{sprite\+\_\+Q}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a8a5efbf173d390e1270e65e0e400e4ea}{sprite\+\_\+R}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a5ddeaa284abfccd5dc7f3323391e0095}{sprite\+\_\+S}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_ad9442d5b778f8a6b8adac7b5a5ad75ef}{sprite\+\_\+T}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a249ecdba5369bd809ec622262652bab2}{sprite\+\_\+U}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_aefc04ae134510ee4fbbf48afca32ab6c}{sprite\+\_\+V}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a089a12e22b42762721c486823bd12fd8}{sprite\+\_\+W}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a2ca97379495ef4548bc3eafca08ee169}{sprite\+\_\+X}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_ad4315f1a129f5f2db44866f6405ae672}{sprite\+\_\+Y}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a9ab97a5e696a7a995cbb08a17d7388c4}{sprite\+\_\+Z}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a254ca7cd7a55afac2325f7e771f09d9f}{sprite\+\_\+0}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_af3560575b97d7e479af7add1c77b92a5}{sprite\+\_\+1}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a098d4b93fdca4bc492ef7f2515658cc9}{sprite\+\_\+2}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a1e8b66127c970360f59ca627238354c6}{sprite\+\_\+3}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_ac0ad10030b45571e092e1dc064d20a58}{sprite\+\_\+4}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_af0e057020fde2e2f145fd2e526e8ae0d}{sprite\+\_\+5}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_af3f6c9f61bfa850d0e00d980ae2a35aa}{sprite\+\_\+6}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_abae0f9ce3c0863a30b14514cb8aecd05}{sprite\+\_\+7}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_aaabbed7fe1688a2f86989eb1f9a570a0}{sprite\+\_\+8}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a8112febcd6c39db8d205545f73f15129}{sprite\+\_\+9}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{video__card_8c_a5d2e63d21d1385ef04ac6ae141c6f269}{sprite\+\_\+dois\+\_\+pontos}}
+\item 
+void $\ast$ \mbox{\hyperlink{video__card_8c_a5077a1a703b40b073dc6b5c1129ab0a1}{video\+\_\+mem}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{video__card_8c_a0c0b7b04e89a4cb319d4ff586df825f4}{horizontal\+Resolution}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{video__card_8c_aa3fc9fdfe152858085f5176c208fe12f}{vertical\+Resolution}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{video__card_8c_a39838b676f89123c42a1509becd29c32}{bits\+Per\+Pixel}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{video__card_8c_ad6aff21f8eadcc1ee84b03b0d8b5c727}{memory\+Model}}
+\item 
+int \mbox{\hyperlink{video__card_8c_afc1b964f483333dc194a2dd4e5435d9d}{x0\+\_\+word}}
+\item 
+int \mbox{\hyperlink{video__card_8c_a6e34259a385c4a814a73af804f48b8af}{num\+\_\+seconds}}
+\item 
+int \mbox{\hyperlink{video__card_8c_acf4d33ee4cff36f69b924471174dcb11}{level}}
+\item 
+\mbox{\hyperlink{structTime}{Time}} \mbox{\hyperlink{video__card_8c_abee024e7cb87bf8c4ebdf75b4c1f2dce}{time\+\_\+rtc}}
+\item 
+int \mbox{\hyperlink{video__card_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}
+\item 
+int \mbox{\hyperlink{video__card_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}}
+\item 
+void $\ast$ \mbox{\hyperlink{video__card_8c_ace8f0c770979569d07617739c5e45167}{initial\+Adress}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{video__card_8c_afdd3ece1a649590c30712859481cf383}{second\+Buffer}}
+\item 
+struct minix\+\_\+mem\+\_\+range \mbox{\hyperlink{video__card_8c_a27553ef0da1f0b187170035242a2287f}{mr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{video__card_8c_a4a42ed1168dcdee4dd3a1423f3378d38}\label{video__card_8c_a4a42ed1168dcdee4dd3a1423f3378d38}} 
+\index{video\_card.c@{video\_card.c}!display\_level@{display\_level}}
+\index{display\_level@{display\_level}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{display\_level()}{display\_level()}}
+{\footnotesize\ttfamily void display\+\_\+level (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a4a42ed1168dcdee4dd3a1423f3378d38_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_adf0e5bdc609c021a347011e8482d19fd}\label{video__card_8c_adf0e5bdc609c021a347011e8482d19fd}} 
+\index{video\_card.c@{video\_card.c}!draw\_backgroud@{draw\_backgroud}}
+\index{draw\_backgroud@{draw\_backgroud}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{draw\_backgroud()}{draw\_backgroud()}}
+{\footnotesize\ttfamily void draw\+\_\+backgroud (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sprite,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha o fundo correspondente ao Sprite$\ast$ sprite. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & -\/ Fundo a desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{video__card_8c_adf0e5bdc609c021a347011e8482d19fd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_ab801580a817ad5e8b33fa718023857cc}\label{video__card_8c_ab801580a817ad5e8b33fa718023857cc}} 
+\index{video\_card.c@{video\_card.c}!draw\_cursor@{draw\_cursor}}
+\index{draw\_cursor@{draw\_cursor}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{draw\_cursor()}{draw\_cursor()}}
+{\footnotesize\ttfamily void draw\+\_\+cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sprite,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha sprite do rato. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & -\/ \mbox{\hyperlink{structSprite}{Sprite}} do rato a desenhar. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{video__card_8c_ab801580a817ad5e8b33fa718023857cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a979d76acd75329c403f136bbb891c21e}\label{video__card_8c_a979d76acd75329c403f136bbb891c21e}} 
+\index{video\_card.c@{video\_card.c}!draw\_everything\_in\_game@{draw\_everything\_in\_game}}
+\index{draw\_everything\_in\_game@{draw\_everything\_in\_game}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{draw\_everything\_in\_game()}{draw\_everything\_in\_game()}}
+{\footnotesize\ttfamily void draw\+\_\+everything\+\_\+in\+\_\+game (\begin{DoxyParamCaption}\item[{char $\ast$}]{word,  }\item[{int}]{score,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address,  }\item[{int}]{y0\+\_\+word }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha tudo o que precisamos no jogo (fundo, palavra atual, score, level e timer). 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & -\/ Palavra atual. \\
+\hline
+{\em score} & -\/ Pontuação atual. \\
+\hline
+{\em initial\+\_\+address} & -\/ Zona da memória gráfica onde queremos desenhar. \\
+\hline
+{\em y0\+\_\+word} & -\/ Coordenada y onde a palavra começa a ser desenhada. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a979d76acd75329c403f136bbb891c21e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a58d52fdac52d3ffb76ee11dbd27b1644}\label{video__card_8c_a58d52fdac52d3ffb76ee11dbd27b1644}} 
+\index{video\_card.c@{video\_card.c}!draw\_timer@{draw\_timer}}
+\index{draw\_timer@{draw\_timer}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{draw\_timer()}{draw\_timer()}}
+{\footnotesize\ttfamily void draw\+\_\+timer (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+seconds,  }\item[{uint8\+\_\+t $\ast$}]{initial\+\_\+address }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a58d52fdac52d3ffb76ee11dbd27b1644_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a505e4eac70b471c9c86556011daf2298}\label{video__card_8c_a505e4eac70b471c9c86556011daf2298}} 
+\index{video\_card.c@{video\_card.c}!free\_everything@{free\_everything}}
+\index{free\_everything@{free\_everything}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{free\_everything()}{free\_everything()}}
+{\footnotesize\ttfamily void free\+\_\+everything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Faz o free de todos os sprites inicializados. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{video__card_8c_a505e4eac70b471c9c86556011daf2298_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a20646c04d7650085de0e5cc88c41ade2}\label{video__card_8c_a20646c04d7650085de0e5cc88c41ade2}} 
+\index{video\_card.c@{video\_card.c}!free\_letters\_and\_numbers@{free\_letters\_and\_numbers}}
+\index{free\_letters\_and\_numbers@{free\_letters\_and\_numbers}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{free\_letters\_and\_numbers()}{free\_letters\_and\_numbers()}}
+{\footnotesize\ttfamily void free\+\_\+letters\+\_\+and\+\_\+numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{video__card_8c_a2ed56794e158969846a9df63dba87f22}\label{video__card_8c_a2ed56794e158969846a9df63dba87f22}} 
+\index{video\_card.c@{video\_card.c}!init\_all\_sprites@{init\_all\_sprites}}
+\index{init\_all\_sprites@{init\_all\_sprites}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_all\_sprites()}{init\_all\_sprites()}}
+{\footnotesize\ttfamily void init\+\_\+all\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cria todos os sprites necessários. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a2ed56794e158969846a9df63dba87f22_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a309f4a6f01b1179bd33faf66be2a65c5}\label{video__card_8c_a309f4a6f01b1179bd33faf66be2a65c5}} 
+\index{video\_card.c@{video\_card.c}!init\_all\_sprites\_day@{init\_all\_sprites\_day}}
+\index{init\_all\_sprites\_day@{init\_all\_sprites\_day}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_all\_sprites\_day()}{init\_all\_sprites\_day()}}
+{\footnotesize\ttfamily void init\+\_\+all\+\_\+sprites\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a309f4a6f01b1179bd33faf66be2a65c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_ae1fab7ebe9cd3b3140447618715a20c7}\label{video__card_8c_ae1fab7ebe9cd3b3140447618715a20c7}} 
+\index{video\_card.c@{video\_card.c}!init\_all\_sprites\_night@{init\_all\_sprites\_night}}
+\index{init\_all\_sprites\_night@{init\_all\_sprites\_night}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_all\_sprites\_night()}{init\_all\_sprites\_night()}}
+{\footnotesize\ttfamily void init\+\_\+all\+\_\+sprites\+\_\+night (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_ae1fab7ebe9cd3b3140447618715a20c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_ac9746eed9ab8b73a128234432e94333d}\label{video__card_8c_ac9746eed9ab8b73a128234432e94333d}} 
+\index{video\_card.c@{video\_card.c}!init\_leaderboard\_background@{init\_leaderboard\_background}}
+\index{init\_leaderboard\_background@{init\_leaderboard\_background}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_leaderboard\_background()}{init\_leaderboard\_background()}}
+{\footnotesize\ttfamily void init\+\_\+leaderboard\+\_\+background (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{video__card_8c_ac9746eed9ab8b73a128234432e94333d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a211f22606ccb968ad4a2d96e393249fd}\label{video__card_8c_a211f22606ccb968ad4a2d96e393249fd}} 
+\index{video\_card.c@{video\_card.c}!init\_letters\_and\_numbers\_sprites@{init\_letters\_and\_numbers\_sprites}}
+\index{init\_letters\_and\_numbers\_sprites@{init\_letters\_and\_numbers\_sprites}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_letters\_and\_numbers\_sprites()}{init\_letters\_and\_numbers\_sprites()}}
+{\footnotesize\ttfamily void init\+\_\+letters\+\_\+and\+\_\+numbers\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{video__card_8c_a211f22606ccb968ad4a2d96e393249fd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a6c162ef2eb879ade18e1ab285d863a81}\label{video__card_8c_a6c162ef2eb879ade18e1ab285d863a81}} 
+\index{video\_card.c@{video\_card.c}!init\_menu\_backgroud@{init\_menu\_backgroud}}
+\index{init\_menu\_backgroud@{init\_menu\_backgroud}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_menu\_backgroud()}{init\_menu\_backgroud()}}
+{\footnotesize\ttfamily void init\+\_\+menu\+\_\+backgroud (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{menu }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{video__card_8c_a6c162ef2eb879ade18e1ab285d863a81_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a9df6347c68b975fcc0c67c2ff810c2f7}\label{video__card_8c_a9df6347c68b975fcc0c67c2ff810c2f7}} 
+\index{video\_card.c@{video\_card.c}!init\_record\_backgroud\_dia@{init\_record\_backgroud\_dia}}
+\index{init\_record\_backgroud\_dia@{init\_record\_backgroud\_dia}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_record\_backgroud\_dia()}{init\_record\_backgroud\_dia()}}
+{\footnotesize\ttfamily void init\+\_\+record\+\_\+backgroud\+\_\+dia (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{video__card_8c_a9df6347c68b975fcc0c67c2ff810c2f7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a5189ef17b942888fba51c6806c1eb1c1}\label{video__card_8c_a5189ef17b942888fba51c6806c1eb1c1}} 
+\index{video\_card.c@{video\_card.c}!init\_sprite\_backgroud@{init\_sprite\_backgroud}}
+\index{init\_sprite\_backgroud@{init\_sprite\_backgroud}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_sprite\_backgroud()}{init\_sprite\_backgroud()}}
+{\footnotesize\ttfamily void init\+\_\+sprite\+\_\+backgroud (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{fundo }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{video__card_8c_a5189ef17b942888fba51c6806c1eb1c1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_ad75dd6f8dc5d04a5481231ad41b924de}\label{video__card_8c_ad75dd6f8dc5d04a5481231ad41b924de}} 
+\index{video\_card.c@{video\_card.c}!init\_sprite\_game\_over@{init\_sprite\_game\_over}}
+\index{init\_sprite\_game\_over@{init\_sprite\_game\_over}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_sprite\_game\_over()}{init\_sprite\_game\_over()}}
+{\footnotesize\ttfamily void init\+\_\+sprite\+\_\+game\+\_\+over (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{fundo }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{video__card_8c_ad75dd6f8dc5d04a5481231ad41b924de_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_ae383dffba78c90bb5ff9d0b4400b7340}\label{video__card_8c_ae383dffba78c90bb5ff9d0b4400b7340}} 
+\index{video\_card.c@{video\_card.c}!init\_sprite\_instructions@{init\_sprite\_instructions}}
+\index{init\_sprite\_instructions@{init\_sprite\_instructions}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_sprite\_instructions()}{init\_sprite\_instructions()}}
+{\footnotesize\ttfamily void init\+\_\+sprite\+\_\+instructions (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{video__card_8c_ae383dffba78c90bb5ff9d0b4400b7340_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_ac1a79b9e7cb3c5fa64a2a53eb7f9333e}\label{video__card_8c_ac1a79b9e7cb3c5fa64a2a53eb7f9333e}} 
+\index{video\_card.c@{video\_card.c}!init\_sprite\_mouse@{init\_sprite\_mouse}}
+\index{init\_sprite\_mouse@{init\_sprite\_mouse}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_sprite\_mouse()}{init\_sprite\_mouse()}}
+{\footnotesize\ttfamily void init\+\_\+sprite\+\_\+mouse (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{cursor }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{video__card_8c_ac1a79b9e7cb3c5fa64a2a53eb7f9333e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a07f88fa3cb12d7d45d44814ad106d84e}\label{video__card_8c_a07f88fa3cb12d7d45d44814ad106d84e}} 
+\index{video\_card.c@{video\_card.c}!init\_sprite\_pausa@{init\_sprite\_pausa}}
+\index{init\_sprite\_pausa@{init\_sprite\_pausa}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{init\_sprite\_pausa()}{init\_sprite\_pausa()}}
+{\footnotesize\ttfamily void init\+\_\+sprite\+\_\+pausa (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{fundo\+\_\+pausa }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{video__card_8c_a07f88fa3cb12d7d45d44814ad106d84e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a4ea8e6c705584d91112207beda2db039}\label{video__card_8c_a4ea8e6c705584d91112207beda2db039}} 
+\index{video\_card.c@{video\_card.c}!is\_day@{is\_day}}
+\index{is\_day@{is\_day}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{is\_day()}{is\_day()}}
+{\footnotesize\ttfamily bool is\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{video__card_8c_aa6c1ff5024cd4d15e476bce487584daa}\label{video__card_8c_aa6c1ff5024cd4d15e476bce487584daa}} 
+\index{video\_card.c@{video\_card.c}!vg\_init@{vg\_init}}
+\index{vg\_init@{vg\_init}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{vg\_init()}{vg\_init()}}
+{\footnotesize\ttfamily void$\ast$() vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Atualiza a palavra atual, retirando o primeiro caracter da palavra atual se o scancode da tecla teclada corresponder a esse caracter. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & -\/ Modo gráfico pretendido. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{video__card_8c_a39838b676f89123c42a1509becd29c32}\label{video__card_8c_a39838b676f89123c42a1509becd29c32}} 
+\index{video\_card.c@{video\_card.c}!bitsPerPixel@{bitsPerPixel}}
+\index{bitsPerPixel@{bitsPerPixel}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{bitsPerPixel}{bitsPerPixel}}
+{\footnotesize\ttfamily uint32\+\_\+t bits\+Per\+Pixel}
+
+\mbox{\Hypertarget{video__card_8c_a0c0b7b04e89a4cb319d4ff586df825f4}\label{video__card_8c_a0c0b7b04e89a4cb319d4ff586df825f4}} 
+\index{video\_card.c@{video\_card.c}!horizontalResolution@{horizontalResolution}}
+\index{horizontalResolution@{horizontalResolution}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{horizontalResolution}{horizontalResolution}}
+{\footnotesize\ttfamily uint32\+\_\+t horizontal\+Resolution}
+
+\mbox{\Hypertarget{video__card_8c_ace8f0c770979569d07617739c5e45167}\label{video__card_8c_ace8f0c770979569d07617739c5e45167}} 
+\index{video\_card.c@{video\_card.c}!initialAdress@{initialAdress}}
+\index{initialAdress@{initialAdress}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{initialAdress}{initialAdress}}
+{\footnotesize\ttfamily void$\ast$ initial\+Adress}
+
+\mbox{\Hypertarget{video__card_8c_acf4d33ee4cff36f69b924471174dcb11}\label{video__card_8c_acf4d33ee4cff36f69b924471174dcb11}} 
+\index{video\_card.c@{video\_card.c}!level@{level}}
+\index{level@{level}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int level}
+
+\mbox{\Hypertarget{video__card_8c_ad6aff21f8eadcc1ee84b03b0d8b5c727}\label{video__card_8c_ad6aff21f8eadcc1ee84b03b0d8b5c727}} 
+\index{video\_card.c@{video\_card.c}!memoryModel@{memoryModel}}
+\index{memoryModel@{memoryModel}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{memoryModel}{memoryModel}}
+{\footnotesize\ttfamily uint32\+\_\+t memory\+Model}
+
+\mbox{\Hypertarget{video__card_8c_a6c59af730728bf5260ef828aea2eebee}\label{video__card_8c_a6c59af730728bf5260ef828aea2eebee}} 
+\index{video\_card.c@{video\_card.c}!mouse\_x@{mouse\_x}}
+\index{mouse\_x@{mouse\_x}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_x}{mouse\_x}}
+{\footnotesize\ttfamily int mouse\+\_\+x}
+
+\mbox{\Hypertarget{video__card_8c_ab21653e455bbca86826aa5f628a5fdb2}\label{video__card_8c_ab21653e455bbca86826aa5f628a5fdb2}} 
+\index{video\_card.c@{video\_card.c}!mouse\_y@{mouse\_y}}
+\index{mouse\_y@{mouse\_y}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_y}{mouse\_y}}
+{\footnotesize\ttfamily int mouse\+\_\+y}
+
+\mbox{\Hypertarget{video__card_8c_a27553ef0da1f0b187170035242a2287f}\label{video__card_8c_a27553ef0da1f0b187170035242a2287f}} 
+\index{video\_card.c@{video\_card.c}!mr@{mr}}
+\index{mr@{mr}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{mr}{mr}}
+{\footnotesize\ttfamily struct minix\+\_\+mem\+\_\+range mr}
+
+\mbox{\Hypertarget{video__card_8c_a6e34259a385c4a814a73af804f48b8af}\label{video__card_8c_a6e34259a385c4a814a73af804f48b8af}} 
+\index{video\_card.c@{video\_card.c}!num\_seconds@{num\_seconds}}
+\index{num\_seconds@{num\_seconds}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{num\_seconds}{num\_seconds}}
+{\footnotesize\ttfamily int num\+\_\+seconds}
+
+\mbox{\Hypertarget{video__card_8c_afdd3ece1a649590c30712859481cf383}\label{video__card_8c_afdd3ece1a649590c30712859481cf383}} 
+\index{video\_card.c@{video\_card.c}!secondBuffer@{secondBuffer}}
+\index{secondBuffer@{secondBuffer}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{secondBuffer}{secondBuffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ second\+Buffer}
+
+\mbox{\Hypertarget{video__card_8c_a254ca7cd7a55afac2325f7e771f09d9f}\label{video__card_8c_a254ca7cd7a55afac2325f7e771f09d9f}} 
+\index{video\_card.c@{video\_card.c}!sprite\_0@{sprite\_0}}
+\index{sprite\_0@{sprite\_0}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_0}{sprite\_0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+0}
+
+\mbox{\Hypertarget{video__card_8c_af3560575b97d7e479af7add1c77b92a5}\label{video__card_8c_af3560575b97d7e479af7add1c77b92a5}} 
+\index{video\_card.c@{video\_card.c}!sprite\_1@{sprite\_1}}
+\index{sprite\_1@{sprite\_1}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_1}{sprite\_1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+1}
+
+\mbox{\Hypertarget{video__card_8c_a098d4b93fdca4bc492ef7f2515658cc9}\label{video__card_8c_a098d4b93fdca4bc492ef7f2515658cc9}} 
+\index{video\_card.c@{video\_card.c}!sprite\_2@{sprite\_2}}
+\index{sprite\_2@{sprite\_2}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_2}{sprite\_2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+2}
+
+\mbox{\Hypertarget{video__card_8c_a1e8b66127c970360f59ca627238354c6}\label{video__card_8c_a1e8b66127c970360f59ca627238354c6}} 
+\index{video\_card.c@{video\_card.c}!sprite\_3@{sprite\_3}}
+\index{sprite\_3@{sprite\_3}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_3}{sprite\_3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+3}
+
+\mbox{\Hypertarget{video__card_8c_ac0ad10030b45571e092e1dc064d20a58}\label{video__card_8c_ac0ad10030b45571e092e1dc064d20a58}} 
+\index{video\_card.c@{video\_card.c}!sprite\_4@{sprite\_4}}
+\index{sprite\_4@{sprite\_4}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_4}{sprite\_4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+4}
+
+\mbox{\Hypertarget{video__card_8c_af0e057020fde2e2f145fd2e526e8ae0d}\label{video__card_8c_af0e057020fde2e2f145fd2e526e8ae0d}} 
+\index{video\_card.c@{video\_card.c}!sprite\_5@{sprite\_5}}
+\index{sprite\_5@{sprite\_5}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_5}{sprite\_5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+5}
+
+\mbox{\Hypertarget{video__card_8c_af3f6c9f61bfa850d0e00d980ae2a35aa}\label{video__card_8c_af3f6c9f61bfa850d0e00d980ae2a35aa}} 
+\index{video\_card.c@{video\_card.c}!sprite\_6@{sprite\_6}}
+\index{sprite\_6@{sprite\_6}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_6}{sprite\_6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+6}
+
+\mbox{\Hypertarget{video__card_8c_abae0f9ce3c0863a30b14514cb8aecd05}\label{video__card_8c_abae0f9ce3c0863a30b14514cb8aecd05}} 
+\index{video\_card.c@{video\_card.c}!sprite\_7@{sprite\_7}}
+\index{sprite\_7@{sprite\_7}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_7}{sprite\_7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+7}
+
+\mbox{\Hypertarget{video__card_8c_aaabbed7fe1688a2f86989eb1f9a570a0}\label{video__card_8c_aaabbed7fe1688a2f86989eb1f9a570a0}} 
+\index{video\_card.c@{video\_card.c}!sprite\_8@{sprite\_8}}
+\index{sprite\_8@{sprite\_8}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_8}{sprite\_8}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+8}
+
+\mbox{\Hypertarget{video__card_8c_a8112febcd6c39db8d205545f73f15129}\label{video__card_8c_a8112febcd6c39db8d205545f73f15129}} 
+\index{video\_card.c@{video\_card.c}!sprite\_9@{sprite\_9}}
+\index{sprite\_9@{sprite\_9}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_9}{sprite\_9}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+9}
+
+\mbox{\Hypertarget{video__card_8c_aa4ec2e48a6e2f6eb9570e09fc6092a8f}\label{video__card_8c_aa4ec2e48a6e2f6eb9570e09fc6092a8f}} 
+\index{video\_card.c@{video\_card.c}!sprite\_A@{sprite\_A}}
+\index{sprite\_A@{sprite\_A}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_A}{sprite\_A}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+A}
+
+\mbox{\Hypertarget{video__card_8c_a2674749153a66fb58590114294f17cfd}\label{video__card_8c_a2674749153a66fb58590114294f17cfd}} 
+\index{video\_card.c@{video\_card.c}!sprite\_B@{sprite\_B}}
+\index{sprite\_B@{sprite\_B}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_B}{sprite\_B}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+B}
+
+\mbox{\Hypertarget{video__card_8c_a4c36fc510b59de3bfb5a70f461da422d}\label{video__card_8c_a4c36fc510b59de3bfb5a70f461da422d}} 
+\index{video\_card.c@{video\_card.c}!sprite\_C@{sprite\_C}}
+\index{sprite\_C@{sprite\_C}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_C}{sprite\_C}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+C}
+
+\mbox{\Hypertarget{video__card_8c_a8cd95f85127ad8eb6032011268e5bdd7}\label{video__card_8c_a8cd95f85127ad8eb6032011268e5bdd7}} 
+\index{video\_card.c@{video\_card.c}!sprite\_D@{sprite\_D}}
+\index{sprite\_D@{sprite\_D}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_D}{sprite\_D}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+D}
+
+\mbox{\Hypertarget{video__card_8c_a5d2e63d21d1385ef04ac6ae141c6f269}\label{video__card_8c_a5d2e63d21d1385ef04ac6ae141c6f269}} 
+\index{video\_card.c@{video\_card.c}!sprite\_dois\_pontos@{sprite\_dois\_pontos}}
+\index{sprite\_dois\_pontos@{sprite\_dois\_pontos}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_dois\_pontos}{sprite\_dois\_pontos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+dois\+\_\+pontos}
+
+\mbox{\Hypertarget{video__card_8c_aacaad23482d12f14548521a44ae22c44}\label{video__card_8c_aacaad23482d12f14548521a44ae22c44}} 
+\index{video\_card.c@{video\_card.c}!sprite\_E@{sprite\_E}}
+\index{sprite\_E@{sprite\_E}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_E}{sprite\_E}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+E}
+
+\mbox{\Hypertarget{video__card_8c_abb4dee969c4835c89019da4a0486b2a6}\label{video__card_8c_abb4dee969c4835c89019da4a0486b2a6}} 
+\index{video\_card.c@{video\_card.c}!sprite\_F@{sprite\_F}}
+\index{sprite\_F@{sprite\_F}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_F}{sprite\_F}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+F}
+
+\mbox{\Hypertarget{video__card_8c_aafabfc28c1a36c31d15be9259b390a1c}\label{video__card_8c_aafabfc28c1a36c31d15be9259b390a1c}} 
+\index{video\_card.c@{video\_card.c}!sprite\_G@{sprite\_G}}
+\index{sprite\_G@{sprite\_G}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_G}{sprite\_G}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+G}
+
+\mbox{\Hypertarget{video__card_8c_a2076073f00e9b0b70e474e764b3e2bb7}\label{video__card_8c_a2076073f00e9b0b70e474e764b3e2bb7}} 
+\index{video\_card.c@{video\_card.c}!sprite\_H@{sprite\_H}}
+\index{sprite\_H@{sprite\_H}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_H}{sprite\_H}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+H}
+
+\mbox{\Hypertarget{video__card_8c_a09b408935c5967ea30a343f79e93adc8}\label{video__card_8c_a09b408935c5967ea30a343f79e93adc8}} 
+\index{video\_card.c@{video\_card.c}!sprite\_I@{sprite\_I}}
+\index{sprite\_I@{sprite\_I}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_I}{sprite\_I}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+I}
+
+\mbox{\Hypertarget{video__card_8c_ac26a6ec312515929fabad6c561602f02}\label{video__card_8c_ac26a6ec312515929fabad6c561602f02}} 
+\index{video\_card.c@{video\_card.c}!sprite\_J@{sprite\_J}}
+\index{sprite\_J@{sprite\_J}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_J}{sprite\_J}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+J}
+
+\mbox{\Hypertarget{video__card_8c_ae288ac65378769e24594ff8ba0fa6fdd}\label{video__card_8c_ae288ac65378769e24594ff8ba0fa6fdd}} 
+\index{video\_card.c@{video\_card.c}!sprite\_K@{sprite\_K}}
+\index{sprite\_K@{sprite\_K}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_K}{sprite\_K}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+K}
+
+\mbox{\Hypertarget{video__card_8c_a01908ceb43001086b0e763d0f3edbd94}\label{video__card_8c_a01908ceb43001086b0e763d0f3edbd94}} 
+\index{video\_card.c@{video\_card.c}!sprite\_L@{sprite\_L}}
+\index{sprite\_L@{sprite\_L}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_L}{sprite\_L}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+L}
+
+\mbox{\Hypertarget{video__card_8c_a867d79f874e7bec2b041b924f36aa4e4}\label{video__card_8c_a867d79f874e7bec2b041b924f36aa4e4}} 
+\index{video\_card.c@{video\_card.c}!sprite\_M@{sprite\_M}}
+\index{sprite\_M@{sprite\_M}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_M}{sprite\_M}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+M}
+
+\mbox{\Hypertarget{video__card_8c_ad5a3b380c0617852656212f8f8c6154d}\label{video__card_8c_ad5a3b380c0617852656212f8f8c6154d}} 
+\index{video\_card.c@{video\_card.c}!sprite\_N@{sprite\_N}}
+\index{sprite\_N@{sprite\_N}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_N}{sprite\_N}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+N}
+
+\mbox{\Hypertarget{video__card_8c_a0c8f1f90eaaf3b1bd8e9562963578028}\label{video__card_8c_a0c8f1f90eaaf3b1bd8e9562963578028}} 
+\index{video\_card.c@{video\_card.c}!sprite\_O@{sprite\_O}}
+\index{sprite\_O@{sprite\_O}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_O}{sprite\_O}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+O}
+
+\mbox{\Hypertarget{video__card_8c_ad504fa636de76b69fe1986d1b098f28a}\label{video__card_8c_ad504fa636de76b69fe1986d1b098f28a}} 
+\index{video\_card.c@{video\_card.c}!sprite\_P@{sprite\_P}}
+\index{sprite\_P@{sprite\_P}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_P}{sprite\_P}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+P}
+
+\mbox{\Hypertarget{video__card_8c_a0aab72d8f66d7fc1f0f0bde6f809e868}\label{video__card_8c_a0aab72d8f66d7fc1f0f0bde6f809e868}} 
+\index{video\_card.c@{video\_card.c}!sprite\_Q@{sprite\_Q}}
+\index{sprite\_Q@{sprite\_Q}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_Q}{sprite\_Q}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+Q}
+
+\mbox{\Hypertarget{video__card_8c_a8a5efbf173d390e1270e65e0e400e4ea}\label{video__card_8c_a8a5efbf173d390e1270e65e0e400e4ea}} 
+\index{video\_card.c@{video\_card.c}!sprite\_R@{sprite\_R}}
+\index{sprite\_R@{sprite\_R}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_R}{sprite\_R}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+R}
+
+\mbox{\Hypertarget{video__card_8c_a5ddeaa284abfccd5dc7f3323391e0095}\label{video__card_8c_a5ddeaa284abfccd5dc7f3323391e0095}} 
+\index{video\_card.c@{video\_card.c}!sprite\_S@{sprite\_S}}
+\index{sprite\_S@{sprite\_S}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_S}{sprite\_S}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+S}
+
+\mbox{\Hypertarget{video__card_8c_ad9442d5b778f8a6b8adac7b5a5ad75ef}\label{video__card_8c_ad9442d5b778f8a6b8adac7b5a5ad75ef}} 
+\index{video\_card.c@{video\_card.c}!sprite\_T@{sprite\_T}}
+\index{sprite\_T@{sprite\_T}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_T}{sprite\_T}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+T}
+
+\mbox{\Hypertarget{video__card_8c_a249ecdba5369bd809ec622262652bab2}\label{video__card_8c_a249ecdba5369bd809ec622262652bab2}} 
+\index{video\_card.c@{video\_card.c}!sprite\_U@{sprite\_U}}
+\index{sprite\_U@{sprite\_U}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_U}{sprite\_U}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+U}
+
+\mbox{\Hypertarget{video__card_8c_aefc04ae134510ee4fbbf48afca32ab6c}\label{video__card_8c_aefc04ae134510ee4fbbf48afca32ab6c}} 
+\index{video\_card.c@{video\_card.c}!sprite\_V@{sprite\_V}}
+\index{sprite\_V@{sprite\_V}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_V}{sprite\_V}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+V}
+
+\mbox{\Hypertarget{video__card_8c_a089a12e22b42762721c486823bd12fd8}\label{video__card_8c_a089a12e22b42762721c486823bd12fd8}} 
+\index{video\_card.c@{video\_card.c}!sprite\_W@{sprite\_W}}
+\index{sprite\_W@{sprite\_W}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_W}{sprite\_W}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+W}
+
+\mbox{\Hypertarget{video__card_8c_a2ca97379495ef4548bc3eafca08ee169}\label{video__card_8c_a2ca97379495ef4548bc3eafca08ee169}} 
+\index{video\_card.c@{video\_card.c}!sprite\_X@{sprite\_X}}
+\index{sprite\_X@{sprite\_X}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_X}{sprite\_X}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+X}
+
+\mbox{\Hypertarget{video__card_8c_ad4315f1a129f5f2db44866f6405ae672}\label{video__card_8c_ad4315f1a129f5f2db44866f6405ae672}} 
+\index{video\_card.c@{video\_card.c}!sprite\_Y@{sprite\_Y}}
+\index{sprite\_Y@{sprite\_Y}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_Y}{sprite\_Y}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+Y}
+
+\mbox{\Hypertarget{video__card_8c_a9ab97a5e696a7a995cbb08a17d7388c4}\label{video__card_8c_a9ab97a5e696a7a995cbb08a17d7388c4}} 
+\index{video\_card.c@{video\_card.c}!sprite\_Z@{sprite\_Z}}
+\index{sprite\_Z@{sprite\_Z}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_Z}{sprite\_Z}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+\_\+Z}
+
+\mbox{\Hypertarget{video__card_8c_a11791b1416f597b4630ba364f65a3908}\label{video__card_8c_a11791b1416f597b4630ba364f65a3908}} 
+\index{video\_card.c@{video\_card.c}!spriteCursor@{spriteCursor}}
+\index{spriteCursor@{spriteCursor}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{spriteCursor}{spriteCursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Cursor}
+
+\mbox{\Hypertarget{video__card_8c_a5c5391a0e50bdbdac721a982071e9622}\label{video__card_8c_a5c5391a0e50bdbdac721a982071e9622}} 
+\index{video\_card.c@{video\_card.c}!spriteFundo@{spriteFundo}}
+\index{spriteFundo@{spriteFundo}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{spriteFundo}{spriteFundo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Fundo}
+
+\mbox{\Hypertarget{video__card_8c_a982f634310493c4a2cd0276fd50d371f}\label{video__card_8c_a982f634310493c4a2cd0276fd50d371f}} 
+\index{video\_card.c@{video\_card.c}!spriteGameOver@{spriteGameOver}}
+\index{spriteGameOver@{spriteGameOver}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{spriteGameOver}{spriteGameOver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Game\+Over}
+
+\mbox{\Hypertarget{video__card_8c_a549a85593a134c7b2f9cd7c1a38773e0}\label{video__card_8c_a549a85593a134c7b2f9cd7c1a38773e0}} 
+\index{video\_card.c@{video\_card.c}!spriteInstructions@{spriteInstructions}}
+\index{spriteInstructions@{spriteInstructions}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{spriteInstructions}{spriteInstructions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Instructions}
+
+\mbox{\Hypertarget{video__card_8c_a3a30719fd30f060855a8896fe89292a0}\label{video__card_8c_a3a30719fd30f060855a8896fe89292a0}} 
+\index{video\_card.c@{video\_card.c}!spriteLeaderboard@{spriteLeaderboard}}
+\index{spriteLeaderboard@{spriteLeaderboard}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{spriteLeaderboard}{spriteLeaderboard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Leaderboard}
+
+\mbox{\Hypertarget{video__card_8c_acfbde9a43c8222c980190c91b1fe711c}\label{video__card_8c_acfbde9a43c8222c980190c91b1fe711c}} 
+\index{video\_card.c@{video\_card.c}!spriteMenu@{spriteMenu}}
+\index{spriteMenu@{spriteMenu}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{spriteMenu}{spriteMenu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Menu}
+
+\mbox{\Hypertarget{video__card_8c_a6d0669c0d93145e1f0535291abfa3f6b}\label{video__card_8c_a6d0669c0d93145e1f0535291abfa3f6b}} 
+\index{video\_card.c@{video\_card.c}!spritePausa@{spritePausa}}
+\index{spritePausa@{spritePausa}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{spritePausa}{spritePausa}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Pausa}
+
+\mbox{\Hypertarget{video__card_8c_aedc0f3ecf46124eedeabc0fbc95d22bd}\label{video__card_8c_aedc0f3ecf46124eedeabc0fbc95d22bd}} 
+\index{video\_card.c@{video\_card.c}!spriteRecordDia@{spriteRecordDia}}
+\index{spriteRecordDia@{spriteRecordDia}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{spriteRecordDia}{spriteRecordDia}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Record\+Dia}
+
+\mbox{\Hypertarget{video__card_8c_abee024e7cb87bf8c4ebdf75b4c1f2dce}\label{video__card_8c_abee024e7cb87bf8c4ebdf75b4c1f2dce}} 
+\index{video\_card.c@{video\_card.c}!time\_rtc@{time\_rtc}}
+\index{time\_rtc@{time\_rtc}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{time\_rtc}{time\_rtc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTime}{Time}} time\+\_\+rtc}
+
+\mbox{\Hypertarget{video__card_8c_aa3fc9fdfe152858085f5176c208fe12f}\label{video__card_8c_aa3fc9fdfe152858085f5176c208fe12f}} 
+\index{video\_card.c@{video\_card.c}!verticalResolution@{verticalResolution}}
+\index{verticalResolution@{verticalResolution}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{verticalResolution}{verticalResolution}}
+{\footnotesize\ttfamily uint32\+\_\+t vertical\+Resolution}
+
+\mbox{\Hypertarget{video__card_8c_a5077a1a703b40b073dc6b5c1129ab0a1}\label{video__card_8c_a5077a1a703b40b073dc6b5c1129ab0a1}} 
+\index{video\_card.c@{video\_card.c}!video\_mem@{video\_mem}}
+\index{video\_mem@{video\_mem}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{video\_mem}{video\_mem}}
+{\footnotesize\ttfamily void$\ast$ video\+\_\+mem}
+
+\mbox{\Hypertarget{video__card_8c_afc1b964f483333dc194a2dd4e5435d9d}\label{video__card_8c_afc1b964f483333dc194a2dd4e5435d9d}} 
+\index{video\_card.c@{video\_card.c}!x0\_word@{x0\_word}}
+\index{x0\_word@{x0\_word}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{x0\_word}{x0\_word}}
+{\footnotesize\ttfamily int x0\+\_\+word}
+

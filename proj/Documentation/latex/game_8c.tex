@@ -1,0 +1,712 @@
+\hypertarget{game_8c}{}\doxysection{game.\+c File Reference}
+\label{game_8c}\index{game.c@{game.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}time.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scancodes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}words.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Leaderboard.\+h\char`\"{}}\newline
+Include dependency graph for game.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8c_af889cb8d2930d95f3de1f37de8d6b922}{subscribe\+\_\+and\+\_\+enable\+\_\+everything}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Subscreve e ativa as interrupções de todos os dispositivos; ativa o data reporting do rato. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{game_8c_a5e7d591fcc90c2e42bf50cb82b937492}{unsubscribe\+\_\+everything}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Retira a subscrição e desativa as interrupções de todos os dispositivos; desativa o data reporting do rato. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{game_8c_ad8e61754b85d20745f257849d4ae851d}{get\+First\+Word}} ()
+\item 
+void \mbox{\hyperlink{game_8c_a31d857684906a63d6b3c37ec795ee7f7}{set\+\_\+level}} ()
+\item 
+void \mbox{\hyperlink{game_8c_a7784190ad4611d265788148b1cd860fe}{level\+\_\+handler}} ()
+\item 
+void \mbox{\hyperlink{game_8c_ad8a7a5017be3e8262302cade0d668f3c}{pause\+Game\+Handler\+Keyboard}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{game_8c_a9ec477a0b8d6cc9db09513c59e84afb0}{ask\+Name\+If\+Record\+Handler\+Keyboard}} (char $\ast$\mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Se houver um record, pergunta o nome do jogador. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a40528afb72ccbb62a58018387c01a40c}{game\+Words\+Handler\+Keyboard}} ()
+\item 
+bool \mbox{\hyperlink{game_8c_abaf0adbb3f8db58f3c138d87ed95d312}{main\+Menu\+Handler\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato no menu principal. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a37d11d5c8f6a3678348bc1fa3e7dfc32}{leaderboard\+Handler\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato na leaderboard. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a1cb9cf0d7c54827f8192f431ec4ac55c}{instructions\+Handler\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato nas instruções. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a642431ad24893994e7032925b8f444b5}{ask\+Name\+Handler\+Mouse}} (char $\ast$\mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato quando se está a pedir o nome do jogador. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_a8eb9f8fc46a486378b31b6b98dfede25}{gamer\+Over\+Handler\+Mouse}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata das interrupções do rato no menu do game over. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8c_afc359b8ab44bfd67915704250ee63ca5}{game\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Trata de tudo o que for relacionado com o jogo em si (nível de dificuldade, tempo passado, pontuação, verificar se o jogador perdeu, verificar se a pontuação obtida corresponde a um recorde, desenhar tudo). 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a2afbabf1ec3e6b54a29c677b4d619bd6}{paused\+Game\+Hanler}} ()
+\item 
+void \mbox{\hyperlink{game_8c_aeb72f01360a33b3837fed6c4dec06d38}{ask\+Name\+Handler}} (char $\ast$\mbox{\hyperlink{Leaderboard_8c_a7fc9f0606ea4d6ba68e03ea3fa9ae588}{top\+Player\+Name}})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Desenha o fundo próprio de quando se pede o nome do jogador, assim como o rato. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a4153880956c612951373977e2008cbd7}{menu\+Handler}} ()
+\item 
+void \mbox{\hyperlink{game_8c_a9f0c5b968db80219c55eff59a7d0e325}{leaderboard\+Handler}} ()
+\item 
+void \mbox{\hyperlink{game_8c_af6b39ba42256ed7dabcef7195e518af9}{instructions\+Handler}} ()
+\item 
+void \mbox{\hyperlink{game_8c_a0ad16c3cd55604e229191d7146346b36}{game\+Over\+Handler}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct packet \mbox{\hyperlink{game_8c_a552a2fa551d83a94359d57d92b354b8c}{pacote}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{game_8c_a6d0669c0d93145e1f0535291abfa3f6b}{sprite\+Pausa}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{game_8c_a11791b1416f597b4630ba364f65a3908}{sprite\+Cursor}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{game_8c_acfbde9a43c8222c980190c91b1fe711c}{sprite\+Menu}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{game_8c_a982f634310493c4a2cd0276fd50d371f}{sprite\+Game\+Over}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{game_8c_a549a85593a134c7b2f9cd7c1a38773e0}{sprite\+Instructions}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_afdd3ece1a649590c30712859481cf383}{second\+Buffer}}
+\item 
+int \mbox{\hyperlink{game_8c_a933e2fc6658376b643e7a80b9b30dbbe}{irq\+\_\+set\+\_\+keyboard}}
+\item 
+int \mbox{\hyperlink{game_8c_aadbf3757def1a49b68caa15ef9117b0f}{irq\+\_\+set\+\_\+timer}}
+\item 
+int \mbox{\hyperlink{game_8c_a582d41086dc389f007e55ae5df94e030}{irq\+\_\+set\+\_\+rtc}}
+\item 
+int \mbox{\hyperlink{game_8c_afd357e4e90c5ce77865791f8e690db27}{irq\+\_\+set\+\_\+mouse}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+int \mbox{\hyperlink{game_8c_acf4d33ee4cff36f69b924471174dcb11}{level}} = 1
+\item 
+bool \mbox{\hyperlink{game_8c_aa9ed1d006ee87973bf872a4645f5333f}{level\+\_\+1}} = true
+\item 
+bool \mbox{\hyperlink{game_8c_aeeaa7d9e649ed15daa9df35fd10d9d93}{level\+\_\+2}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_a064baecd1206eaf6d44ea87eee84d8ce}{level\+\_\+3}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_ae7c69688b79564d7fc6b87e717e7c15f}{level\+\_\+4}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_a0e19958f2a473c88841d40d896008fe1}{level\+\_\+5}} = false
+\item 
+int \mbox{\hyperlink{game_8c_a572259e9327ffd81d9348c35038d9092}{y0\+\_\+word}}
+\item 
+int \mbox{\hyperlink{game_8c_afc1b964f483333dc194a2dd4e5435d9d}{x0\+\_\+word}}
+\item 
+bool \mbox{\hyperlink{game_8c_a82855b67ef736d207333add636da5615}{paused\+Game}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_a217b738e11033b8ebfb179f8c7e72e1f}{game\+\_\+over}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_ab6df1872027554e16d6f0fecce3b3753}{in\+Game}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_aa0fd885a3e2c1d7265e49035ebf31016}{ask\+Name}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_a99fa6c655bcbfcd77c4dc2ba5014d6cd}{in\+Menu}} = true
+\item 
+bool \mbox{\hyperlink{game_8c_a9ee3c17a75279ecb4131630ba459782f}{in\+Leaderboard}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_a6b85d47e35cd8fed2d1a07c3cd91b3a4}{in\+Instructions}} = false
+\item 
+bool \mbox{\hyperlink{game_8c_aae3d881ed021a5f5a1827c0e93f0b9b3}{exit\+Game}}
+\item 
+int \mbox{\hyperlink{game_8c_a6c59af730728bf5260ef828aea2eebee}{mouse\+\_\+x}}
+\item 
+int \mbox{\hyperlink{game_8c_ab21653e455bbca86826aa5f628a5fdb2}{mouse\+\_\+y}}
+\item 
+char $\ast$ \mbox{\hyperlink{game_8c_a260c7056dc66725df30a150f2a27625e}{current\+\_\+word}}
+\item 
+int \mbox{\hyperlink{game_8c_a617a47c70795bcff659815ad0efd2266}{counter}}
+\item 
+int \mbox{\hyperlink{game_8c_a73b59f20e932a25b3658fe97398cff89}{numero\+\_\+palavras\+\_\+digitadas}}
+\item 
+int \mbox{\hyperlink{game_8c_a6e34259a385c4a814a73af804f48b8af}{num\+\_\+seconds}} = 0
+\item 
+\mbox{\hyperlink{structTime}{Time}} \mbox{\hyperlink{game_8c_abee024e7cb87bf8c4ebdf75b4c1f2dce}{time\+\_\+rtc}}
+\item 
+\mbox{\hyperlink{structTime}{Time}} \mbox{\hyperlink{game_8c_a30f2444b59d4b87daf0c4b724ee392ba}{previous\+\_\+time\+\_\+rtc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game_8c_aeb72f01360a33b3837fed6c4dec06d38}\label{game_8c_aeb72f01360a33b3837fed6c4dec06d38}} 
+\index{game.c@{game.c}!askNameHandler@{askNameHandler}}
+\index{askNameHandler@{askNameHandler}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{askNameHandler()}{askNameHandler()}}
+{\footnotesize\ttfamily void ask\+Name\+Handler (\begin{DoxyParamCaption}\item[{char $\ast$}]{top\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Desenha o fundo próprio de quando se pede o nome do jogador, assim como o rato. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Player\+Name} & -\/ Nome do jogador atual. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_aeb72f01360a33b3837fed6c4dec06d38_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a642431ad24893994e7032925b8f444b5}\label{game_8c_a642431ad24893994e7032925b8f444b5}} 
+\index{game.c@{game.c}!askNameHandlerMouse@{askNameHandlerMouse}}
+\index{askNameHandlerMouse@{askNameHandlerMouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{askNameHandlerMouse()}{askNameHandlerMouse()}}
+{\footnotesize\ttfamily bool ask\+Name\+Handler\+Mouse (\begin{DoxyParamCaption}\item[{char $\ast$}]{top\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato quando se está a pedir o nome do jogador. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Player\+Name} & -\/ Nome do jogador atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a642431ad24893994e7032925b8f444b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a9ec477a0b8d6cc9db09513c59e84afb0}\label{game_8c_a9ec477a0b8d6cc9db09513c59e84afb0}} 
+\index{game.c@{game.c}!askNameIfRecordHandlerKeyboard@{askNameIfRecordHandlerKeyboard}}
+\index{askNameIfRecordHandlerKeyboard@{askNameIfRecordHandlerKeyboard}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{askNameIfRecordHandlerKeyboard()}{askNameIfRecordHandlerKeyboard()}}
+{\footnotesize\ttfamily char$\ast$ ask\+Name\+If\+Record\+Handler\+Keyboard (\begin{DoxyParamCaption}\item[{char $\ast$}]{top\+Player\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Se houver um record, pergunta o nome do jogador. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em top\+Player\+Name} & -\/ Nome do jogador atual (o que o utilizador já digitou até ao momento). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Nome do jogador atual. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a9ec477a0b8d6cc9db09513c59e84afb0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_afc359b8ab44bfd67915704250ee63ca5}\label{game_8c_afc359b8ab44bfd67915704250ee63ca5}} 
+\index{game.c@{game.c}!gameHandler@{gameHandler}}
+\index{gameHandler@{gameHandler}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{gameHandler()}{gameHandler()}}
+{\footnotesize\ttfamily bool game\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata de tudo o que for relacionado com o jogo em si (nível de dificuldade, tempo passado, pontuação, verificar se o jogador perdeu, verificar se a pontuação obtida corresponde a um recorde, desenhar tudo). 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_afc359b8ab44bfd67915704250ee63ca5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a0ad16c3cd55604e229191d7146346b36}\label{game_8c_a0ad16c3cd55604e229191d7146346b36}} 
+\index{game.c@{game.c}!gameOverHandler@{gameOverHandler}}
+\index{gameOverHandler@{gameOverHandler}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{gameOverHandler()}{gameOverHandler()}}
+{\footnotesize\ttfamily void game\+Over\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo do menu do game over, caso o jogo se encontre aí. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a0ad16c3cd55604e229191d7146346b36_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a8eb9f8fc46a486378b31b6b98dfede25}\label{game_8c_a8eb9f8fc46a486378b31b6b98dfede25}} 
+\index{game.c@{game.c}!gamerOverHandlerMouse@{gamerOverHandlerMouse}}
+\index{gamerOverHandlerMouse@{gamerOverHandlerMouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{gamerOverHandlerMouse()}{gamerOverHandlerMouse()}}
+{\footnotesize\ttfamily bool gamer\+Over\+Handler\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato no menu do game over. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8c_a40528afb72ccbb62a58018387c01a40c}\label{game_8c_a40528afb72ccbb62a58018387c01a40c}} 
+\index{game.c@{game.c}!gameWordsHandlerKeyboard@{gameWordsHandlerKeyboard}}
+\index{gameWordsHandlerKeyboard@{gameWordsHandlerKeyboard}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{gameWordsHandlerKeyboard()}{gameWordsHandlerKeyboard()}}
+{\footnotesize\ttfamily void game\+Words\+Handler\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Atualizada a palavra atual do jogo, de acordo com o que o jogador digita. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a40528afb72ccbb62a58018387c01a40c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_ad8e61754b85d20745f257849d4ae851d}\label{game_8c_ad8e61754b85d20745f257849d4ae851d}} 
+\index{game.c@{game.c}!getFirstWord@{getFirstWord}}
+\index{getFirstWord@{getFirstWord}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{getFirstWord()}{getFirstWord()}}
+{\footnotesize\ttfamily char$\ast$ get\+First\+Word (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Vai buscar a primeira palavra ao ficheiro das palavras (words.\+txt). Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{game_8c_ad8e61754b85d20745f257849d4ae851d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_af6b39ba42256ed7dabcef7195e518af9}\label{game_8c_af6b39ba42256ed7dabcef7195e518af9}} 
+\index{game.c@{game.c}!instructionsHandler@{instructionsHandler}}
+\index{instructionsHandler@{instructionsHandler}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{instructionsHandler()}{instructionsHandler()}}
+{\footnotesize\ttfamily void instructions\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo das instruções, caso o jogo se encontre nas instruções. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_af6b39ba42256ed7dabcef7195e518af9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a1cb9cf0d7c54827f8192f431ec4ac55c}\label{game_8c_a1cb9cf0d7c54827f8192f431ec4ac55c}} 
+\index{game.c@{game.c}!instructionsHandlerMouse@{instructionsHandlerMouse}}
+\index{instructionsHandlerMouse@{instructionsHandlerMouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{instructionsHandlerMouse()}{instructionsHandlerMouse()}}
+{\footnotesize\ttfamily bool instructions\+Handler\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato nas instruções. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8c_a9f0c5b968db80219c55eff59a7d0e325}\label{game_8c_a9f0c5b968db80219c55eff59a7d0e325}} 
+\index{game.c@{game.c}!leaderboardHandler@{leaderboardHandler}}
+\index{leaderboardHandler@{leaderboardHandler}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{leaderboardHandler()}{leaderboardHandler()}}
+{\footnotesize\ttfamily void leaderboard\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo da leaderboard, caso o jogo se encontre na leaderboard. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a9f0c5b968db80219c55eff59a7d0e325_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a37d11d5c8f6a3678348bc1fa3e7dfc32}\label{game_8c_a37d11d5c8f6a3678348bc1fa3e7dfc32}} 
+\index{game.c@{game.c}!leaderboardHandlerMouse@{leaderboardHandlerMouse}}
+\index{leaderboardHandlerMouse@{leaderboardHandlerMouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{leaderboardHandlerMouse()}{leaderboardHandlerMouse()}}
+{\footnotesize\ttfamily bool leaderboard\+Handler\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato na leaderboard. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8c_a7784190ad4611d265788148b1cd860fe}\label{game_8c_a7784190ad4611d265788148b1cd860fe}} 
+\index{game.c@{game.c}!level\_handler@{level\_handler}}
+\index{level\_handler@{level\_handler}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{level\_handler()}{level\_handler()}}
+{\footnotesize\ttfamily void level\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Muda a velocidade com que as palavras caem, de acordo com o nível de dificuldade do jogo. \mbox{\Hypertarget{game_8c_abaf0adbb3f8db58f3c138d87ed95d312}\label{game_8c_abaf0adbb3f8db58f3c138d87ed95d312}} 
+\index{game.c@{game.c}!mainMenuHandlerMouse@{mainMenuHandlerMouse}}
+\index{mainMenuHandlerMouse@{mainMenuHandlerMouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mainMenuHandlerMouse()}{mainMenuHandlerMouse()}}
+{\footnotesize\ttfamily bool main\+Menu\+Handler\+Mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Trata das interrupções do rato no menu principal. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ true de for para fazer break no loop principal do jogo; false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8c_a4153880956c612951373977e2008cbd7}\label{game_8c_a4153880956c612951373977e2008cbd7}} 
+\index{game.c@{game.c}!menuHandler@{menuHandler}}
+\index{menuHandler@{menuHandler}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{menuHandler()}{menuHandler()}}
+{\footnotesize\ttfamily void menu\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo do menu principal, caso o jogo se encontre o menu principal. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a4153880956c612951373977e2008cbd7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a2afbabf1ec3e6b54a29c677b4d619bd6}\label{game_8c_a2afbabf1ec3e6b54a29c677b4d619bd6}} 
+\index{game.c@{game.c}!pausedGameHanler@{pausedGameHanler}}
+\index{pausedGameHanler@{pausedGameHanler}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{pausedGameHanler()}{pausedGameHanler()}}
+{\footnotesize\ttfamily void paused\+Game\+Hanler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Desenha o fundo da pausa, caso o jogo se encontre em pausa. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a2afbabf1ec3e6b54a29c677b4d619bd6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_ad8a7a5017be3e8262302cade0d668f3c}\label{game_8c_ad8a7a5017be3e8262302cade0d668f3c}} 
+\index{game.c@{game.c}!pauseGameHandlerKeyboard@{pauseGameHandlerKeyboard}}
+\index{pauseGameHandlerKeyboard@{pauseGameHandlerKeyboard}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{pauseGameHandlerKeyboard()}{pauseGameHandlerKeyboard()}}
+{\footnotesize\ttfamily void pause\+Game\+Handler\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Mete e retira o jogo da pausa. \mbox{\Hypertarget{game_8c_a31d857684906a63d6b3c37ec795ee7f7}\label{game_8c_a31d857684906a63d6b3c37ec795ee7f7}} 
+\index{game.c@{game.c}!set\_level@{set\_level}}
+\index{set\_level@{set\_level}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{set\_level()}{set\_level()}}
+{\footnotesize\ttfamily void set\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Atribui o nível de dificuldade do jogo, de acordo com o tempo. \mbox{\Hypertarget{game_8c_af889cb8d2930d95f3de1f37de8d6b922}\label{game_8c_af889cb8d2930d95f3de1f37de8d6b922}} 
+\index{game.c@{game.c}!subscribe\_and\_enable\_everything@{subscribe\_and\_enable\_everything}}
+\index{subscribe\_and\_enable\_everything@{subscribe\_and\_enable\_everything}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{subscribe\_and\_enable\_everything()}{subscribe\_and\_enable\_everything()}}
+{\footnotesize\ttfamily int subscribe\+\_\+and\+\_\+enable\+\_\+everything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Subscreve e ativa as interrupções de todos os dispositivos; ativa o data reporting do rato. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ 0 se houver sucesso, 1 caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_af889cb8d2930d95f3de1f37de8d6b922_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{game_8c_a5e7d591fcc90c2e42bf50cb82b937492}\label{game_8c_a5e7d591fcc90c2e42bf50cb82b937492}} 
+\index{game.c@{game.c}!unsubscribe\_everything@{unsubscribe\_everything}}
+\index{unsubscribe\_everything@{unsubscribe\_everything}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{unsubscribe\_everything()}{unsubscribe\_everything()}}
+{\footnotesize\ttfamily int unsubscribe\+\_\+everything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Retira a subscrição e desativa as interrupções de todos os dispositivos; desativa o data reporting do rato. 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+-\/ 0 se houver sucesso, 1 caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a5e7d591fcc90c2e42bf50cb82b937492_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{game_8c_aa0fd885a3e2c1d7265e49035ebf31016}\label{game_8c_aa0fd885a3e2c1d7265e49035ebf31016}} 
+\index{game.c@{game.c}!askName@{askName}}
+\index{askName@{askName}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{askName}{askName}}
+{\footnotesize\ttfamily bool ask\+Name = false}
+
+\mbox{\Hypertarget{game_8c_a617a47c70795bcff659815ad0efd2266}\label{game_8c_a617a47c70795bcff659815ad0efd2266}} 
+\index{game.c@{game.c}!counter@{counter}}
+\index{counter@{counter}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int counter}
+
+\mbox{\Hypertarget{game_8c_a260c7056dc66725df30a150f2a27625e}\label{game_8c_a260c7056dc66725df30a150f2a27625e}} 
+\index{game.c@{game.c}!current\_word@{current\_word}}
+\index{current\_word@{current\_word}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{current\_word}{current\_word}}
+{\footnotesize\ttfamily char$\ast$ current\+\_\+word}
+
+\mbox{\Hypertarget{game_8c_aae3d881ed021a5f5a1827c0e93f0b9b3}\label{game_8c_aae3d881ed021a5f5a1827c0e93f0b9b3}} 
+\index{game.c@{game.c}!exitGame@{exitGame}}
+\index{exitGame@{exitGame}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{exitGame}{exitGame}}
+{\footnotesize\ttfamily bool exit\+Game}
+
+\mbox{\Hypertarget{game_8c_a217b738e11033b8ebfb179f8c7e72e1f}\label{game_8c_a217b738e11033b8ebfb179f8c7e72e1f}} 
+\index{game.c@{game.c}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game\_over}{game\_over}}
+{\footnotesize\ttfamily bool game\+\_\+over = false}
+
+\mbox{\Hypertarget{game_8c_ab6df1872027554e16d6f0fecce3b3753}\label{game_8c_ab6df1872027554e16d6f0fecce3b3753}} 
+\index{game.c@{game.c}!inGame@{inGame}}
+\index{inGame@{inGame}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{inGame}{inGame}}
+{\footnotesize\ttfamily bool in\+Game = false}
+
+\mbox{\Hypertarget{game_8c_a6b85d47e35cd8fed2d1a07c3cd91b3a4}\label{game_8c_a6b85d47e35cd8fed2d1a07c3cd91b3a4}} 
+\index{game.c@{game.c}!inInstructions@{inInstructions}}
+\index{inInstructions@{inInstructions}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{inInstructions}{inInstructions}}
+{\footnotesize\ttfamily bool in\+Instructions = false}
+
+\mbox{\Hypertarget{game_8c_a9ee3c17a75279ecb4131630ba459782f}\label{game_8c_a9ee3c17a75279ecb4131630ba459782f}} 
+\index{game.c@{game.c}!inLeaderboard@{inLeaderboard}}
+\index{inLeaderboard@{inLeaderboard}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{inLeaderboard}{inLeaderboard}}
+{\footnotesize\ttfamily bool in\+Leaderboard = false}
+
+\mbox{\Hypertarget{game_8c_a99fa6c655bcbfcd77c4dc2ba5014d6cd}\label{game_8c_a99fa6c655bcbfcd77c4dc2ba5014d6cd}} 
+\index{game.c@{game.c}!inMenu@{inMenu}}
+\index{inMenu@{inMenu}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{inMenu}{inMenu}}
+{\footnotesize\ttfamily bool in\+Menu = true}
+
+\mbox{\Hypertarget{game_8c_a933e2fc6658376b643e7a80b9b30dbbe}\label{game_8c_a933e2fc6658376b643e7a80b9b30dbbe}} 
+\index{game.c@{game.c}!irq\_set\_keyboard@{irq\_set\_keyboard}}
+\index{irq\_set\_keyboard@{irq\_set\_keyboard}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_keyboard}{irq\_set\_keyboard}}
+{\footnotesize\ttfamily int irq\+\_\+set\+\_\+keyboard}
+
+\mbox{\Hypertarget{game_8c_afd357e4e90c5ce77865791f8e690db27}\label{game_8c_afd357e4e90c5ce77865791f8e690db27}} 
+\index{game.c@{game.c}!irq\_set\_mouse@{irq\_set\_mouse}}
+\index{irq\_set\_mouse@{irq\_set\_mouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_mouse}{irq\_set\_mouse}}
+{\footnotesize\ttfamily int irq\+\_\+set\+\_\+mouse}
+
+\mbox{\Hypertarget{game_8c_a582d41086dc389f007e55ae5df94e030}\label{game_8c_a582d41086dc389f007e55ae5df94e030}} 
+\index{game.c@{game.c}!irq\_set\_rtc@{irq\_set\_rtc}}
+\index{irq\_set\_rtc@{irq\_set\_rtc}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_rtc}{irq\_set\_rtc}}
+{\footnotesize\ttfamily int irq\+\_\+set\+\_\+rtc}
+
+\mbox{\Hypertarget{game_8c_aadbf3757def1a49b68caa15ef9117b0f}\label{game_8c_aadbf3757def1a49b68caa15ef9117b0f}} 
+\index{game.c@{game.c}!irq\_set\_timer@{irq\_set\_timer}}
+\index{irq\_set\_timer@{irq\_set\_timer}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{irq\_set\_timer}{irq\_set\_timer}}
+{\footnotesize\ttfamily int irq\+\_\+set\+\_\+timer}
+
+\mbox{\Hypertarget{game_8c_acf4d33ee4cff36f69b924471174dcb11}\label{game_8c_acf4d33ee4cff36f69b924471174dcb11}} 
+\index{game.c@{game.c}!level@{level}}
+\index{level@{level}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int level = 1}
+
+\mbox{\Hypertarget{game_8c_aa9ed1d006ee87973bf872a4645f5333f}\label{game_8c_aa9ed1d006ee87973bf872a4645f5333f}} 
+\index{game.c@{game.c}!level\_1@{level\_1}}
+\index{level\_1@{level\_1}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{level\_1}{level\_1}}
+{\footnotesize\ttfamily bool level\+\_\+1 = true}
+
+\mbox{\Hypertarget{game_8c_aeeaa7d9e649ed15daa9df35fd10d9d93}\label{game_8c_aeeaa7d9e649ed15daa9df35fd10d9d93}} 
+\index{game.c@{game.c}!level\_2@{level\_2}}
+\index{level\_2@{level\_2}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{level\_2}{level\_2}}
+{\footnotesize\ttfamily bool level\+\_\+2 = false}
+
+\mbox{\Hypertarget{game_8c_a064baecd1206eaf6d44ea87eee84d8ce}\label{game_8c_a064baecd1206eaf6d44ea87eee84d8ce}} 
+\index{game.c@{game.c}!level\_3@{level\_3}}
+\index{level\_3@{level\_3}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{level\_3}{level\_3}}
+{\footnotesize\ttfamily bool level\+\_\+3 = false}
+
+\mbox{\Hypertarget{game_8c_ae7c69688b79564d7fc6b87e717e7c15f}\label{game_8c_ae7c69688b79564d7fc6b87e717e7c15f}} 
+\index{game.c@{game.c}!level\_4@{level\_4}}
+\index{level\_4@{level\_4}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{level\_4}{level\_4}}
+{\footnotesize\ttfamily bool level\+\_\+4 = false}
+
+\mbox{\Hypertarget{game_8c_a0e19958f2a473c88841d40d896008fe1}\label{game_8c_a0e19958f2a473c88841d40d896008fe1}} 
+\index{game.c@{game.c}!level\_5@{level\_5}}
+\index{level\_5@{level\_5}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{level\_5}{level\_5}}
+{\footnotesize\ttfamily bool level\+\_\+5 = false}
+
+\mbox{\Hypertarget{game_8c_a6c59af730728bf5260ef828aea2eebee}\label{game_8c_a6c59af730728bf5260ef828aea2eebee}} 
+\index{game.c@{game.c}!mouse\_x@{mouse\_x}}
+\index{mouse\_x@{mouse\_x}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_x}{mouse\_x}}
+{\footnotesize\ttfamily int mouse\+\_\+x}
+
+\mbox{\Hypertarget{game_8c_ab21653e455bbca86826aa5f628a5fdb2}\label{game_8c_ab21653e455bbca86826aa5f628a5fdb2}} 
+\index{game.c@{game.c}!mouse\_y@{mouse\_y}}
+\index{mouse\_y@{mouse\_y}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_y}{mouse\_y}}
+{\footnotesize\ttfamily int mouse\+\_\+y}
+
+\mbox{\Hypertarget{game_8c_a6e34259a385c4a814a73af804f48b8af}\label{game_8c_a6e34259a385c4a814a73af804f48b8af}} 
+\index{game.c@{game.c}!num\_seconds@{num\_seconds}}
+\index{num\_seconds@{num\_seconds}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{num\_seconds}{num\_seconds}}
+{\footnotesize\ttfamily int num\+\_\+seconds = 0}
+
+\mbox{\Hypertarget{game_8c_a73b59f20e932a25b3658fe97398cff89}\label{game_8c_a73b59f20e932a25b3658fe97398cff89}} 
+\index{game.c@{game.c}!numero\_palavras\_digitadas@{numero\_palavras\_digitadas}}
+\index{numero\_palavras\_digitadas@{numero\_palavras\_digitadas}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{numero\_palavras\_digitadas}{numero\_palavras\_digitadas}}
+{\footnotesize\ttfamily int numero\+\_\+palavras\+\_\+digitadas}
+
+\mbox{\Hypertarget{game_8c_a552a2fa551d83a94359d57d92b354b8c}\label{game_8c_a552a2fa551d83a94359d57d92b354b8c}} 
+\index{game.c@{game.c}!pacote@{pacote}}
+\index{pacote@{pacote}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{pacote}{pacote}}
+{\footnotesize\ttfamily struct packet pacote}
+
+\mbox{\Hypertarget{game_8c_a82855b67ef736d207333add636da5615}\label{game_8c_a82855b67ef736d207333add636da5615}} 
+\index{game.c@{game.c}!pausedGame@{pausedGame}}
+\index{pausedGame@{pausedGame}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{pausedGame}{pausedGame}}
+{\footnotesize\ttfamily bool paused\+Game = false}
+
+\mbox{\Hypertarget{game_8c_a30f2444b59d4b87daf0c4b724ee392ba}\label{game_8c_a30f2444b59d4b87daf0c4b724ee392ba}} 
+\index{game.c@{game.c}!previous\_time\_rtc@{previous\_time\_rtc}}
+\index{previous\_time\_rtc@{previous\_time\_rtc}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{previous\_time\_rtc}{previous\_time\_rtc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTime}{Time}} previous\+\_\+time\+\_\+rtc}
+
+\mbox{\Hypertarget{game_8c_aa1de7a5557e9d96b83cf03f73c92163f}\label{game_8c_aa1de7a5557e9d96b83cf03f73c92163f}} 
+\index{game.c@{game.c}!scancode@{scancode}}
+\index{scancode@{scancode}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily uint8\+\_\+t scancode}
+
+\mbox{\Hypertarget{game_8c_afdd3ece1a649590c30712859481cf383}\label{game_8c_afdd3ece1a649590c30712859481cf383}} 
+\index{game.c@{game.c}!secondBuffer@{secondBuffer}}
+\index{secondBuffer@{secondBuffer}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{secondBuffer}{secondBuffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ second\+Buffer}
+
+\mbox{\Hypertarget{game_8c_a11791b1416f597b4630ba364f65a3908}\label{game_8c_a11791b1416f597b4630ba364f65a3908}} 
+\index{game.c@{game.c}!spriteCursor@{spriteCursor}}
+\index{spriteCursor@{spriteCursor}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteCursor}{spriteCursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Cursor}
+
+\mbox{\Hypertarget{game_8c_a982f634310493c4a2cd0276fd50d371f}\label{game_8c_a982f634310493c4a2cd0276fd50d371f}} 
+\index{game.c@{game.c}!spriteGameOver@{spriteGameOver}}
+\index{spriteGameOver@{spriteGameOver}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteGameOver}{spriteGameOver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Game\+Over}
+
+\mbox{\Hypertarget{game_8c_a549a85593a134c7b2f9cd7c1a38773e0}\label{game_8c_a549a85593a134c7b2f9cd7c1a38773e0}} 
+\index{game.c@{game.c}!spriteInstructions@{spriteInstructions}}
+\index{spriteInstructions@{spriteInstructions}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteInstructions}{spriteInstructions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Instructions}
+
+\mbox{\Hypertarget{game_8c_acfbde9a43c8222c980190c91b1fe711c}\label{game_8c_acfbde9a43c8222c980190c91b1fe711c}} 
+\index{game.c@{game.c}!spriteMenu@{spriteMenu}}
+\index{spriteMenu@{spriteMenu}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteMenu}{spriteMenu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Menu}
+
+\mbox{\Hypertarget{game_8c_a6d0669c0d93145e1f0535291abfa3f6b}\label{game_8c_a6d0669c0d93145e1f0535291abfa3f6b}} 
+\index{game.c@{game.c}!spritePausa@{spritePausa}}
+\index{spritePausa@{spritePausa}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spritePausa}{spritePausa}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ sprite\+Pausa}
+
+\mbox{\Hypertarget{game_8c_abee024e7cb87bf8c4ebdf75b4c1f2dce}\label{game_8c_abee024e7cb87bf8c4ebdf75b4c1f2dce}} 
+\index{game.c@{game.c}!time\_rtc@{time\_rtc}}
+\index{time\_rtc@{time\_rtc}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{time\_rtc}{time\_rtc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTime}{Time}} time\+\_\+rtc}
+
+\mbox{\Hypertarget{game_8c_afc1b964f483333dc194a2dd4e5435d9d}\label{game_8c_afc1b964f483333dc194a2dd4e5435d9d}} 
+\index{game.c@{game.c}!x0\_word@{x0\_word}}
+\index{x0\_word@{x0\_word}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{x0\_word}{x0\_word}}
+{\footnotesize\ttfamily int x0\+\_\+word}
+
+\mbox{\Hypertarget{game_8c_a572259e9327ffd81d9348c35038d9092}\label{game_8c_a572259e9327ffd81d9348c35038d9092}} 
+\index{game.c@{game.c}!y0\_word@{y0\_word}}
+\index{y0\_word@{y0\_word}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{y0\_word}{y0\_word}}
+{\footnotesize\ttfamily int y0\+\_\+word}
+

@@ -1,0 +1,6 @@
+<map id="displayNumber" name="displayNumber">
+<area shape="rect" id="node1" title="Desenha no ecrã o número pretendido." alt="" coords="5,56,115,83"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#a7151b29f2e45fc31dd5125879647eaeb" title="Desenha o sprite sp;" alt="" coords="163,5,252,32"/>
+<area shape="rect" id="node3" href="$words_8c.html#a2d5452b6a168937899914f0978105ae9" title="Obtém o Sprite* correspondente ao caracter c." alt="" coords="170,56,245,83"/>
+<area shape="rect" id="node4" href="$words_8c.html#ab81423dba4689728aefd790cb8316167" title=" " alt="" coords="176,107,239,133"/>
+</map>
